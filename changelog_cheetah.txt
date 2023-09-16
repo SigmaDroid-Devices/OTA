@@ -6,4 +6,127 @@ Device maintainer: Albinoman887
      09-16-2023
 ====================
 
-* initial SigmaDroid stable build v2
+   * build/make
+b5f498772 - Rebrand to SigmaDroid (by Matt Filetto)
+
+   * device/google/gs201
+eb3c29d - gs201: drop the NowPlayingOverlay RRO (by Matt Filetto)
+
+   * device/google/pantah
+acb489c - pantah:  don't allow backup of PixelFrameworksOverlay RRO (by Matt Filetto)
+1869179 - pantah: updated GMS build flags for refactored build logic. (by Matt Filetto)
+
+   * device/lineage/sepolicy
+8fa0ff6 - fix compile (by Matt Filetto)
+864c2cd - Updater app policy updates (by Matt Filetto)
+
+   * frameworks/base
+a251730d2a13 - Revert "Revert "make KeyguardBottomArea Public"" (by Matt Filetto)
+8d533795d360 - Revert "make KeyguardBottomArea Public" (by Matt Filetto)
+
+   * packages/apps/SetupWizard
+acbdc6b - Update the package name the OTA Updater app (by Matt Filetto)
+
+   * packages/apps/Updater
+33974cc - update permissions (by Matt Filetto)
+9f02b69 - Rebrand as SigmaDroid (by Matt Filetto)
+
+   * vendor/lineage
+ffb4093b - config: default to gesture navigation instead of navbar. (by Matt Filetto)
+002582d0 - Bump to version 1.22 (by Matt Filetto)
+e5e49e73 - createjson.sh: refactor parsing version string from OTA update zip filename (by Matt Filetto)
+293552f3 - init: lineage-updater.rc: add backword compatibility for updater app (by Matt Filetto)
+ee026a3e - Update product inheritance when building with GAPPS. (by Matt Filetto)
+
+====================
+     09-15-2023
+====================
+
+====================
+     09-14-2023
+====================
+
+====================
+     09-13-2023
+====================
+
+====================
+     09-12-2023
+====================
+
+====================
+     09-11-2023
+====================
+
+====================
+     09-10-2023
+====================
+
+====================
+     09-09-2023
+====================
+
+====================
+     09-08-2023
+====================
+
+   * frameworks/base
+6afb8aa8ef90 - LocalImageResolver: flag off debug logging (by Joey Huab)
+030220129bc5 - NoCutoutOverlay: add corner radius (by elpaablo)
+fade55fe4b29 - Revert "base: Introduce Smart 5G service [1/2]" (by elpaablo)
+a84b0b74e3e4 - PixelPropsUtils: enable debug logging (by Matt Filetto)
+
+   * vendor/lineage
+d04c1b90 - Revert "[DNM]: hardcode device configurator package name to GMS" (by Matt Filetto)
+
+   * vendor/pixel-framework
+870fe2b - interfaces: add google_battery AIDL interface (by Anay Wadhera)
+14069b7 - SystemUIGoogle: power: disable some debug services (by Chiranth A J)
+f848160 - SystemUIGoogle: googlebattery: rework system feature check sequence (by Alcatraz323)
+e806f57 - SystemUIGoogle: Dont override biometric dialog corner radius (by NurKeinNeid)
+e3235ec - Settings: Import animations from SettingsGoogle (by minaripenguin)
+69b747f - SystemUIGoogle: Silence google battery hal failures (by minaripenguin)
+e6a9b15 - SystemUIGoogle: Fix now playing visibility updates (by minaripenguin)
+c70ae47 - SystemUIGoogle: Hide now playing icon if not clickable (by minaripenguin)
+13770fd - now playing: Resolve compiler warnings (by minaripenguin)
+787e657 - SystemUIGoogle: Rewrite AmbientIndicationContainer to kotlin (by minaripenguin)
+9d2ee56 - fixup - googlebattery/reversecharging: Update service calls (by jhenrique09)
+7b87110 - SystemUIGoogle: Fix BatteryControllerImplGoogle injection (by jhenrique09)
+fcfd06d - googlebattery/reversecharging: Update service calls (by jhenrique09)
+e4e78ca - Adaptive charging: Add google-hal checks and resolve possible regression (by minaripenguin)
+57b8605 - SettingsGoogle: Update and fix missing res error (by Matt Filetto)
+ac5319b - SystemUIGoogle: Fix now playing text alignment (by Anushek Prasal)
+6dec1d8 - SystemUIGoogle: Trigger an ambient pulse on a new Now Playing track (by spezi77)
+5daa151 - SystemUIGoogle: Fixed the AdaptiveCharging indication not showing up (by spezi77)
+
+====================
+     09-07-2023
+====================
+
+   * vendor/lineage
+51adb248 - [DNM]: hardcode device configurator package name to GMS (by Matt Filetto)
+e3714882 - compile and include Updater app on OFFICIAL builds (by Matt Filetto)
+1907e134 - import AOSPConfigOverlay from vendor/gms (by Matt Filetto)
+
+====================
+     09-06-2023
+====================
+
+====================
+     09-05-2023
+====================
+
+====================
+     09-04-2023
+====================
+
+====================
+     09-03-2023
+====================
+
+   * packages/apps/SigmaSettings
+79f5b7f - point to settings preferences that actually exist (by Matt Filetto)
+
+   * vendor/addons
+6a6e645f - com.alpha -> com.sigma (by Matt Filetto)
+
