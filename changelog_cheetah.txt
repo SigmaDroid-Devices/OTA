@@ -6,4 +6,4 @@ Device maintainer: Albinoman887
      09-16-2023
 ====================
 
-* initial SigmaDroid stable build
+* initial SigmaDroid stable build v2
