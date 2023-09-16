@@ -3,7 +3,7 @@ Device: Google Pixel 7 Pro (cheetah)
 Device maintainer: Albinoman887
 
 ====================
-     09-08-2023
+     09-16-2023
 ====================
 
 * initial SigmaDroid stable build
