@@ -1,10 +1,9 @@
 Build type: Monthly
 Device: Google Pixel 7 Pro (cheetah)
-Device maintainer: Pyrtle93
+Device maintainer: Albinoman887
 
 ====================
-     08-31-2023
+     09-08-2023
 ====================
 
-* initial AlphaDroid stable build
-* Some pixel goodies are not included, will be in next release
+* initial SigmaDroid stable build

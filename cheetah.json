@@ -1,16 +1,16 @@
 {
 	"response": [
 		{
-			"maintainer": "Pyrtle93",
+			"maintainer": "Albinoman887",
 			"oem": "Google",
-			"device": "7Pro",
-			"filename": "AlphaDroid-13.0-20230905-cheetah--v1.8.zip",
-			"download": "https://sourceforge.net/projects/alphadroid-project/files/cheetah/AlphaDroid-13.0-20230905-cheetah--v1.8.zip/download",
-			"timestamp": 1693862038,
-			"md5": "a04f510c2f262ff105072c8b9a32472d",
-			"sha256": "648dae3c4be18ab0483a13c774de3016d90c81e69140f08e5e0e9a4c7b8661b2",
-			"size": 2744094557,
-			"version": "1.8",
+			"device": "Pixel 7 Pro",
+			"filename": "SigmaDroid-v1.2-20230908-OFFICIAL-gapps-cheetah.zip",
+			"download": "https://sourceforge.net/projects/sigmadroid-project/files/cheetah/SigmaDroid-v1.2-20230908-OFFICIAL-gapps-cheetah.zip/download",
+			"timestamp": 1694170943,
+			"md5": "28c41653cded6492a1b4640dcaff638c",
+			"sha256": "f291e07341f6f4d4c57bbf5173c79850903446dc4cd3e316c06f2b1bc99ccf38",
+			"size": 2033846949,
+			"version": "1.2",
 			"buildtype": "gapps",
 			"forum": "",
 			"gapps": "",
@@ -18,11 +18,11 @@
 			"modem": "",
 			"bootloader": "",
 			"recovery": "",
-			"paypal": "",
-			"telegram": "https://t.me/PyrtlesPixels",
-			"dt": "https://github.com/AlphaDroid-devices/device_google_gs201",
-			"common-dt": "https://github.com/AlphaDroid-devices/device_google_pantah",
-			"kernel": "https://github.com/AlphaDroid-devices/Kirisakura_Pantah"
+			"paypal": "https://paypal.me/albinoman887",
+			"telegram": "https://t.me/PantahRomsPixel7and7Pro",
+			"dt": "https://github.com/SigmaDroid-devices/device_google_gs201",
+			"common-dt": "https://github.com/SigmaDroid-devices/device_google_pantah",
+			"kernel": "https://github.com/SigmaDroid-devices/kernel_google_gs201"
 		}
 	]
 }
