@@ -1,0 +1,499 @@
+Build type: Monthly
+Device: Google Pixel 7 (panther)
+Device maintainer: Albinoman887
+
+====================
+ Release Highlights
+====================
+
+- Merged Final Android 13 release from upstream
+- Fixed Battery Usage Chart not showing up
+- Fixed missing App grid size setting for SigmaLauncher as well as other the other missing theming settings.
+- Fixed HbmSVManager from crashing on boot. As a result, PixelParts no longer controls Auto HBM as it is now controlled by the system.
+- Fixed entering the "More Security Settings" Submenu of Settings>Security when using the new combined Security dashboard style.
+- Fixed QS Vertical Layout toggle switch being opposite of the actual state, and enabled by default.
+- Fixed Brightness Slider Haptic feedback not being enabled by default like I intended.
+- Fixed spacing between status bar text and QS header introduced by the new Custom QS Header Size option.
+- SigmaToolbox: Added Dismiss All Notification button styles
+- SigmaToolbox: Added SparkOS's "MusicCard" to Volume panel
+
+====================
+     10-18-2023
+====================
+
+   * device/google/gs201
+19757e3 - Update logic for use with new GMS source (by Matt Filetto)
+
+   * device/google/pantah
+e88a40b - pantah: include HbmSVManager & related rro_overlays again (by Matt Filetto)
+
+   * frameworks/base
+8f3d5122cba1 - make KeyguardBottomArea Public (by Matt Filetto)
+f8e8bdcf34df - PixelPropsUtils: add missing symbol definitions. (by Matt Filetto)
+4f3263281213 - PixelPropsUtils: Update cheetah build fingerprint to Sep 2023 (by Matt Filetto)
+b40b390c9c8a - PixelPropsUtils: Refactor again (by Joey Huab)
+951af9b56f8f - PixelPropUtils: Stop spoofing some google apps (by aswin7469)
+e05cb0cd221c - PixelPropsUtils: Partial spoofing improvement (by minaripenguin)
+eabde3f62fe6 - GamesPropsUtils: Switch back BGMI to OnePlus 8 Pro (by COSMIC)
+86894c031a55 - PixelPropsUtils: Refactor logic and cleanup (by Henrique Silva)
+de3e8096c238 - PixelPropsUtils: Update fingerprints to August 2023 release (by Joey Huab)
+6268dc2bd2e9 - PixelPropsUtils: Spoof all wallpaper packages to Pixel 7 Pro (by someone5678)
+51700b8a29c9 - PixelPropsUtils: Set HARDWARE, ID values (by someone5678)
+70c8df4a9b75 - PixelPropsUtils: Correctly spoof unstable process (by someone5678)
+930560741c82 - GamesPropsUtils: Add Gameprops for Battlegrounds Mobile India (BGMI) (by Signed-off-by: SwapnilVicky)
+46ac4a5e62c2 - PixelPropsUtils: Remove pixel tablet spoof for Weather (by jhenrique09)
+e3022930e165 - PixelPropsUtils: Spoof to Pixel 5a by default (by someone5678)
+0c57bf3ce74e - PixelPropsUtils: Update fingerprints to July 2023 release (by Joey Huab)
+b10f95b9fb0e - PixelPropsUtils: Refactor (by Joey Huab)
+99cc3f70e0f5 - PixelPropsUtils: Enable new Velvet Weather UI (by Sourajit Karmakar)
+2bb74ace34cd - PixelPropsUtils: Add emojiwalls and cinematiceffects pkgs (by aswin7469)
+95d663c762c7 - Revert "PixelPropUtils: Spoof userdebug to pixel launcher" (by aswin7469)
+a383a3229e02 - [SQUASH] Introduce PixelPropsUtils (by jhenrique09)
+8720fca698c9 - Drop current PropImitationHooks implementation [SQUASHED] (by Matt Filetto)
+
+   * kernel/google/gs201/private/gs-google
+20270754302d - arch: arm64: configs: Set LTO to thin (by AnierinB)
+a459c9b33507 - drivers: misc: power: implement usb fast charge mode (by engstk)
+
+   * packages/apps/PixelParts
+0770d0a - Remove HBM functions (by Matt Filetto)
+
+   * packages/apps/SigmaSettings
+7aab2836 - Drop the unused Changelog Fragment from Settings (by Matt Filetto)
+f04e6134 - import some missing strings (by Matt Filetto)
+b2e704a5 - QuickSettings: fix up QS vertical layout default value (by Matt Filetto)
+
+   * vendor/gms
+cd0b1cc - Organize, cleanup and guard some packages with build flags (by Matt Filetto)
+
+   * vendor/google/panther
+649296e - Revert "panther: Nuke HbmSVManager" (by Matt Filetto)
+
+   * vendor/lineage
+9c7d478a - Bump version to v3.2 (by Matt Filetto)
+90d2913e - common_mobile: add guards for building SeedVault to make it opt-in. (by Matt Filetto)
+
+   * vendor/pixel-framework
+5697ebf - SettingsGoogle: define SettingsGoogle_manifest (by Matt Filetto)
+dbd25f0 - Revert "SettingsGoogle: FeatureFactoryGoogle: remove FaceProvider" (by Matt Filetto)
+f44d164 - Revert "SettingsGoogle: sync face_enroll bools with defaults" (by Matt Filetto)
+5c324c9 - SettingsGoogle: add missing resources for Pixel Battery Chart (by Matt Filetto)
+4ec0431 - SystemUIGoogle: correct the name of the themepicker package (by Matt Filetto)
+a3bbbbe - SettingsGoogle: Fix wallapaper picker class (by Matt Filetto)
+7084ccf - SettingsGoogle: sync with SigmaDroid Changes (by Matt Filetto)
+
+====================
+     10-17-2023
+====================
+
+   * device/google/pantah
+4fc9e1b - pantah: Update GMS build flags for  use with new vendor/gms (by Matt Filetto)
+7903c56 - overlay: renamed the OnFingerDown overlay to reflect the new name given in frameworks. (by Matt Filetto)
+
+   * packages/apps/Settings
+04eeb788ea - Change text color in SigmaInfoTitle style to colorAccent (by Matt Filetto)
+653ddafa74 - Remove Lineage Health (by LurdRaiden)
+a9c5a2326a - Change identifier to sigma (by LurdRaiden)
+1fe2282037 - Change Sigma dashboard layout (by LurdRaiden)
+caf3909f4f - Remove icon background accent nad dashboard (by LurdRaiden)
+5c67e1def2 - AboutPhone: Revert back to original sigma layout (by LurdRaiden)
+
+   * vendor/lineage
+7a5ce13e - Bump version to v3.1 (by Matt Filetto)
+30df64d2 - Revert "prebuilt: Add prebuilt vendor.aac.hardware.richtap.vibrator" (by elpaablo)
+610f5927 - vendor/lineage: Hookup TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED (by Rohit Sekhar)
+7f72120e - config: Remove AOSPOverlay, RepainterServicePriv, SeedVault (by Matt Filetto)
+
+====================
+     10-16-2023
+====================
+
+   * packages/apps/Aperture
+f04ce7c - Automatic translation import (by LineageOS Infra)
+
+   * packages/apps/AudioFX
+ce735b8 - Automatic translation import (by LineageOS Infra)
+
+   * packages/apps/Eleven
+0770f96b - Automatic translation import (by LineageOS Infra)
+
+   * packages/apps/Etar
+7e422aae - Automatic translation import (by LineageOS Infra)
+
+   * packages/apps/FlipFlap
+77e2031 - Automatic translation import (by LineageOS Infra)
+
+   * packages/apps/Jelly
+cee18cc - Automatic translation import (by LineageOS Infra)
+
+   * packages/apps/Recorder
+8c97fca - Automatic translation import (by LineageOS Infra)
+
+   * vendor/crowdin
+1e44bdd - Automatic translation import (by LineageOS Infra)
+
+   * vendor/qcom/opensource/fm-commonsys
+e0342d5 - Automatic translation import (by LineageOS Infra)
+
+====================
+     10-15-2023
+====================
+
+   * packages/apps/Dialer
+1dd9de207 - Dialer: Bring back merge calls (by Michael W)
+
+====================
+     10-14-2023
+====================
+
+   * frameworks/base
+ffa1596799fc - fix error com.google.android.gms.persistent (by rc420head)
+2c5fbdf10fcd - SystemUI: Change the default value of QS Header size to match the original default value of the header height. [1/2] (by Matt Filetto)
+c2122cb1ad1d - fixup brightness slider haptic feedback default setting (by Matt Filetto)
+b992baac73a4 - SystemUI: Enable haptic feedback for brightness slider by default [1/2] (by Matt Filetto)
+734e1264905e - SystemUI: Enable QS Vertical Layout by default [1/2] (by Matt Filetto)
+01b154af850e - add missing import (by Matt Filetto)
+9553d20b21f0 - SystemUI: Introduce MusicCard in VolumePanel (by TikkiTikki)
+fa18e4417965 - SystemUI: Notification clear all button styles [1/2] (by spkal01)
+84634e8916e3 - core: freeze two IDs used by HbmSvManager (by nift4)
+b23c885f1511 - aapt2: support freezing private resource IDs (by nift4)
+4fee689af5f6 - Increase QS header size default value to 150 [1/2] (by Matt Filetto)
+79d6f805fb58 - QSFooter: Launch SigmaDroid Settings when long clicking settings (by Matt Filetto)
+0f419faced77 - SettingsLib: Add Category for SigmaSettings (by Matt Filetto)
+
+   * packages/apps/Etar
+18466685 - factorise setting FORMAT_SHOW_WEEKDAY (by Lionel Mamane)
+12154b45 - Bump to latest stable AGP & Gradle versions (by Aayush Gupta)
+
+   * vendor/pixel-framework
+c9907d6 - SettingsGoogle: sync security_lockscreen_settings.xml with SigmaDroid (by Matt Filetto)
+a103f3b - Security lockscreen settings: update doze preferences (by elpaablo)
+e3f3d45 - Security lockscreen settings: add AoD schedule preference (by elpaablo)
+a8d169f - system_dashboard_fragment: add default USB configuration preference (by elpaablo)
+
+====================
+     10-13-2023
+====================
+
+   * frameworks/base
+8a8292aa2a38 - Remove duplicate settings key (by Matt Filetto)
+790088e846fa - Utils: Import restart systemui api (by SpiritCroc)
+ecee90c4a823 - SystemUI: UdfpsAnimation: Don't run scaleFactor on mAnimationSize (by AnierinB)
+e015183bceb7 - SystemUI: Allow UdfpsAnimations to work with multiple resolutions (by AnierinB)
+0ff4aeac12c1 - enable custom OnePlus McLaren Udfps Animation by default (by Matt Filetto)
+3d83a64e3b34 - Add Sigma to metrics constants (by Matt Filetto)
+e530b3a33db7 - QSTiles: Allow changing tile label size independently. (by Matt Filetto)
+c9d1b374fd78 - QSPanel: Increase label text size a step (by minaripenguin)
+6bd6cc5a67fd - SystemUI: Fix inconsistent secondary label text size (by Matt Filetto)
+8a0d155a3c93 - SystemUI: Reduce QS tile secondary label text size (by minaripenguin)
+cc679204a069 - Implement edge long swipe gesture to new back gesture affordance (by someone5678)
+49c037d28936 - SystemUI: Remove function that disables night light mode when fingerprint sensor is in use, (by Matt Filetto)
+c146455201a4 - fixup! Add toggle to enable brightness slider haptic feedback (by Pranav Vashi)
+49522fd7aedd - Add toggle to enable brightness slider haptic feedback [1/2] (by Matt Filetto)
+63a6434154c5 - SystemUI: add haptics to brightness slider (by Vaisakh Murali)
+
+   * packages/apps/Settings
+cb563445bb - AboutPhone: Fixup (by LurdRaiden)
+1341e203ea - Add missing strings (by LurdRaiden)
+70f7ec3542 - Settings: Fix layout battery UsageView (by LurdRaiden)
+2d07783596 - Update SigmaDroid logo (by LurdRaiden)
+f4ee26d671 - Allow for phone number block to be added without category tag (by LurdRaiden)
+4e92a836c1 - Fix dashboard conditions (by LurdRaiden)
+457aeab7d1 - AboutPhone: move items to hardware info (by LurdRaiden)
+dafb6f01c1 - AboutPhone: Test new layout Fixup (by LurdRaiden)
+1f97b4567d - AboutPhone: Test new layout (by LurdRaiden)
+c599628272 - Rework dot dashboard style (by LurdRaiden)
+1c7166ad9e - Update DashboardFragmentRegistry with corrected category name (by LurdRaiden)
+1ccf0b53cf - Add missing PreferenceControllerMixin interface implementation to offending fragments (by LurdRaiden)
+2ddc617cd7 - Change remaining references in XML files to preference fragments to reflect new package name. (by LurdRaiden)
+077427dc12 - replace imports begining with com.alpha with com.sigma (by LurdRaiden)
+e6cc256fd5 - Test: Alt sigma logos (by Matt Filetto)
+8f887b3979 - AboutPhone: Update DoT build status card (by LurdRaiden)
+b2282fbb3f - Add icon accent to DoT dashboard about phone card (by LurdRaiden)
+d0d9c092f1 - Add accent to chevron right (by LurdRaiden)
+9daba45dee - AboutPhone: Add accent to dashboard icons (by LurdRaiden)
+310916e1b1 - Add accent to NAD dashboard icons (by LurdRaiden)
+11b1f66526 - NAD Top menu: adjust dimensions add accent to sigma icon (by LurdRaiden)
+a7778cb49d - Add accent to DoT and Sigma dashboard icons (by LurdRaiden)
+35ac26d81b - Settings: Remove medium font weight from DoT and Sigma Dashboard styles (by LurdRaiden)
+d1cb9c70ca - Settings: Remove dot radius merge (by LurdRaiden)
+106f40bfaa - Colors required for verified and unverified drawables (by LurdRaiden)
+aa48665edd - Add missing string (by LurdRaiden)
+326a0597e9 - Update Maintainer method to add new conditions (by LurdRaiden)
+a8321b5697 - AboutPhone: Re-arrange some menu items, add maintainer card (by LurdRaiden)
+3b97a382ac - Settings: Show SoC Model rather than value of ro.board.platform if available (by LurdRaiden)
+364d68b25d - Settings: Align TotalRAMPreferenceController with MemoryUsagePreferenceController from dev settings (by LurdRaiden)
+6b2767272b - Settings: Add platform and RAM to Model & Hardware (by LurdRaiden)
+e1b926fb85 - Reorder the order of the various properties displayed on the Android Version page. (by LurdRaiden)
+c5b36c0224 - use sigma logo (by Matt Filetto)
+45fe8226bc - Settings: replace all instances of "alpha" with "sigma" (by LurdRaiden)
+af754b7e5c - Replace AlphaDroid logo with SigmaDroid (by LurdRaiden)
+8730837df6 - Some AlphaDroid strings I missed (by LurdRaiden)
+0326371200 - Update all references to ALPHA_VERSION to SIGMA_VERSION (by LurdRaiden)
+259624e246 - Change build property references to use the new ro.sigma prefix (by LurdRaiden)
+ce0e960f9e - Introduce Sigma dashboard style [1/2] (by LurdRaiden)
+
+====================
+     10-12-2023
+====================
+
+====================
+     10-11-2023
+====================
+
+   * device/google/gs101
+97f25ec1 - gs101: Set date for vendor & boot SPL (by razorloves)
+
+   * hardware/interfaces
+a402b2250 - Fix the missing std (by zijunzhao)
+5f11108e6 - bluetooth: audiocodecs: add 16 bit sample rate for APTX offloading (by klozz)
+839364f89 - Remove length check to allow empty HDR10+ blobs to HWC (by Sally Qi)
+e8f81a2d8 - camera: Fix prefix length path for External Camera HAL (by Avichal Rakesh)
+f9ee6648a - btaudio: aidl: Support offloading all LDAC qualities (by Adithya R)
+5273c4776 - catch mutex when notify sampling rate changed, otherwise signal may be lost (by sangweilin)
+
+   * packages/apps/Aperture
+4ad48ce - Aperture: Use prebuilt SDK version (by LuK1337)
+48ecbae - Aperture: Use org.lineageos:gradle-generatebp 1.3 (by LuK1337)
+
+   * packages/apps/DeskClock
+7e8229bda - Merge 'lineage-20.0' into 13.0 (by Pranav Vashi)
+
+   * packages/apps/Dialer
+6694cc59b - Merge 'lineage-20.0' into 13.0 (by Pranav Vashi)
+
+   * packages/apps/Jelly
+f0a7c30 - Jelly: Use prebuilt SDK version (by LuK1337)
+fc75f9e - Jelly: Use org.lineageos:gradle-generatebp 1.3 (by LuK1337)
+
+   * packages/apps/Messaging
+90f864e - Messaging: support notification channels (by nift4)
+1569bea - Remove uses of Time. (by Almaz Mingaleev)
+b01bf6b - Messaging: Improve letter render decisioning for avatar (by Pranav Vashi)
+61ed3b4 - Messaging: Fix activity bar menu icons tint (by minarypenguin)
+9323b9c - Messaging: Replace AOSP illustrations (by minarypenguin)
+d446bec - SimIconView: Don't intercept touch events when there's nothing to do (by LibXZR)
+49e2961 - Messaging: Do not check preferred sim if conversation sim exist (by LibXZR)
+dd4f282 - Add support for text/vCard and text/vCalendar MIME type (by Chris Talbot)
+07c1672 - Messaging: Use light icons on conversations select menu (by DarkJoker360)
+
+   * packages/apps/Recorder
+5e734b2 - Recorder: Use prebuilt SDK version (by LuK1337)
+ff2bcf7 - Recorder: Use org.lineageos:gradle-generatebp 1.3 (by LuK1337)
+
+   * packages/apps/Settings
+8cb589690a - Add toggle to switch between AOSP/Google battery graphs (by Pranav Vashi)
+
+   * packages/inputmethods/LatinIME
+a3c179b91 - Merge 'lineage-20.0' into 13.0 (by Pranav Vashi)
+
+   * packages/modules/Permission
+718089fd0 - Merge 'lineage-20.0' into 13.0 (by Pranav Vashi)
+
+   * packages/modules/Wifi
+f42e7e1cab - Merge 'lineage-20.0' into 13.0 (by Pranav Vashi)
+
+   * packages/services/Telecomm
+39305f3b5 - Merge 'lineage-20.0' into 13.0 (by Pranav Vashi)
+
+   * vendor/google/cheetah
+ec97c96 - Revert "cheetah: Nuke HbmSVManager" (by Matt Filetto)
+
+====================
+     10-10-2023
+====================
+
+   * device/google/atv
+bec7fb5 - atv_base: Include default translations (by Bruno Martins)
+
+   * lineage-sdk
+c53322ef - Revert "Revert "sdk: Implement Lineage health service"" (by Matt Filetto)
+
+   * packages/apps/LineageParts
+307ee41 - Revert "Revert "LineageParts: Add charging control preferences"" (by Matt Filetto)
+
+====================
+     10-09-2023
+====================
+
+   * packages/apps/Dialer
+deda9d388 - New translations (#78) (by Lup Gabriel)
+
+   * packages/apps/GameSpace
+37d8868 - New Crowdin updates (#52) (by Lup Gabriel)
+
+   * packages/apps/Settings
+061e3a8acf - Update Alpha logo and Alpha Settings header (by elpaablo)
+4d9943bd26 - fixup! Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD (by elpaablo)
+
+====================
+     10-08-2023
+====================
+
+   * packages/apps/Jelly
+3248b14 - Jelly: Don't use ktx extension to set OnBackPressedCallback (by Luca Stefani)
+90608ab - Jelly: Move HttpURLConnection.getCharset to an extension (by Sebastiano Barezzi)
+56552b4 - Jelly: Redo reach mode configuration (by Sebastiano Barezzi)
+da90d8e - Jelly: Use SAM conversion where possible (by Sebastiano Barezzi)
+2d94d8d - Jelly: Use onBackPressedDispatcher (by Luca Stefani)
+1d1497c - Jelly: Show secure lock icon as soon as we know URL is https (by Luca Stefani)
+cddade0 - Jelly: Decrease search bar font size (by Luca Stefani)
+8ffaefc - Jelly: Adjust search bar image layout starts (by Luca Stefani)
+e683af0 - Jelly: Per website location perm (by Luca Stefani)
+25ae4e5 - Jelly: Update AGP to 8.1.2 (by Sebastiano Barezzi)
+
+====================
+     10-07-2023
+====================
+
+   * packages/modules/Wifi
+e6037c2d84 - Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/modules/Wifi into staging/lineage-20.0_merge_android-security-13.0.0_r10 (by Kevin F. Haggerty)
+40d5e72faa - Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/Wifi into staging/lineage-20.0_merge_android-security-13.0.0_r10 (by Kevin F. Haggerty)
+
+   * packages/services/Telecomm
+c8b247abc - Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/services/Telecomm into staging/lineage-20.0_merge_android-security-13.0.0_r10 (by Kevin F. Haggerty)
+30416a4c0 - Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/services/Telecomm into staging/lineage-20.0_merge_android-security-13.0.0_r10 (by Kevin F. Haggerty)
+
+====================
+     10-06-2023
+====================
+
+   * frameworks/base
+4a7ff16d3feb - Fix custom qs header image not being persistent across reboots (by elpaablo)
+b2235ada1285 - Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/frameworks/base into alpha-13 (by elpaablo)
+f65c2fb9d9eb - Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/frameworks/base into alpha-13 (by elpaablo)
+
+   * frameworks/native
+0f15a56dca - Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/frameworks/native into alpha-13 (by elpaablo)
+8d0cd7c436 - Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/frameworks/native into alpha-13 (by elpaablo)
+
+   * packages/apps/Aperture
+1004933 - Aperture: Swap HDR off drawable with a smaller one (by Sebastiano Barezzi)
+
+   * packages/apps/Jelly
+6acf56a - Jelly: Update Gradle to 8.4 (by Sebastiano Barezzi)
+
+   * packages/apps/Settings
+bf180697ec - Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD (by elpaablo)
+55f7d301e5 - Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD (by elpaablo)
+
+   * packages/modules/Bluetooth
+8a432a063d - Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/packages/modules/Bluetooth into alpha-13 (by elpaablo)
+ea01a29610 - Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/packages/modules/Bluetooth into alpha-13 (by elpaablo)
+
+   * system/sepolicy
+d53d0b855 - Merge 'lineage-20.0' into 13.0 (by Pranav Vashi)
+
+====================
+     10-05-2023
+====================
+
+   * device/google/atv
+f40342f - atv: Build SettingsIntelligence (by Nolen Johnson)
+
+   * frameworks/base
+a051306d2552 - Revert "Systemui: Add Misc Wifi/Network icon Customization[1/2]" (by elpaablo)
+18cadd9defcf - Chip styles: adjust colors and sync with Settings (by elpaablo)
+a94c2ae57333 - fixup! SystemUI: Implement burn-in protection for status/navbar (by elpaablo)
+2ad956c9d1a7 - SystemUI: Add Resizable QS header Space[1/2] (by rdx420)
+033c94f44b3e - SystemUI: Introduce preferred network tile (by cjh1249131356)
+fdefc0cdd236 - Update Origami and MiUI Pill battery styles (by elpaablo)
+f37838503c2d - base: Allow to always show the time in media player [1/2] (by Ido Ben-Hur)
+84d4595c0d0d - Clock: Statusbar Clock Customization [1/2] Add Clock size, color & font style. (by SuperDroidBond)
+926ce5653a6d - Clock: Add ability to resize QS & Statusbar Clock [1/2] (by StarkDroid)
+8a17d826f4d6 - PIH: update cheetah and felix fingerprints to Semptember 2023 (by elpaablo)
+14c37b471066 - FPSInfo: adjust top margin (by elpaablo)
+a967ae5db5ef - Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/frameworks/base into alpha-13-wip (by elpaablo)
+928ee426e453 - fwb: silence batteryexternalstatsworker spam (by Dmitrii)
+e1c7e027c388 - Battery Styles: Add MIUI pill battery icon (by DrDisagree)
+1f13a7141380 - Battery styles: add Origami battery icon (by DrDisagree)
+2dc36c319d67 - SurfaceControl: Prevent crash when surfacecontrol is null (by minaripenguin)
+bf42dde83cc4 - DeviceConfig: Skip read permission enforcement for google apps (by minaripenguin)
+7908f7b8807b - ViewConfiguration: Disable fading marquee (by minaripenguin)
+1c6b09c55bdf - Fix system reboot in systm_server caused by SensorPrivacyService (by liuxinqi)
+fe7e77aa3956 - Remove UPDATED_SYSTEM_APP from updated system apps no longer exist (by Jeongsik Mun)
+b8f73d4efe91 - base: Double tap to trigger doze [1/2] (by SKULSHADY)
+24db865efc5e - base: Allow setting wake for notification separately from doze [1/2] (by Ido Ben-Hur)
+09611847221b - base: Extend showing Ambient instead of fully waking to single tap gesture [1/2] (by aswin7469)
+d5238476d3a3 - base: Allow showing Ambient instead of fully waking [1/2] (by ezio84)
+21e52ce1c88e - core: block 2022+ pixel experience xmls to ASI (by John Galt)
+3c658d1eb3d7 - SettingsProvider: Resolve package name that requires permission (by neobuddy89)
+27ec2d24f1bd - Allow required Android Auto permissions (by Dylanger Daly)
+3a0dcdc52ce8 - PIHooks: Update fingerprints to August 2023. (by spezi77)
+228486967626 - PIHooks: Set HARDWARE, ID values (by someone5678)
+42ced5964eb0 - PIHooks: Spoof pixel fold to google services (by minaripenguin)
+28754338e8ed - PIHooks: limit google camera spoofing to pixel 6 series (by minaripenguin)
+1a2b49f1f7e5 - PIHooks: Spoof Pixel 7 Pro to Google Camera (by minaripenguin)
+b7c020e65aa3 - PIHooks: Un-spoof GMS while adding google account (by Adithya R)
+cfff44c0affd - core: Workaround for ASI crash (by minaripenguin)
+38be948c7508 - PropImitationHooks: Spoof GMS apps for pixel-exclusive features * Switch to felix and update to r66 fp (by minaripenguin)
+49885be089b0 - PropImitationHooks: Prepare and refactor * createGoogleSpoofProps method * if-else block -> switch block (by minaripenguin)
+c3dc80e97f9e - PropImitationHooks: Update cheetah fp to July 2023 (by Leonardo Ledda)
+e5a392152cc3 - PropImitationHooks: Fix google restore issue Original commit: minaripenguin/android_frameworks_base@260a631 (by minaripenguin)
+9837bca76ef6 - PropImitationHooks: Update to cheetah June 2023 FP (by ralph950412)
+fcb25aee6087 - PropImitationHooks: Add toggle for google photos spoofs (by spezi77)
+a8e6b9ebc848 - PropImitationHooks: Spoof gms with Pixel 2 (by Jayant-Deshmukh)
+247711746186 - PropImitationHooks: Update to cheetah May 2023 FP (by ralph950412)
+c856f61daa92 - PropImitationHooks: Spoof Pixel 7 Pro to some Google apps (by Adithya R)
+46d6f71ffdd8 - PropImitationHooks: Spoof Pixel XL to pass CTS/Play Integrity (by Dyneteve)
+aea8d0925ef5 - Introduce PropImitationHooks (by Omkar Chandorkar)
+a1a185321248 - PixelProps: Drop current pixelprop impl (by Pyrtle93)
+e1b7c41aadc9 - services: permissions: Prevent apps from crashing when removing new permissions (by minaripenguin)
+34d1917b3402 - add missing perm for restore (by hurtcopain)
+ac1917d7e076 - Do not drop app permissions on hibernate (by Sergey Vasiliev)
+ca1ce8c67062 - aapt: Default to 0 compression ratio (by arter97)
+754ff413cf8f - Fix NullPointerException in the fingerprint pre-enrollment process (by Ge Tianxiong)
+6aaaf83a3470 - Fix some memory and handlers leakage (by Houxiang Dai)
+85bce4a83dfe - Volume panel: avoid multiple animations on touch spam (by Giuseppe Maggio)
+5d5138cc76bd - SystemUI: Fix black screen after DOZE (by maxwen)
+4dcb4c566ca3 - fixd for IOException when call loadStateFromFilesystem function (by luyunzeng)
+9f7e5c1d94d3 - AutoFillUI: Don't show a "null" toast (by Ido Ben-Hur)
+3b54feb3582b - TtsEngines: avoid crashes caused by null engine name (by Oliver Scott)
+9b61f0e11e0a - KernelCpuUidTimeReader: Always check if `remove_uid_range` file exists (by minaripenguin)
+5c0edbb03100 - core: Enable freeform/multiple windows feature by default (by minaripenguin)
+578cef9e3b84 - SystemUI: add percentage view to brightness bar [1/2] (by elpaablo)
+4df3893c5ca6 - SettingsLib: make MainSwitchPreference background transparent (by elpaablo)
+cba5c4587db0 - DeviceConfig: Change setProperties behavior (by jhenrique09)
+8e1f074ff288 - DeviceConfigUtils: Make debug optional (by jhenrique09)
+01331d27afd6 - Implement DeviceConfigUtils and service (by jhenrique09)
+788445d2df18 - fixup! QSFooter: Launch AlphaDroid Settings when long clicking settings (by elpaablo)
+139e654ecfef - Smart5gService: guard it with overlay (by elpaablo)
+1d1303f4c744 - FPSInfoService: Revamp FPS counter (by StarkDroid)
+2c970707207d - SystemUI: Grant INTERACT_ACROSS_USERS_FULL permission for smartspace (by cjh1249131356)
+9157fb9e25a7 - Extend optional haptic feedback on back gesture to new affordance (by elpaablo)
+c2ce80fc69ab - SystemUI: Extend back gesture visibility to new affordance (by SparkOS-Bot)
+b5fed07dd47c - SystemUI: Optional haptic feedback for back gesture [1/2] (by minaripenguin)
+c9bc98c96dbb - Partially revert "Optional haptic feedback on back gesture [1/2]" (by elpaablo)
+a07dbb6362e6 - SystemUI: Resolve crashes caused by allowing the reinflation of SystemUI. (by minaripenguin)
+3eecaef348ad - SystemUI: Prevent back invocations callbacks from trigerring long swipe action (by minaripenguin)
+68563b8601e7 - SystemUI: Back gesture affordance improvements (by minaripenguin)
+28c6ab69c946 - SystemUI: Edge long press implementation for new back affordance (by minaripenguin)
+bc2771b1a536 - SystemUI: Enable new back gesture affordance (by Timo Dorfner)
+6e3b3afd2fa4 - NotificationChannel: Fix URI failures caused by securityException (by minaripenguin)
+e0c0823e3895 - SystemUI: Re-evaluate theme when changing VoLTE or VoWiFi Icons (by SuperDroidBond)
+4912bf3f47e9 - base: Fix scheduled AOD/Sleep mode (by cjh1249131356)
+58cd7bc3019b - [SQUASH] base: Allow scheduling always on display [1/2] (by Ido Ben-Hur)
+9398e8ebad95 - overlays: Update notchbarkiller overlays (by minaripenguin)
+019446379b82 - overlays: Add notchbar killer for left-notch devices (by Jaida Wu)
+65e46b0577d6 - overlays: Add notch bar killer (by Josh Fox)
+db8f672eb959 - Pixel fixup: UdfpsView: insert a condition on illumination dot logic (by elpaablo)
+0caa6db13722 - Pixel fixup: UDFPS: trigger onFingerDown with regular action down events (by elpaablo)
+
+   * packages/apps/Aperture
+da28f76 - Aperture: Drop android.nonTransitiveRClass (by Sebastiano Barezzi)
+05e87f6 - Aperture: Enable setup-java@v3 cache (by LuK1337)
+4bf39d5 - Aperture: Update AGP to 8.1.2 (by Sebastiano Barezzi)
+413eca7 - Aperture: Update Gradle to 8.3 (by Sebastiano Barezzi)
+0c14d6a - Aperture: Move data classes and enum classes to models package (by Sebastiano Barezzi)
+5bdaf99 - Aperture: Remove unused import (by Sebastiano Barezzi)
+4b40d87 - Aperture: CapturePreviewLayout: Remove callback defined in XML layout (by Sebastiano Barezzi)
+c3c6a81 - Aperture: Hook up video mirror mode (by Sebastiano Barezzi)
+
+   * packages/apps/Jelly
+6b308e0 - Jelly: Move Baidu suggestion provider to HTTPS (by Sebastiano Barezzi)
+5355fde - Jelly: Remove custom parser for Brave (by Sebastiano Barezzi)
+212c262 - Jelly: Drop Google encrypted (by Sebastiano Barezzi)
+aa11787 - Jelly: Enable setup-java@v3 cache (by LuK1337)
+
+   * packages/apps/Recorder
+3b626a4 - Recorder: Enable setup-java@v3 cache (by LuK1337)

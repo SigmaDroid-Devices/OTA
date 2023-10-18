@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "Albinoman887",
+			"oem": "Google",
+			"device": "Pixel 7",
+			"filename": "SigmaDroid-v3.2-20231018-OFFICIAL-gapps-panther.zip",
+			"download": "https://sourceforge.net/projects/sigmadroid-project/files/panther/SigmaDroid-v3.2-20231018-OFFICIAL-gapps-panther.zip/download",
+			"timestamp": 1697658850,
+			"md5": "041a28355900bb6a97b6ca1c2ef2c0a7",
+			"sha256": "2e160ad5858163cab79ef13a40631f14bccce938a07c337c24a47ebc6d78313d",
+			"size": 2007632601,
+			"version": "3.2",
+			"buildtype": "gapps",
+			"forum": "",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "https://paypal.me/albinoman887",
+			"telegram": "https://t.me/PantahRomsPixel7and7Pro",
+			"dt": "https://github.com/SigmaDroid-devices/device_google_gs201",
+			"common-dt": "https://github.com/SigmaDroid-devices/device_google_pantah",
+			"kernel": "https://github.com/SigmaDroid-devices/kernel_google_gs201"
+		}
+	]
+}
