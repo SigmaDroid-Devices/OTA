@@ -4,13 +4,13 @@
 			"maintainer": "Albinoman887",
 			"oem": "Google",
 			"device": "Pixel 7 Pro",
-			"filename": "SigmaDroid-v1.2.4-20230916-OFFICIAL-gapps-cheetah.zip",
-			"download": "https://sourceforge.net/projects/sigmadroid-project/files/cheetah/SigmaDroid-v1.2.4-20230916-OFFICIAL-gapps-cheetah.zip/download",
-			"timestamp": 1694876622,
-			"md5": "48045732c644e7f2b3cdef0136299ef8",
-			"sha256": "192cbe4412d81d635ffba87ef257caabade9e3f48222c44103b1155e264d3685",
-			"size": 2042019919,
-			"version": "1.2.4",
+			"filename": "SigmaDroid-v3.2-20231018-OFFICIAL-gapps-cheetah.zip",
+			"download": "https://sourceforge.net/projects/sigmadroid-project/files/cheetah/SigmaDroid-v3.2-20231018-OFFICIAL-gapps-cheetah.zip/download",
+			"timestamp": 1697624026,
+			"md5": "c476b3046797720a9f451404f26525fd",
+			"sha256": "6f8c13de392f5ddbc36328f6e8eb7e75fdf3e5016c268a194b4add52b67fa3b4",
+			"size": 2008831256,
+			"version": "3.2",
 			"buildtype": "gapps",
 			"forum": "",
 			"gapps": "",
@@ -26,4 +26,3 @@
 		}
 	]
 }
-
