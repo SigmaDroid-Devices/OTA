@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "Albinoman887",
+			"oem": "Google",
+			"device": "Pixel 8 Pro",
+			"filename": "SigmaDroid-v2.0-20240123-OFFICIAL-gapps-husky.zip",
+			"download": "https://sigmadroid.xyz/downloads/Home/Husky/OTAs/SigmaDroid-v2.0-20240123-OFFICIAL-gapps-husky.zip",
+			"timestamp": 1706034439,
+			"md5": "3d0a1c8be09e227c5e7b904f3de7492d",
+			"sha256": "5e9e670ea6e265ac2eb5613434243c0ebd8d576be1821d224f1f6bcee3a8e839",
+			"size": 2056033005,
+			"version": "2.0",
+			"buildtype": "gapps",
+			"forum": "",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "https://paypal.me/albinoman887",
+			"telegram": "https://t.me/PantahRomsPixel7and7Pro",
+			"dt": "https://github.com/SigmaDroid-devices/device_google_shusky",
+			"common-dt": "https://github.com/SigmaDroid-devices/device_google_zuma",
+			"kernel": "https://android.googlesource.com/device/google/shusky-kernel/"
+		}
+	]
+}
