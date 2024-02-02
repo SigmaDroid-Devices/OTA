@@ -1,13 +1,157 @@
 ====================
+     02-01-2024
+====================
+
+   * packages/apps/Settings
+edbec170f1 - import settingslib.Udfps* to UdfpsEnrollDrawable (by Matt Filetto)
+2d2498b526 - UI: Change default settings dashboard style to NaD [1/2] (by Matt Filetto)
+
+   * vendor/lineage
+e81072fa - import google network stack (by LurdRaiden)
+
+====================
+     01-31-2024
+====================
+
+   * device/google/shusky
+c74f0c3 - shusky: udfps: don't trigger FingerDown on ActionDown (by Matt Filetto)
+92b241b - husky: PPU: define stock fingerprint for CTS (by Matt Filetto)
+0d1aebc - husky: move battery capacity definition to sigma_husky.mk as its different between devices. (by Matt Filetto)
+
+   * frameworks/base
+8826dc3df659 - flags: change UDFPS_NEW_TOUCH_DETECTION to false by default. (by Matt Filetto)
+a2ef13a90ff9 - UDFPS: Refactor the conditional for onFingerDownWithActionDown (by Matt Filetto)
+2c1ccea48b8a - Pixel fixup: UdfpsView: insert a condition on illumination dot logic (by elpaablo)
+3287d041df25 - remove extra UdfpsAnimation and change from CustomUtils to Utils in PixelProps (by Matt Filetto)
+916cdb406571 - Pixel fixup: UDFPS: trigger onFingerDown with regular action down events (by elpaablo)
+eef98fa051ef - SystemUI: UdfpsAnimation: Don't run scaleFactor on mAnimationSize (by AnierinB)
+1adfc797ea5c - SystemUI: Allow UdfpsAnimations to work with multiple resolutions (by AnierinB)
+f56e9966ce14 - enable custom OnePlus McLaren Udfps Animation by default (by Matt Filetto)
+0f9e38888914 - UDFPS: conditionally trigger onFingerDown with regular action down events (by elpaablo)
+6938e2cbc146 - revert "disable nightlight on fod" (by Matt Filetto)
+676f603f7445 - AuthRippleController: Always make sure LightRevealScrim finishes regardless of the progress (by minaripenguin)
+94743287e543 - SystemUI: UdfpsController: Disable Night Light on keyguard (by SuperDroidBond)
+e1936c279764 - SystemUI: FOD pressed colors [1/2] (by Joey Huab)
+eba1d40b37d9 - AuthRippleController: Always finish the LightRevealScrim (by Chenyang Zhong)
+ce21d02a1a1f - fwb: Smart Pixels on UDFPS - drop disable_smart_pixels_on_udfps flag (by ShevT)
+f51a161a8280 - fwb: Allow disable Smart Pixels on UDFPS (by ShevT)
+de6b3246bdc5 - UdfpsAnimations: Migrate to DisplayUtils.getScaleFactor (by AnierinB)
+c4bf58115a5a - SystemUI: UdfpsAnimation: Don't run scaleFactor on mAnimationSize (by AnierinB)
+23a7d45d4034 - SystemUI: Allow UdfpsAnimations to work with multiple resolutions (by AnierinB)
+409ae98a1473 - biometrics: Fix udfps races (by Andrzej Perczak)
+595816d6221b - Bring back UDFPS icons and animations [1/3] (by SagarMakhar)
+a7ff297a318f - fixup (by Matt Filetto)
+
+   * vendor/addons
+f76ed1ee - Change order of animations (by Matt Filetto)
+f51dc730 - UdfpsIcons: introduce SigmaDroid Udfps Icon (by Matt Filetto)
+b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
+
+   * vendor/lineage
+5cd3f340 - correct and bump version (by Matt Filetto)
+
+====================
+     01-30-2024
+====================
+
+====================
+     01-29-2024
+====================
+
+====================
+     01-28-2024
+====================
+
+====================
+     01-27-2024
+====================
+
+   * device/google/shusky
+a019187 - shusky: override first API level build property. (by Matt Filetto)
+
+   * system/core
+aa49ffbaf - init: add support for setting first api level to <= 32 (by Matt Filetto)
+
+   * vendor/lineage
+1000f789 - include PifPrebuilt.apk for passing SafetyNet (by Matt Filetto)
+
+====================
+     01-26-2024
+====================
+
+====================
+     01-25-2024
+====================
+
+   * packages/apps/Launcher3
+2a0ee2dc36 - Rebrand as SigmaDroid Launcher (by Matt Filetto)
+
+====================
+     01-24-2024
+====================
+
+   * vendor/google/husky
+660432c - Revert "drop packages that are dupes of ones in vendor/gms" (by Matt Filetto)
+a38f66b - drop packages that are dupes of ones in vendor/gms (by Matt Filetto)
+
+====================
      01-23-2024
 ====================
+
+   * bionic
+821d0e207 - Revert "system_properties: Introduce native PropImitationHooks" (by Matt Filetto)
+7e9c16c7d - system_properties: Introduce native PropImitationHooks (by Adithya R)
 
    * device/google/shusky
 7d6460d - shusky: set build type to OFFICIAL (by Matt Filetto)
 715f9f8 - shusky: manually define battery capacity Sigma About Phone. (by Matt Filetto)
-3d8ade8 - Add Sigma Specific build flags (by Matt Filetto)
 
    * frameworks/base
+6b7a63e25d2c - PPU: do not spoof Pixel Launcher (by ExactExampl)
+3a433bb5dbc3 - PPU: Stop spoofing com.google.android.googlequicksearchbox (by Soo-Hwan Na)
+11bc17c3ba3e - PPU: Allow spoofing all gapps to Pixel 8 Pro [1/2] (by Joey Huab)
+cd71f7c772e0 - PixelPropsUtils: Check process name before doing certify (by someone5678)
+dfe0543240f6 - PPU: Update fingerprints to January 2024 release (by Joey Huab)
+6d0b20c49b6f - PPU: Spoof as Pixel Tab for tablets (by saikiran2001)
+4ba62ba8bde0 - PPU: Spoof to recent Pixel on iD apps (by lahaina)
+0fd4970e4163 - MeizuPropsUtils: Spoof Hihonor Cloudmusic (by QKIvan)
+547875a01c2d - services: Fix google apps permission denials (by minaripenguin)
+d277a2633d39 - PPU: Make PIF and PixelProps toggleable [1/2] (by Joey Huab)
+1a6d9ea36f72 - PPU: Store the current array name in SettingsProvider (by AnierinB)
+915b08af63aa - PPU: Enable logging & add more statements (by AnierinB)
+3aa30018f746 - PPU: Allow spoofing INITIAL_SDK_INT & SECURITY_PATCH (by AnierinB)
+5fe950b863e0 - PPU: Make spoofBuildGms updatable and chosen from a list (by AnierinB)
+c7764f5f7836 - PPU: Make CTS/Play Integrity pass again (again and again and again) (by Adithya R)
+d4f19892ac45 - PPU: Update fingerprints to December 2023 release (by Joey Huab)
+77687bcc69f5 - PPU: Improve device certification bypass (by minaripenguin)
+137a8ea276b8 - PPU: Remove Snapchat spoof (by Joey Huab)
+b18c444f7dc4 - services/PPU: Simplify and improve bypassing for PPU `onTaskStackChanged` listening (by minaripenguin)
+69808e9ec80a - PixelPropsUtils: Make CTS/Play Integrity pass again (by chiteroman)
+dbbd39ea4156 - PixelPropsUtils: Use RecentPixel instead of individual model name (by someone5678)
+eb092a171a0f - PixelPropsUtils: Drop pixel codenames and checks (by someone5678)
+f138a7c9b752 - PixelPropsUtils: Add a config to enable/disable prop imitation (by Chris Crawford)
+ef4b287a1497 - PixelPropsUtils: Update fingerprints to November 2023 release (by Joey Huab)
+2100339580a1 - PixelPropsUtils: Fix GMS drain triggered by an outdated ROM build date (by Tim Josten)
+4d2e653737be - PixelPropsUtils: Bring in Pixel 8 series changes (by Joey Huab)
+6f0f0d6843f4 - PixelPropsUtils: Update fingerprints to September 2023 release (by Joey Huab)
+78fc5e903abb - PixelPropsUtils: Stop spoofing some google apps (by aswin7469)
+41f0c449b8f7 - PixelPropsUtils: Partial spoofing improvement (by minaripenguin)
+19e6fcb65798 - PixelPropsUtils: Refactor logic and cleanup (by Henrique Silva)
+1de491ff3585 - PixelPropsUtils: Update fingerprints to August 2023 release (by Joey Huab)
+c98ea5d8aef0 - PixelPropsUtils: Spoof all wallpaper packages to Pixel 7 Pro (by someone5678)
+03e06c46c13a - PixelPropsUtils: Set HARDWARE, ID values (by someone5678)
+d264ea49d74e - PixelPropsUtils: Correctly spoof unstable process (by someone5678)
+73ac89a0c2c2 - PixelPropsUtils: Remove pixel tablet spoof for Weather (by jhenrique09)
+d8e974fd7d8e - PixelPropsUtils: Spoof to Pixel 5a by default (by someone5678)
+3070d5a0dcdb - PixelPropsUtils: Update fingerprints to July 2023 release (by Joey Huab)
+f35a8dde78db - PixelPropsUtils: Refactor (by Joey Huab)
+8fedba0afde2 - PixelPropsUtils: Enable new Velvet Weather UI (by Sourajit Karmakar)
+83d06c74c70e - PixelPropsUtils: Add emojiwalls and cinematiceffects pkgs (by aswin7469)
+dc6073db3f78 - Revert "PixelPropUtils: Spoof userdebug to pixel launcher" (by aswin7469)
+d079f7b41d2f - [SQUASH] Introduce PixelPropsUtils (by jhenrique09)
+a2d8b68853e5 - PixelProps: Drop current pixelprop impl (by Pyrtle93)
+9cf31700a7cb - speedup window animation scale (by elpaablo)
+59514d1e328a - android.view: reduce animation speeds (by Mazda)
 8b18f8a779c8 - PixelPropsUtils: try and fix NGA Voice Typing (by Matt Filetto)
 31bcd1030eb0 - fixup: Fix derp with getQSTileLableSlize (by Matt Filetto)
 14154937dbb9 - fixup: Launch SIgmaSettings from QS Long Press (by Matt Filetto)
@@ -18,7 +162,6 @@ a942e91ae139 - QSTiles: Allow changing tile label size independently. (by Matt F
 
    * packages/apps/Settings
 a4c49b2add - SpecUtils: Add fallback option for getting battery capacity to show in About Phone. (by Matt Filetto)
-0ea7abc62e - Add accent to sigmainfo headers (by LurdRaiden)
 
    * vendor/google/husky
 b40ba2b - update GIT LFS config (by Matt Filetto)
@@ -44,15 +187,20 @@ f1cc5773 - tasks: updatepackage: fixup parsing of filename for final update pack
 bcdcb5ed - build: refactor updatepackage task for SigmaDroid (by Matt Filetto)
 8e018e9d - refactor changelog.sh (by Matt Filetto)
 f28145b4 - tools: add generation of changelog on successful build. (by Matt Filetto)
-a6a3e7a1 - Add new build properties for displaying build date in a formatted way. (by Matt Filetto)
-bf0be3a7 - add RRO to enable Clear Calling settings (by Matt Filetto)
 
 ====================
      01-22-2024
 ====================
 
-   * vendor/addons
-7eacf27a - Change default wallpaper (by Matt Filetto)
+   * device/google/shusky
+3d8ade8 - Add Sigma Specific build flags (by Matt Filetto)
+
+   * packages/apps/Settings
+0ea7abc62e - Add accent to sigmainfo headers (by LurdRaiden)
+
+   * vendor/lineage
+a6a3e7a1 - Add new build properties for displaying build date in a formatted way. (by Matt Filetto)
+bf0be3a7 - add RRO to enable Clear Calling settings (by Matt Filetto)
 
 ====================
      01-21-2024
@@ -64,6 +212,9 @@ bf0be3a7 - add RRO to enable Clear Calling settings (by Matt Filetto)
    * packages/apps/SetupWizard
 f78fc9e - Rebrand as SigmaDroid (by Matt Filetto)
 
+   * vendor/addons
+7eacf27a - Change default wallpaper (by Matt Filetto)
+
 ====================
      01-20-2024
 ====================
@@ -71,323 +222,4 @@ f78fc9e - Rebrand as SigmaDroid (by Matt Filetto)
 ====================
      01-19-2024
 ====================
-
-====================
-     01-18-2024
-====================
-
-====================
-     01-17-2024
-====================
-
-   * device/google/zuma
-faa6afb - Revert "zuma: Build with 64-bit only GMS if WITH_GMS" (by Matt Filetto)
-
-   * frameworks/base
-19bfa48f83be - SettingsLib: replace string CATEGORY_ALPHA_SETTINGS with CATEGORY_ALPHA_SETTINGS. (by Matt Filetto)
-ab5e496bd380 - remove duplicate line (by Matt Filetto)
-0948b9214e61 - Introduce Dashboard Style (by LurdRaiden)
-06a923765b50 - Rebrand as SigmaDroid (by Matt Filetto)
-2d263082896b - Revert "Add Alert Slider user interface [SQUASHED]" (by Matt Filetto)
-9e00b2a73083 - FaceService: fix Adding Sensors for Pixel FaceUnlock Impl (by Matt Filetto)
-
-   * packages/apps/Settings
-1888e20870 - NAD TopLevelSettings: remove battery submenu (by LurdRaiden)
-763b04def5 - AboutPhone:  rework (by LurdRaiden)
-a932be194f - fix upstream mergefail (by Matt Filetto)
-9ae7ee58b4 - TopLevelSettings:  add sigma icon + update some strings (by LurdRaiden)
-4482e77c22 - TopLevelSettings:  Fix issue that cause crash (by LurdRaiden)
-8e4bef1efd - TopLevelSettings: rework dot dashboard layout (by LurdRaiden)
-cd00ac8459 - Introduce Sigma Dashboard (2/2) (by LurdRaiden)
-75f9d8e9c7 - Settings: Redesign PreferenceCategory (by rohanpurohit)
-062561ff7c - merge alpha and sigma colors (by Matt Filetto)
-b4ab3f6b34 - replace alpha_color_* with sigma_color_* (by Matt Filetto)
-69672cc815 - fixup (by Matt Filetto)
-b6c0a0f78c - rename custom settings symlink to reflect name change to SigmaSettings (by Matt Filetto)
-c300911ca8 - WIP: rename some files (by Matt Filetto)
-90847c46b1 - rename alpha_*.xml (by Matt Filetto)
-2fe3349bcf - replace alpha strings with sigma (by Matt Filetto)
-93acb612d7 - >>> Sigma (by LurdRaiden)
-e66df120da - Use about_settings string on dot top level settings (by elpaablo)
-f9cc3886ec - Add missing resource (by elpaablo)
-859e5a89df - Sync with frameworks/base: SETTINGS_DASHBOARD_STYLE -> SETTINGS_STYLE (by elpaablo)
-dff4cc229a - Settings styles: improve color tuning (by elpaablo)
-7da8c257cf - Adjust Alpha Settings layout (by elpaablo)
-b7583563cb - Rework dashboard styles (by elpaablo)
-a6d2b448e8 - Introduce Nusantara dashboard style (by elpaablo)
-561af265ff - Introduce DotOS dashboard style (by elpablo)
-
-   * vendor/gms
-7f2f8f0 - extras: Update PixelDependencies to include shiba (Pixel 8) (by Matt Filetto)
-
-   * vendor/lineage
-7bcc2ada - Build Pixel Face Unlock support if it exists & TARGET_DEVICE is a Pixel. (by Matt Filetto)
-
-====================
-     01-16-2024
-====================
-
-   * packages/apps/Settings
-8d0d26274e - Add ROM build status preference and remove official status restrictions (by elpaablo)
-
-====================
-     01-15-2024
-====================
-
-====================
-     01-14-2024
-====================
-
-   * device/google/shusky
-76d47db - lineage -> sigma (by Matt Filetto)
-2178bea - shusky: build Pixel FaceUnlock Impl if present (by Matt Filetto)
-7ae2f3a - Revert "add sysconfig from stock OS" (by Matt Filetto)
-28281f6 - wip gms stuff (by Matt Filetto)
-f4731fd - revert firmware extraction support and drop some dupe blobs from gms (by Matt Filetto)
-d114ca7 - add sysconfig from stock OS (by maade69)
-b883950 - Remove camera protection exclusions for com.google.android.as (by flawedworld)
-bc10d49 - Revert "husky: fix compile with adevtool generated vendor" (by Matt Filetto)
-120ca54 - TEMP: fix extract-files.sh (by Matt Filetto)
-3f997ea - husky: fix compile with adevtool generated vendor (by Matt Filetto)
-9f7b40c - shusky: don't enforce GSI requirements (by Matt Filetto)
-b0076c5 - shusky: Set TARGET_PREBUILT_KERNEL (by Chirayu Desai)
-
-   * device/google/zuma
-b0186b1 - Revert "selinux permissive" (by Matt Filetto)
-3156dd4 - selinux permissive (by Matt Filetto)
-fea1d02 - add eUICC privileged permissions (by Matt Filetto)
-be46060 - specify GNSS PSDS type (by Dmitry Muhomor)
-a5ed1a7 - declare that Google Camera needs seinfo for access to accelerators (by Dmitry Muhomor)
-136f428 - declare that Google apps can have special access to accelerators (by Dmitry Muhomor)
-f7f43e5 - add qns package name for 8th gen devices (by Pratyush)
-7f0572c - disable stripping kernel modules (by Daniel Micay)
-151ee90 - zuma: Set camera extension package to Google package (by Scott Warner)
-eb5c2a5 - workaround for building with prebuilt kernel headers (by Matt Filetto)
-636956e - zuma: don't enforce GSI requirments (by Matt Filetto)
-
-   * packages/apps/Settings
-c8c781a2c7 - Settings: Import missing Face Unlock animation (by Chris Crump)
-18f492805f - TopLevelBatteryPreferenceController: add null check (by elpaablo)
-06345598c3 - Revert "Settings: Import illustrations from motorola" (by elpaablo)
-c511853f7b - Revert "Settings: Update few illustrations from Lottiefiles" (by elpaablo)
-0d2a135f70 - Settings: HideDeveloperStatus: Query all apps installed by any user [2/2] (by someone5678)
-5a954cff69 - Settings: HideDeveloperStatus: Add "Show system" menu (by someone5678)
-0a1da4dc42 - Settings: Hide ADB and developer setting enable status [2/2] (by someone5678)
-
-   * vendor/google/husky
-f5c3451 - husky: don't include firmware for OTA images to fix build (by Matt Filetto)
-fd9449a - Drop DeviceIntelligenceNetworkPrebuilt (by Matt Filetto)
-
-====================
-     01-13-2024
-====================
-
-   * build/make
-029419cffb - change product type prefix to sigma_ from lineage_ (by Matt Filetto)
-1f35043a88 - Rebrand as SigmaDroid (by Matt Filetto)
-
-   * build/soong
-4fb4fff80 - Rebrand as SigmaDroid (by Matt Filetto)
-
-   * frameworks/base
-284f11c9c22d - NetworkTraffic: Prevent network callback exception on theme change (by Pranav Vashi)
-
-   * lineage-sdk
-aefb7496 - Rebrand as SigmaDroid (by Matt Filetto)
-
-   * packages/apps/LineageParts
-e91d249 - Rebrand as SigmaDroid (by Matt Filetto)
-
-   * vendor/lineage
-0fa04c33 - introduce SigmaDroid Boot Animation (by Matt Filetto)
-91f8812a - Rebrand as SigmaDroid (by Matt Filetto)
-217de5be - common_full: don't build Seedvault (by Matt Filetto)
-
-====================
-     01-12-2024
-====================
-
-   * art
-c5e0dd3f51 - Speed up HInstruction::ReplaceUsesDominatedBy (by Santiago Aboy Solanes)
-
-   * frameworks/base
-8429c4301eb2 - fixup! Revert "SystemUI: Add A11 QS UI Style [1/3]" (by elpaablo)
-057a3e59da40 - base: HideDeveloperStatus: Query all apps installed by any user [1/2] (by someone5678)
-e302d33ac621 - base: Hide ADB and developer setting enable status [1/2] (by someone5678)
-6efafd677734 - Fixup!: QS icon color (by elpaablo)
-04206f69d3a1 - SystemUI: add more QS Header Images (by kamikaonashi)
-82d15b28ee15 - fixup! Battery Styles: Added 9 more battery styles [1/2] (by elpaablo)
-409960d16f34 - Add SETTINGS_STYLE to Settings (by elpaablo)
-3da2f70f286f - Redesign seekbar (by SagarMakhar)
-e195cb16b6a0 - Move status bar paddings overlays (by elpaablo)
-ec6cb225c5b7 - SystemUI: Controllable squiggle animation [1/2] (by elpaablo)
-46e6e8cd6b44 - Add Ambient Customizations [1/2] (by elpaablo)
-2431cbfbff1a - Add tunnings for status bar paddings [1/2] (by IDontCare-05)
-da99fc07775e - statusbar:  allow user to customize max visible notification icons [1/2] (by elpaablo)
-1be0fa740eba - Add statusbar alpha logo (by elpaablo)
-c8606f3fa17a - base: rework QS panel styles implementation (by elpaablo)
-1856bd076597 - Battery Styles: Add MIUI pill battery icon (by DrDisagree)
-94e48c65a5ee - Battery styles: add Origami battery icon (by DrDisagree)
-b975c5c7dcc6 - BatteryMeterView: simplify scale logic (by elpaablo)
-3e1ae0ddfb00 - Battery Styles: Add Landscape iOS battery styles from Iconify [1/2] (by helliscloser)
-1614ae8547ed - Battery Styles: Added 9 more battery styles [1/2] (by R15Hi)
-0ba424cb9d78 - fixup! core: Workaround for ASI crash test: reboot with patch applied, check if ASI services crashes (by minaripenguin)
-360e1f6a4a7d - PixelPropsUtils: Stop spoofing some google apps * non pixels doesnt need to spoof asi to enable most features * fixes now playing in pixel devices   [asi is checked with device codename to load sountrigger models for now playing] (by aswin7469)
-a6b6ee8f1b78 - Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation (by c_jyuan)
-caf53862d385 - Add missing INTERACT_ACROSS_USERS_FULL permission (by AdrianDC)
-a406f96f310a - Add "android.permission.READ_PHONE_STATE" to manifest (by Janson Kang)
-84fa7d935737 - base: Grant remaining Gapps permissions (by Stallix)
-34fc0785d52b - always auto-grant permissions that have "normal" protectionLevel (by Dmitry Muhomor)
-fce776a7f6e6 - Fix android setup permissions (by mukesh22584)
-057719abf297 - base: Grant Pixel Wallpaper apps permissions (by calebcabob)
-9b3c4b8d7af6 - base: Grant Google Sound Picker storage permissions (by shagbag913)
-7d9578d1e809 - base: Grant storage permission to ThemePicker (by Anushek Prasal)
-500973d302dc - Fix Google Dialer FC due to missing permissions (by Alex Cruz)
-3fb0967bd5d6 - Fix Google Calendar FC (by Josh Chasky)
-7fd6b6aa7b1e - Fix Fi permissions (by Kshitij Gupta)
-8d24ab01fc62 - Fix Android 7.0 GApps permissions which were causing FC (by Alex Naidis)
-e9fb54520cbd - Permissions: Grant Download Provider access permissions to external storage (by Sagarrokade006)
-040347b074b4 - base: fix Chrome sign in (by aswin7469)
-3a90193fc93d - DisplayPowerController: Fix incall proximity not turning off display (by sooti)
-82df71b97d2c - SystemUI: restart timeout causes black screen (by pengzhicai)
-03ae5f88c676 - DefaultPermissionGrant: Fix google search crash (by Pranav Vashi)
-d78797770349 - Permissions: Grant Mediascanner access permissions to external storage (by Ali B)
-706aad08eb9c - services: Whitelist Nfc Service from clipboard toasts (by AshutoshSundresh)
-186e0eaf2d17 - privapp-permissions: Grant missing TelephonyProvider perm. (by spezi77)
-f4c4bd4eb86f - config: Allow gms to access persistent data partition (by Demon000)
-f56abd6d2cf8 - BrightnessUtils: Conditionally use low gamma implementation for brightness curve (by SagarMakhar)
-b70dc15bb228 - RecoverySystem: make the package readable before checking capex (by Chenyang Zhong)
-8eff64595596 - core: Implement system vibration haptics settings (by minaripenguin)
-a983da905504 - Revert "Add toggle to enable brightness slider haptic feedback [1/2]" (by elpaablo)
-f408c9b72e61 - [squash] Add monet customization [1/2] (by elpaablo)
-413318eaa146 - Revert "SystemUI: Add A11 QS UI Style [1/3]" (by elpaablo)
-ea99bc88dba7 - Revert "SystemUI: Add QS Panel Style [1/3]" (by elpaablo)
-3a7ba0f1d2e0 - Revert "SystemUI: Add monet customization [1/2]" (by elpaablo)
-4e43384f9dff - SettingsLib: add category for Alpha settings (by elpaablo)
-d0794d0c3ab3 - Add Alpha to metrics constants (by elpaablo)
-04af8ad77402 - Only need check one time for mPreQTopResumedActivity on preQ version (by ot903107)
-d0713a3d9a01 - services: Fix exception when retrieving target SDK version (by minaripenguin)
-c2888c2d33c7 - add pss for process exit due to am_kill (by guolun Xue)
-f7ea88e44f08 - Fix method not found for NotProvisionedException hidden api (by Kyle Zhang)
-bc31d2216d74 - core: Broadcast intent when display power state changes (by Adithya R)
-7cbda2871d82 - NotificationMenuRow: fix logspam (by tejasvp25)
-5d4e6432890f - SystemUI: Improve ripple animation color (by minaripenguin)
-
-====================
-     01-11-2024
-====================
-
-   * bootable/recovery
-a5777216 - recovery: Disable SPL downgrade check (by jhenrique09)
-48475fe5 - recovery: Disable downgrade check (by jhenrique09)
-a7d5cf7c - Initial rebrand (by elpaablo)
-0c947e3e - recovery_ui: Add support for battery capacity status (by Chippa-a)
-
-   * external/boringssl
-ec8367a9 - Enable AutoFDO for libcrypto (by Yi Kong)
-8bd8d770 - libbssl_rust_support: disable lto (by John Galt)
-1b9ce05a - Revert "Disable LTO as workaround" (by Pranav Vashi)
-
-   * frameworks/av
-e7006cdcd0 - Avoid incomplete OutputConfiguration definition (by Tomasz Wasilczyk)
-
-   * frameworks/base
-e3c5bb8cef44 - Reset top activity's mWaitForEnteringPinnedMode when aborting an incomplete pip-entry (by buwenjing)
-87dee367bfbd - SystemUI: WifiStandard: Avoid usage of Resources#getIdentifier() (by Dhina17)
-afc6337f4d6e - Fix possible NPE in StatusBarIconList causing bootloop (by SpiritCroc)
-41b5e222c87b - Fix phone restarts after SD card formatted as internal storage (by Bo Ye)
-cd41bad0dc17 - ProcessList: Catch Security exception when starting a frozen package (by minaripenguin)
-82d540ffcf23 - base: Pre-grant non-system preloaded apps (by Jeongeun Song)
-f555d6d61b3a - core: Catch OOB when returning pooled string (by minaripenguin)
-04263b822b1f - Fix typo in Dynamic coloring section (by Shen Lin)
-aca6d0c3a3ac - binder: remove dead logging code (by Steven Moreland)
-355df861fe54 - UEventObserver: Fix logging for uevent messages (by Anton Utkin)
-6d7fd82b230e - Fix system reboot in systm_server caused by SensorPrivacyService (by Shen Lin)
-e5b67fa1bdd1 - Fix: avoid the potential attack on SlicePermissionActivity (by hukaixiang)
-8659a39ca0cd - Skip checking SystemUI's permission for observing sensor privacy (by Han Wang)
-
-   * packages/apps/SetupWizard
-402155b - fixup! SetupWizard: Add step for changing theme (by elpaablo)
-
-   * toolchain/pgo-profiles
-0d33bfd - Make libcrypto AFDO profile ARM64 specific (by John Galt)
-
-====================
-     01-10-2024
-====================
-
-   * build/make
-9b69a0c8e1 - Merge branch '14.0' of github.com:crdroidandroid/android_build into alpha-14 (by elpaablo)
-
-   * build/soong
-a47e53094 - Merge branch '14.0' of github.com:crdroidandroid/android_build_soong into alpha-14 (by elpaablo)
-
-   * device/lineage/sepolicy
-18e6f6a - Merge branch '14.0' of https://github.com/crdroidandroid/android_device_crdroid_sepolicy into alpha-14 (by elpaablo)
-ddabd17 - sepolicy: Label Dolby Sepolicy labels (by johnmart19)
-
-   * frameworks/base
-6eb522644f21 - New Crowdin updates (#1054) (by Lup Gabriel)
-f0f9c9a25af8 - Update Crowdin configuration file (by Lup Gabriel)
-656b108262e6 - TunerService: Add parseInteger method (by Pranav Vashi)
-237f5af70b98 - Revert "Deprecate TunerService" (by Pranav Vashi)
-33a599042008 - SystemUI: FaceUnlock: Add margin based on lock icon (by someone5678)
-a15f4bf90e11 - SystemUI: Avoid NullPointerException in setKeyguardMessage for face unlock message (by someone5678)
-9aa638e8a33c - SystemUI: Fix face unlock icon visibility when auth fails (by minaripenguin)
-72c93432d054 - SystemUI: Implement bouncer face unlock animation (by minaripenguin)
-81932d10376e - SystemUI: Use proper tint for face unlock icon (by Pranav Vashi)
-0f49199190d5 - SystemUI: Implement face unlock recognition animation and text (by minaripenguin)
-c5dfa0a07c00 - FaceSense: Vibrate on successful authentication (by Adithya R)
-bc45ffc859fb - KeyguardBouncer: Don't delay showing if face auth running (by jhenrique09)
-97cda8e8a265 - WalletActivity: Don't explicity request face auth (by jhenrique09)
-87eb16f7c38e - SystemUI: Reset face auth on occluding app when authenticated (by jhenrique09)
-d1629adf095b - SystemUI: Use simple check for isFaceDisabled (by Ali B)
-0182eafd6332 - base: Initial SenseProvider for FaceSense service (by Chris Crump)
-
-   * packages/apps/Launcher3
-86c630e0f1 - Merge branch '14.0' of github.com:crdroidandroid/android_packages_apps_Launcher3 into alpha-14 (by elpaablo)
-d94efb6e98 - Merge tag 'android-14.0.0_r20' into 14.0 (by Pranav Vashi)
-
-   * packages/apps/Settings
-24f380a61d - Update a few classes location, after reorganizing Alpha settings (by elpaablo)
-983e6d1b55 - FastChargingPreferenceController: implement dynamic summary to show fastcharge status (by elpaablo)
-5ea2e3f1f5 - Extend Fastcharge implementation [2/3] (by elpaablo)
-ce883cfa4c - Revert "Optional haptic feedback on back gesture [2/2]" (by elpaablo)
-61d0529ff1 - Use monet to color Alpha logo (by elpaablo)
-35d423bc77 - Settings: Partial import DotOS A11 About Phone design (by IacobIonut01)
-cc85066df7 - Rework firmware version (by elpaablo)
-18543807ac - Introduce AlphaSettings (by elpaablo)
-20716063f7 - Settings: adapt system properties to Alpha (by elpaablo)
-
-   * packages/apps/SetupWizard
-37b3297 - Merge branch '14.0' of github.com:crdroidandroid/android_packages_apps_SetupWizard into alpha-14 (by elpaablo)
-
-   * system/core
-a4c4b0dea - Revert "snapuserd: opt out of Global ThinLTO to workaround segfault" (by Yi Kong)
-a6b542d72 - core: Fix reading max_comp_streams for zram (by usernameComputer01)
-c7d85df8f - init.rc: tune dirty data writebacks (by Juhyung Park)
-9358483e7 - task_profiles: Use foreground cpuset for SurfaceFlinger (by Jake Weinstein)
-62249823f - libprocessgroup: Add I/O scheduler attributes to task_profiles.json (by Bart Van Assche)
-1c02a790b - Revert "libprocessgroup: Add a function to remove only empty process groups" (by Bart Van Assche)
-08e61ccb9 - libprocessgroup: Internal linkage for removeAllProcessGroupsInternal (by T.J. Mercier)
-3fe1e1e38 - libprocessgroup: Convert incorrect PLOGs to LOGs (by T.J. Mercier)
-df2a67626 - libprocessgroup: Use correct language for cgroups (by T.J. Mercier)
-bd68e0dbf - libprocessgroup: Don't sleep after last cgroup removal attempt (by T.J. Mercier)
-0c3335b4b - libprocessgroup: Remove max_processes from KillProcessGroup API (by T.J. Mercier)
-58e4acf1b - init: Spoof more props (by jhenrique09)
-d4792ae4f - core: Lockscreen Charging (2/3) (by xyyx)
-715da5212 - init: reboot to recovery on panic by default to allow reading pstore (by Alexander Martinz)
-1d8130f42 - init: Do not set safety net props for ENG builds (by Pranav Vashi)
-b3481ec45 - init: Add more properties to spoof. (by spezi77)
-e7203338f - init: Weaken property override security for the init extension (by Alex Naidis)
-0393d58c8 - init: Set properties to make SafetyNet pass (by Danny Lin)
-9b9422582 - camera: Add L-compatible camera feature enums (by Steve Kondik)
-53386e9dc - Camera: Add feature extensions (by Sauhard Pande)
-b126e38bb - debuggerd: Adapt rom name in tombstones (by DarkJoker360)
-fa60c5d4c - debuggerd: Set correct version for tombstone (by Pranav Vashi)
-
-   * vendor/lineage
-7dc8cce2 - init: Hide Magisk better (by Simao Gomes Viana)
-dad78d89 - crdroid: Update clone apps exemption list (by Pranav Vashi)
-524d8105 - crdroid: Avoid cloning default launcher (by Pranav Vashi)
 
