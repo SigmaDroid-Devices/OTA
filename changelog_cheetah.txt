@@ -1,9 +1,8 @@
-Build type: Monthly
 Device: Google Pixel 7 Pro (cheetah)
 Device maintainer: LurdRaiden
 
 ====================
-     02-02-2024
+     02-03-2024
 ====================
 
    * art
@@ -17,8 +16,8 @@ Device maintainer: LurdRaiden
 f94747389cc9 - Fix missing variables (by LurdRaiden)
 
    * packages/apps/Settings
+d69a60c5959 - update sigmatoolbox dashboard preference (by LurdRaiden)
 edbec170f1f - import settingslib.Udfps* to UdfpsEnrollDrawable (by Matt Filetto)
-2d2498b5267 - UI: Change default settings dashboard style to NaD [1/2] (by Matt Filetto)
 
    * packages/apps/SigmaSettings
 bea1201a - UI: Change default settings dashboard style to NaD [2/2] (by Matt Filetto)
@@ -27,11 +26,14 @@ bea1201a - UI: Change default settings dashboard style to NaD [2/2] (by Matt Fil
 c5c48bb1 - Import new fonts (by LurdRaiden)
 
    * vendor/lineage
-e81072fa - import google network stack (by LurdRaiden)
+4825a554 - bump version to v4.1.1 after sepolicy fix for updater app (by Matt Filetto)
 
 ====================
-     02-01-2024
+     02-02-2024
 ====================
+
+   * art
+396e1a5100 - Don't try to use JIT code if we need dex pc move events (by Mythri Alle)
 
    * packages/apps/Aperture
 147e4ca - Automatic translation import (by LineageOS Infra)
@@ -39,8 +41,14 @@ e81072fa - import google network stack (by LurdRaiden)
    * packages/apps/Jelly
 2974191 - Automatic translation import (by LineageOS Infra)
 
+   * packages/apps/Settings
+2d2498b5267 - UI: Change default settings dashboard style to NaD [1/2] (by Matt Filetto)
+
+   * vendor/lineage
+e81072fa - import google network stack (by LurdRaiden)
+
 ====================
-     01-31-2024
+     02-01-2024
 ====================
 
    * art
@@ -92,7 +100,7 @@ b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
 5cd3f340 - correct and bump version (by Matt Filetto)
 
 ====================
-     01-30-2024
+     01-31-2024
 ====================
 
    * frameworks/native
@@ -133,7 +141,7 @@ e74962c4 - Eleven: Add repeat button for Android Auto (by Albert Tang)
 e162184a8 - init.rc: Disable native stats collection service (by Danny Lin)
 
 ====================
-     01-29-2024
+     01-30-2024
 ====================
 
    * frameworks/av
@@ -148,7 +156,7 @@ c36bd8a5f2 - Turn on LTO optmisations for libbinder (by Yi Kong)
 baae0dd751 - libbinder: size by 30%, dirty memory by 43% (by Steven Moreland)
 
 ====================
-     01-28-2024
+     01-29-2024
 ====================
 
    * external/chromium-webview/patches
@@ -170,7 +178,7 @@ e3b79e7 - Update Chromium Webview arm64 prebuilt to 121.0.6167.101 (by Kevin F. 
 924e98b - Refreshed afdo profiles drop from ZP1A.240112.x (by Yi Kong)
 
 ====================
-     01-27-2024
+     01-28-2024
 ====================
 
    * hardware/interfaces
@@ -180,9 +188,6 @@ e3b79e7 - Update Chromium Webview arm64 prebuilt to 121.0.6167.101 (by Kevin F. 
 e46293a3 - remove Udfps Pressed Icon Color options for now (by Matt Filetto)
 2277089d - Bring back UDFPS Icons and Animations (by Matt Filetto)
 
-   * packages/services/Telecomm
-e3bfbc688 - Telecomm: More improvements for incall vibrations (by Pranav Vashi)
-
    * vendor/gms
 20d0402 - import TurboAdapter and include by default for all pixels (by Matt Filetto)
 
@@ -190,16 +195,14 @@ e3bfbc688 - Telecomm: More improvements for incall vibrations (by Pranav Vashi)
 1000f789 - include PifPrebuilt.apk for passing SafetyNet (by Matt Filetto)
 
 ====================
-     01-26-2024
+     01-27-2024
 ====================
-
-   * packages/apps/Launcher3
-2a0ee2dc36 - Rebrand as SigmaDroid Launcher (by Matt Filetto)
 
    * packages/apps/PixelParts
 47922ad - PixelParts: Import AOSP color mode preview for saturation (by Alfred Lin)
 
    * packages/services/Telecomm
+e3bfbc688 - Telecomm: More improvements for incall vibrations (by Pranav Vashi)
 769a363d8 - Telecomm: Get rid of deprecation in incall vibrations (by Ido Ben-Hur)
 87e830f9c - Ringer: Rewrite flashlight blink on incoming calls (by Ido Ben-Hur)
 7ea2a17d5 - Ringer: There should really not be an observer here (by Ido Ben-Hur)
@@ -213,14 +216,17 @@ c5c02cf74 - Telecomm: Add a null check to custom ring vibration (by Ido Ben-Hur)
 65fe90fc0 - Telecomm: Add vibration patterns from OOS [2/3] (by rituj)
 
 ====================
-     01-25-2024
+     01-26-2024
 ====================
+
+   * packages/apps/Launcher3
+2a0ee2dc36 - Rebrand as SigmaDroid Launcher (by Matt Filetto)
 
    * packages/apps/PixelParts
 0d9a5ea - PixelParts: Allow continuousUpdates for saturation SeekBarPreference (by AnierinB)
 
 ====================
-     01-24-2024
+     01-25-2024
 ====================
 
    * packages/modules/Permission
@@ -230,7 +236,7 @@ c5c02cf74 - Telecomm: Add a null check to custom ring vibration (by Ido Ben-Hur)
 44da485e7 - Workaround for Global ThinLTO (by Jooyung Han)
 
 ====================
-     01-23-2024
+     01-24-2024
 ====================
 
    * device/google/atv
@@ -292,7 +298,6 @@ a942e91ae139 - QSTiles: Allow changing tile label size independently. (by Matt F
 
    * packages/apps/Settings
 a4c49b2adde - SpecUtils: Add fallback option for getting battery capacity to show in About Phone. (by Matt Filetto)
-0ea7abc62ea - Add accent to sigmainfo headers (by LurdRaiden)
 
    * packages/apps/SigmaSettings
 a509661d - QS: Allow changing the size of the secondary label on QS Tiles (by Matt Filetto)
@@ -323,11 +328,9 @@ f1cc5773 - tasks: updatepackage: fixup parsing of filename for final update pack
 bcdcb5ed - build: refactor updatepackage task for SigmaDroid (by Matt Filetto)
 8e018e9d - refactor changelog.sh (by Matt Filetto)
 f28145b4 - tools: add generation of changelog on successful build. (by Matt Filetto)
-a6a3e7a1 - Add new build properties for displaying build date in a formatted way. (by Matt Filetto)
-bf0be3a7 - add RRO to enable Clear Calling settings (by Matt Filetto)
 
 ====================
-     01-22-2024
+     01-23-2024
 ====================
 
    * bionic
@@ -336,6 +339,17 @@ bce2dc317 - Fix the types in the arm64 dynamic function dispatch. (by Elliott Hu
 
    * device/lineage/atv
 3a460bc - atv: Move standalone RRO packages to a separate dir (by Bruno Martins)
+
+   * packages/apps/Settings
+0ea7abc62ea - Add accent to sigmainfo headers (by LurdRaiden)
+
+   * vendor/lineage
+a6a3e7a1 - Add new build properties for displaying build date in a formatted way. (by Matt Filetto)
+bf0be3a7 - add RRO to enable Clear Calling settings (by Matt Filetto)
+
+====================
+     01-22-2024
+====================
 
    * frameworks/av
 db48df283b - Fix spatial audio noise with EQ on (by wendy lin)
@@ -406,21 +420,17 @@ ce0bda14b4 - Fix null deref in camera service (by Pawan Wagh)
    * frameworks/native
 9c49855bcd - Make servicemanager ProcessCapacityHigh (by Milo Sredkov)
 
-   * toolchain/pgo-profiles
-6ca689d - Refreshed afdo profiles drop from ZP1A.240105.x (by Yi Kong)
-
-====================
-     01-21-2024
-====================
-
    * packages/apps/SetupWizard
 f78fc9e - Rebrand as SigmaDroid (by Matt Filetto)
+
+   * toolchain/pgo-profiles
+6ca689d - Refreshed afdo profiles drop from ZP1A.240105.x (by Yi Kong)
 
    * vendor/addons
 7eacf27a - Change default wallpaper (by Matt Filetto)
 
 ====================
-     01-20-2024
+     01-21-2024
 ====================
 
    * packages/apps/Aperture
@@ -441,4 +451,5 @@ eb312e2 - Jelly: Run `./gradlew app:generateBp` (by Luca Stefani)
 
    * packages/apps/PixelParts
 6f7b81e - PixelParts: Move to PreferenceFragmentCompat (by AnierinB)
+
 
