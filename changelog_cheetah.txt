@@ -5,6 +5,16 @@ Device maintainer: LurdRaiden
      02-03-2024
 ====================
 
+   * frameworks/base
+f94747389cc9 - Fix missing variables (by LurdRaiden)
+
+   * packages/apps/Settings
+d69a60c5959 - update sigmatoolbox dashboard preference (by LurdRaiden)
+
+====================
+     02-02-2024
+====================
+
    * art
 396e1a5100 - Don't try to use JIT code if we need dex pc move events (by Mythri Alle)
 
@@ -12,12 +22,9 @@ Device maintainer: LurdRaiden
 3121df2 - update sepolicy for OTA Updater app name change (by Matt Filetto)
 6cfe1e0 - missing GMS policy (by Matt Filetto)
 
-   * frameworks/base
-f94747389cc9 - Fix missing variables (by LurdRaiden)
-
    * packages/apps/Settings
-d69a60c5959 - update sigmatoolbox dashboard preference (by LurdRaiden)
 edbec170f1f - import settingslib.Udfps* to UdfpsEnrollDrawable (by Matt Filetto)
+2d2498b5267 - UI: Change default settings dashboard style to NaD [1/2] (by Matt Filetto)
 
    * packages/apps/SigmaSettings
 bea1201a - UI: Change default settings dashboard style to NaD [2/2] (by Matt Filetto)
@@ -27,32 +34,11 @@ c5c48bb1 - Import new fonts (by LurdRaiden)
 
    * vendor/lineage
 4825a554 - bump version to v4.1.1 after sepolicy fix for updater app (by Matt Filetto)
-
-====================
-     02-02-2024
-====================
-
-   * art
-396e1a5100 - Don't try to use JIT code if we need dex pc move events (by Mythri Alle)
-
-   * packages/apps/Aperture
-147e4ca - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Jelly
-2974191 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Settings
-2d2498b5267 - UI: Change default settings dashboard style to NaD [1/2] (by Matt Filetto)
-
-   * vendor/lineage
 e81072fa - import google network stack (by LurdRaiden)
 
 ====================
      02-01-2024
 ====================
-
-   * art
-4cd56c3905 - Do not create random scheduling selector if not needed. (by Vladimir Marko)
 
    * frameworks/base
 8826dc3df659 - flags: change UDFPS_NEW_TOUCH_DETECTION to false by default. (by Matt Filetto)
@@ -76,37 +62,35 @@ c4bf58115a5a - SystemUI: UdfpsAnimation: Don't run scaleFactor on mAnimationSize
 23a7d45d4034 - SystemUI: Allow UdfpsAnimations to work with multiple resolutions (by AnierinB)
 409ae98a1473 - biometrics: Fix udfps races (by Andrzej Perczak)
 595816d6221b - Bring back UDFPS icons and animations [1/3] (by SagarMakhar)
-a7ff297a318f - fixup (by Matt Filetto)
 
-   * packages/apps/Eleven
-0c74853c - Eleven: Avoid posting notification when service start id is invalid (by LuK1337)
-b7666321 - Eleven: Run `./gradlew app:generateBp` (by LuK1337)
+   * packages/apps/Aperture
+147e4ca - Automatic translation import (by LineageOS Infra)
+
+   * packages/apps/Jelly
+2974191 - Automatic translation import (by LineageOS Infra)
 
    * packages/inputmethods/LatinIME
 2e5d4a0b5 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
 
-   * system/core
-86263223f - Merge pull request #15 from kondors1995/14.0 (by Pranav Vashi)
-
    * toolchain/pgo-profiles
 eda5d10 - Merge pull request #1 from SOVIET-ANDROID/14.0 (by Pranav Vashi)
-
-   * vendor/addons
-f76ed1ee - Change order of animations (by Matt Filetto)
-f51dc730 - UdfpsIcons: introduce SigmaDroid Udfps Icon (by Matt Filetto)
-b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
-
-   * vendor/lineage
-5cd3f340 - correct and bump version (by Matt Filetto)
 
 ====================
      01-31-2024
 ====================
 
+   * art
+4cd56c3905 - Do not create random scheduling selector if not needed. (by Vladimir Marko)
+
+   * frameworks/base
+a7ff297a318f - fixup (by Matt Filetto)
+
    * frameworks/native
 71cf4a6d11 - Revert "libbinder: size by 30%, dirty memory by 43%" (by Pranav Vashi)
 
    * packages/apps/Eleven
+0c74853c - Eleven: Avoid posting notification when service start id is invalid (by LuK1337)
+b7666321 - Eleven: Run `./gradlew app:generateBp` (by LuK1337)
 15137709 - Eleven: Bump minSdk (by Georg Veichtlbauer)
 d90d9418 - Eleven: Update MediaStore for API > 28 (by Georg Veichtlbauer)
 fe366f31 - Eleven: Set type for FGS (by Georg Veichtlbauer)
@@ -138,14 +122,19 @@ d7b422ba - Eleven: Round off corners of list images (by Georg Veichtlbauer)
 e74962c4 - Eleven: Add repeat button for Android Auto (by Albert Tang)
 
    * system/core
-e162184a8 - init.rc: Disable native stats collection service (by Danny Lin)
+86263223f - Merge pull request #15 from kondors1995/14.0 (by Pranav Vashi)
+
+   * vendor/addons
+f76ed1ee - Change order of animations (by Matt Filetto)
+f51dc730 - UdfpsIcons: introduce SigmaDroid Udfps Icon (by Matt Filetto)
+b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
+
+   * vendor/lineage
+5cd3f340 - correct and bump version (by Matt Filetto)
 
 ====================
      01-30-2024
 ====================
-
-   * frameworks/av
-b6e1b56b8f - Change to output ArrayMode if using SkipCutBuffer (by Arun Johnson)
 
    * frameworks/native
 980c7c9a29 - Display: the resolution scale factor changed during booting (by jiajia.tian)
@@ -155,12 +144,25 @@ c36bd8a5f2 - Turn on LTO optmisations for libbinder (by Yi Kong)
 7380f3aa88 - Fix the Nullable pointer is dereferenced issue (by zijunzhao)
 baae0dd751 - libbinder: size by 30%, dirty memory by 43% (by Steven Moreland)
 
+   * system/core
+e162184a8 - init.rc: Disable native stats collection service (by Danny Lin)
+
 ====================
      01-29-2024
 ====================
 
    * external/chromium-webview/patches
 12b0006 - Update Chromium Webview to 121.0.6167.101 (by Kevin F. Haggerty)
+
+   * frameworks/av
+b6e1b56b8f - Change to output ArrayMode if using SkipCutBuffer (by Arun Johnson)
+
+   * toolchain/pgo-profiles
+924e98b - Refreshed afdo profiles drop from ZP1A.240112.x (by Yi Kong)
+
+====================
+     01-28-2024
+====================
 
    * external/chromium-webview/prebuilt/arm
 73a91d7 - Update Chromium Webview arm prebuilt to 121.0.6167.101 (by Kevin F. Haggerty)
@@ -174,13 +176,6 @@ e3b79e7 - Update Chromium Webview arm64 prebuilt to 121.0.6167.101 (by Kevin F. 
    * external/chromium-webview/prebuilt/x86_64
 22f0552 - Update Chromium Webview x86_64 prebuilt to 121.0.6167.101 (by Kevin F. Haggerty)
 
-   * toolchain/pgo-profiles
-924e98b - Refreshed afdo profiles drop from ZP1A.240112.x (by Yi Kong)
-
-====================
-     01-28-2024
-====================
-
    * hardware/interfaces
 7b4810078 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
 
@@ -188,18 +183,9 @@ e3b79e7 - Update Chromium Webview arm64 prebuilt to 121.0.6167.101 (by Kevin F. 
 e46293a3 - remove Udfps Pressed Icon Color options for now (by Matt Filetto)
 2277089d - Bring back UDFPS Icons and Animations (by Matt Filetto)
 
-   * vendor/gms
-20d0402 - import TurboAdapter and include by default for all pixels (by Matt Filetto)
-
-   * vendor/lineage
-1000f789 - include PifPrebuilt.apk for passing SafetyNet (by Matt Filetto)
-
 ====================
      01-27-2024
 ====================
-
-   * packages/apps/PixelParts
-47922ad - PixelParts: Import AOSP color mode preview for saturation (by Alfred Lin)
 
    * packages/services/Telecomm
 e3bfbc688 - Telecomm: More improvements for incall vibrations (by Pranav Vashi)
@@ -215,6 +201,12 @@ c5c02cf74 - Telecomm: Add a null check to custom ring vibration (by Ido Ben-Hur)
 8d5cc05d0 - Telecomm: Allow choosing a custom vibration pattern [2/3] (by Ido Ben-Hur)
 65fe90fc0 - Telecomm: Add vibration patterns from OOS [2/3] (by rituj)
 
+   * vendor/gms
+20d0402 - import TurboAdapter and include by default for all pixels (by Matt Filetto)
+
+   * vendor/lineage
+1000f789 - include PifPrebuilt.apk for passing SafetyNet (by Matt Filetto)
+
 ====================
      01-26-2024
 ====================
@@ -223,6 +215,7 @@ c5c02cf74 - Telecomm: Add a null check to custom ring vibration (by Ido Ben-Hur)
 2a0ee2dc36 - Rebrand as SigmaDroid Launcher (by Matt Filetto)
 
    * packages/apps/PixelParts
+47922ad - PixelParts: Import AOSP color mode preview for saturation (by Alfred Lin)
 0d9a5ea - PixelParts: Allow continuousUpdates for saturation SeekBarPreference (by AnierinB)
 
 ====================
@@ -232,15 +225,9 @@ c5c02cf74 - Telecomm: Add a null check to custom ring vibration (by Ido Ben-Hur)
    * packages/modules/Permission
 004a77aad - Prevent crashing with several child profiles (by Tommy Webb)
 
-   * system/core
-44da485e7 - Workaround for Global ThinLTO (by Jooyung Han)
-
 ====================
      01-24-2024
 ====================
-
-   * device/google/atv
-a876b76 - Revert "Removing references to arm7 emulator targets." (by Nolen Johnson)
 
    * frameworks/base
 6b7a63e25d2c - PPU: do not spoof Pixel Launcher (by ExactExampl)
@@ -291,10 +278,6 @@ a2d8b68853e5 - PixelProps: Drop current pixelprop impl (by Pyrtle93)
 8b18f8a779c8 - PixelPropsUtils: try and fix NGA Voice Typing (by Matt Filetto)
 31bcd1030eb0 - fixup: Fix derp with getQSTileLableSlize (by Matt Filetto)
 14154937dbb9 - fixup: Launch SIgmaSettings from QS Long Press (by Matt Filetto)
-afd58b70feea - fixup: Fix getting QS Tile label size (by Matt Filetto)
-50456eb60ecb - QSPanel: Increase label text size a step (by minaripenguin)
-a942e91ae139 - QSTiles: Allow changing tile label size independently. (by Matt Filetto)
-3b895d2cd2ae - QSFooter: Launch SigmaDroid Settings when long clicking settings (by Matt Filetto)
 
    * packages/apps/Settings
 a4c49b2adde - SpecUtils: Add fallback option for getting battery capacity to show in About Phone. (by Matt Filetto)
@@ -306,6 +289,9 @@ a509661d - QS: Allow changing the size of the secondary label on QS Tiles (by Ma
 4a00d54 - Change some references to alpha I missed (by Matt Filetto)
 652c197 - update permissions (by Matt Filetto)
 0de4399 - Rebrand as SigmaDroid (by Matt Filetto)
+
+   * system/core
+44da485e7 - Workaround for Global ThinLTO (by Jooyung Han)
 
    * vendor/lineage
 55eab70c - fixup: refactor parsing version string from OTA update zip when no existing device.json is present (by Matt Filetto)
@@ -333,12 +319,14 @@ f28145b4 - tools: add generation of changelog on successful build. (by Matt File
      01-23-2024
 ====================
 
-   * bionic
-b51d14689 - Fix the *return* types in the arm64 dynamic function dispatch. (by Elliott Hughes)
-bce2dc317 - Fix the types in the arm64 dynamic function dispatch. (by Elliott Hughes)
+   * device/google/atv
+a876b76 - Revert "Removing references to arm7 emulator targets." (by Nolen Johnson)
 
-   * device/lineage/atv
-3a460bc - atv: Move standalone RRO packages to a separate dir (by Bruno Martins)
+   * frameworks/base
+afd58b70feea - fixup: Fix getting QS Tile label size (by Matt Filetto)
+50456eb60ecb - QSPanel: Increase label text size a step (by minaripenguin)
+a942e91ae139 - QSTiles: Allow changing tile label size independently. (by Matt Filetto)
+3b895d2cd2ae - QSFooter: Launch SigmaDroid Settings when long clicking settings (by Matt Filetto)
 
    * packages/apps/Settings
 0ea7abc62ea - Add accent to sigmainfo headers (by LurdRaiden)
@@ -350,6 +338,13 @@ bf0be3a7 - add RRO to enable Clear Calling settings (by Matt Filetto)
 ====================
      01-22-2024
 ====================
+
+   * bionic
+b51d14689 - Fix the *return* types in the arm64 dynamic function dispatch. (by Elliott Hughes)
+bce2dc317 - Fix the types in the arm64 dynamic function dispatch. (by Elliott Hughes)
+
+   * device/lineage/atv
+3a460bc - atv: Move standalone RRO packages to a separate dir (by Bruno Martins)
 
    * frameworks/av
 db48df283b - Fix spatial audio noise with EQ on (by wendy lin)
@@ -436,20 +431,7 @@ f78fc9e - Rebrand as SigmaDroid (by Matt Filetto)
    * packages/apps/Aperture
 032a39b - Aperture: Update dependencies (by LuK1337)
 c1fa5fb - Aperture: Address missing opt-in decorator warning in getMode() (by LuK1337)
-b4a5ee6 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Dialer
-2c2a66783 - New Crowdin updates (#98) (by Lup Gabriel)
-
-   * packages/apps/GameSpace
-4b81092 - New translations (#68) (by Lup Gabriel)
-
-   * packages/apps/Jelly
-39793db - Automatic translation import (by LineageOS Infra)
-f9ef099 - Jelly: Override CarHTMLViewer (by Bruno Martins)
-eb312e2 - Jelly: Run `./gradlew app:generateBp` (by Luca Stefani)
 
    * packages/apps/PixelParts
 6f7b81e - PixelParts: Move to PreferenceFragmentCompat (by AnierinB)
-
 
