@@ -1,4 +1,17 @@
 ====================
+     02-05-2024
+====================
+
+   * frameworks/base
+f641dd34e22d - SystemUI: Implement Volume Styles [1/3] (by LurdRaiden)
+
+   * packages/apps/SigmaSettings
+8cc9bc54 - Implement Volume Styles [2/3] (by LurdRaiden)
+
+   * vendor/addons
+b0cacbea - Implement Volume Styles [3/3] (by LurdRaiden)
+
+====================
      02-04-2024
 ====================
 
@@ -335,87 +348,4 @@ bcdcb5ed - build: refactor updatepackage task for SigmaDroid (by Matt Filetto)
 f28145b4 - tools: add generation of changelog on successful build. (by Matt Filetto)
 a6a3e7a1 - Add new build properties for displaying build date in a formatted way. (by Matt Filetto)
 bf0be3a7 - add RRO to enable Clear Calling settings (by Matt Filetto)
-
-====================
-     01-22-2024
-====================
-
-   * bionic
-b51d14689 - Fix the *return* types in the arm64 dynamic function dispatch. (by Elliott Hughes)
-bce2dc317 - Fix the types in the arm64 dynamic function dispatch. (by Elliott Hughes)
-
-   * device/lineage/atv
-3a460bc - atv: Move standalone RRO packages to a separate dir (by Bruno Martins)
-
-   * frameworks/av
-db48df283b - Fix spatial audio noise with EQ on (by wendy lin)
-7f75a7f3c6 - SurfaceUtils: ensure lock() grants a valid pointer (by Sungtak Lee)
-445ec99b6e - CCodec: Set Pipeline paused timeout to 1000ms (by ShevT)
-c7e9b2ad3c - Avoid incomplete OutputConfiguration definition (by Tomasz Wasilczyk)
-c1bba7954a - codec2: Add android fence implementation for C2Fence (by Akshata Sahukar)
-01b9acffd7 - Reexport operator!= overloads in the derived type to avoid ambiguous base class lookups (by Yi Kong)
-8ff94a62e8 - C2BqPool: Do not call cancelBuffer() after invalidated (by Sungtak Lee)
-808a15073e - AudioFlinger: Fix timestamp advancing interval constant (by Andy Hung)
-f6f82e0699 - update scale mode to MediaCodec under NuPlayer::instantiateDecoder (by lumei)
-5cfb0060fb - audiopolicy: support extended feature in audiopolicymanager (by Revathi Uddaraju)
-278b2bf956 - camera: Don't segfault if we get a NULL parameter (by Steve Kondik)
-d50688c630 - Nuplayer: Handle get input/output format errors cleanly (by Shrikara B)
-71397a7719 - Nuplayer: Update request input buffer delay as per fps (by Priyanka Gujjula)
-ac8f748f0b - Introduce dynamic delay buffer management for C2SoftAacDecoder. (by Jonathan Kim)
-68651faba0 - Tracks: Fix memory leak. (by External Developer)
-e8d13d6006 - libstagefright: Fix memory leak due to lock timeout (by Priyanka Gujjula)
-fd814fff32 - libstagefright: Free buffers on observer died (by Manikanta Kanamarlapudi)
-431b115e9a - MediaCodec: fix possible null pointer dereference (by Uma Mehta)
-051360a2ec - av: Initial support for 24bit encoding and 6 channels (by Pranav Vashi)
-bd93aa8c74 - Add NULL check to popFromStashAndRegister. (by Chris Gross)
-1960efd616 - sfplugin: do not fail resume call if inputs slots are active (by Shivam Joshi)
-5034fc0605 - Codec2Client: add nullptr check before accessing Configurable name (by Malathi Gottam)
-edd0f6a577 - av: support per-app volume [1/3] (by cjybyjk)
-aab7866082 - screenrecord: get codec capabilities & limit frame rate configuration (by Malathi Gottam)
-550fc7b429 - audioflinger: Do not allow DAP effect to be suspended (by Adithya R)
-d79e58eef9 - OMX: Remove support for prebuilt ac4 decoder (by Adithya R)
-b63f85e44f - media codec2: Expire waiters from HAL during stop()/release() (by Sungtak Lee)
-54d2bd05de - Stop audio capture before next start (by Shunkai Yao)
-5464eb368c - av: Add legacy 32bit compat to GraphicBufferSource::configure (by someone5678)
-e668f7869d - libstagefright: use 64-bit usage for native_window_set_usage (by Milos Ratkovic)
-4aa9e66e01 - libcameraservice: extend support for Oppo Camera (by arnodorian-r)
-7d6f360414 - libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS (by ShevT)
-5c93b13562 - libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB (by Hikari-no-Tenshi)
-2e99c69787 - libcameraservice: Add support to set vendor tag with client package name (by cjh1249131356)
-fabcc9e2ef - nuplayer: Avoid crash when codec fails to load (by Steve Kondik)
-ee4974bb0b - av: Nuplayer: Declare 24Bit Packed & 32Bit support (by johnmart19)
-57fe59339a - av: Audio Policy: Increase Max Sample Rate Hz to 384k (by johnmart19)
-439a705071 - av: Import Dolby Effects initialization (by johnmart19)
-d5d707b999 - media: OMXStore: Import loading libstagefrightdolby (by johnmart19)
-89d928fdbe - Add AC4Tbl params for dolby AC4 decoder [1/2] (by HELLBOY017)
-590068965d - libstagefright: omx: Add support for loading prebuilt ddp and ac4 decoder lib (by Paul Keith)
-36531bc6b8 - MediaProfiles: Check before overriding media settings xml (by Pranav Vashi)
-c155a7868c - media: Add timelapse 8k UHD Camcorder profile to quality map (by Malathi Gottam)
-dbdc13da5e - media: Add changes to pick target specific media xml's (by Uma Mehta)
-ce924d6b02 - audio: add encoding support for linear PCM format (by Mingming Yin)
-32aeb5dc7d - WifiDisplaySource: allow overriding max wfd resolution with prop (by Chenyang Zhong)
-f3df980e87 - WifiDisplaySource: raise supported resolution to 1920x1080p60 (by Chenyang Zhong)
-5bfee6a09f - StagefrightRecorder: Add "set-title" parameter (by cjh1249131356)
-f6b1846cda - libstagefright: Allow HFR-60 in HAL-3 recording (by Manikanta Kanamarlapudi)
-ed4f532ae4 - libstagefright: Support YVU420SemiPlanar camera format (by Ethan Chen)
-481fec0c4a - stagefright: add changes related to high-framerates in CameraSource (by Paras Nagda)
-c04bdf7c3d - Camera: Removing cachedump call to miminimize delay during close. (by Venugopal Nadipalli)
-2f77c4e3ce - Camera: Flush Improvements - Result drain optimization (by Susmitha Gummalla)
-4b1f20f522 - CameraService: Fix deadlock in binder death cleanup (by Mounika Reddy Tangirala)
-2f2c861ba8 - av: Remove restrictions for system audio record (by jhenrique09)
-daee162dfd - Camera: Add missing initialization (by Kwangkyu Park)
-1d30385195 - Camera: Wait for the status tracker idle fence (by Emilian Peev)
-a1ce689581 - Camera: Heic: Allow grids settings override in onFormatChanged (by Shuzhen Wang)
-ce0bda14b4 - Fix null deref in camera service (by Pawan Wagh)
-6739cdd09d - Camera: Increase precapture end timeout (by Shuzhen Wang)
-4eebf53642 - Camera: Add support for preview frame fd (by Susmitha Gummalla)
-346a1bfd75 - CAMX: CHI: Added support for handling jpeg debug data. (by Abhinav sohane)
-26446f27fe - Camera: Fix potential null pointer dereference issues (by Tony Guo)
-861dd0e7d8 - fixup! Camera: Skip stream size check for whitelisted apps (by Arian)
-
-   * frameworks/native
-9c49855bcd - Make servicemanager ProcessCapacityHigh (by Milo Sredkov)
-
-   * toolchain/pgo-profiles
-6ca689d - Refreshed afdo profiles drop from ZP1A.240105.x (by Yi Kong)
 
