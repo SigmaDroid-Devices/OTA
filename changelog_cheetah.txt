@@ -1,5 +1,5 @@
 ====================
-     02-05-2024
+     02-06-2024
 ====================
 
    * frameworks/base
@@ -12,12 +12,19 @@ f641dd34e22d - SystemUI: Implement Volume Styles [1/3] (by LurdRaiden)
 b0cacbea - Implement Volume Styles [3/3] (by LurdRaiden)
 
 ====================
+     02-05-2024
+====================
+
+====================
      02-04-2024
 ====================
 
 ====================
      02-03-2024
 ====================
+
+   * frameworks/base
+f94747389cc9 - Fix missing variables (by LurdRaiden)
 
    * packages/apps/Settings
 d69a60c5959 - update sigmatoolbox dashboard preference (by LurdRaiden)
@@ -32,9 +39,6 @@ d69a60c5959 - update sigmatoolbox dashboard preference (by LurdRaiden)
    * device/lineage/sepolicy
 3121df2 - update sepolicy for OTA Updater app name change (by Matt Filetto)
 6cfe1e0 - missing GMS policy (by Matt Filetto)
-
-   * frameworks/base
-f94747389cc9 - Fix missing variables (by LurdRaiden)
 
    * packages/apps/Settings
 edbec170f1f - import settingslib.Udfps* to UdfpsEnrollDrawable (by Matt Filetto)
@@ -93,35 +97,12 @@ c4bf58115a5a - SystemUI: UdfpsAnimation: Don't run scaleFactor on mAnimationSize
    * frameworks/base
 a7ff297a318f - fixup (by Matt Filetto)
 
-   * packages/apps/Eleven
-0c74853c - Eleven: Avoid posting notification when service start id is invalid (by LuK1337)
-b7666321 - Eleven: Run `./gradlew app:generateBp` (by LuK1337)
-
-   * packages/inputmethods/LatinIME
-2e5d4a0b5 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
-
-   * system/core
-86263223f - Merge pull request #15 from kondors1995/14.0 (by Pranav Vashi)
-
-   * toolchain/pgo-profiles
-eda5d10 - Merge pull request #1 from SOVIET-ANDROID/14.0 (by Pranav Vashi)
-
-   * vendor/addons
-f76ed1ee - Change order of animations (by Matt Filetto)
-f51dc730 - UdfpsIcons: introduce SigmaDroid Udfps Icon (by Matt Filetto)
-b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
-
-   * vendor/lineage
-5cd3f340 - correct and bump version (by Matt Filetto)
-
-====================
-     01-30-2024
-====================
-
    * frameworks/native
 71cf4a6d11 - Revert "libbinder: size by 30%, dirty memory by 43%" (by Pranav Vashi)
 
    * packages/apps/Eleven
+0c74853c - Eleven: Avoid posting notification when service start id is invalid (by LuK1337)
+b7666321 - Eleven: Run `./gradlew app:generateBp` (by LuK1337)
 15137709 - Eleven: Bump minSdk (by Georg Veichtlbauer)
 d90d9418 - Eleven: Update MediaStore for API > 28 (by Georg Veichtlbauer)
 fe366f31 - Eleven: Set type for FGS (by Georg Veichtlbauer)
@@ -152,6 +133,35 @@ d7b422ba - Eleven: Round off corners of list images (by Georg Veichtlbauer)
 19a28a92 - Eleven: Uprev to version 4.2.0 (by Albert Tang)
 e74962c4 - Eleven: Add repeat button for Android Auto (by Albert Tang)
 
+   * packages/inputmethods/LatinIME
+2e5d4a0b5 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * system/core
+86263223f - Merge pull request #15 from kondors1995/14.0 (by Pranav Vashi)
+
+   * toolchain/pgo-profiles
+eda5d10 - Merge pull request #1 from SOVIET-ANDROID/14.0 (by Pranav Vashi)
+
+   * vendor/addons
+f76ed1ee - Change order of animations (by Matt Filetto)
+f51dc730 - UdfpsIcons: introduce SigmaDroid Udfps Icon (by Matt Filetto)
+b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
+
+   * vendor/lineage
+5cd3f340 - correct and bump version (by Matt Filetto)
+
+====================
+     01-30-2024
+====================
+
+   * frameworks/native
+980c7c9a29 - Display: the resolution scale factor changed during booting (by jiajia.tian)
+6b69b339de - Fix AIBinder_setMinSchedulerPolicy failed to set sched policy (by shuide chen)
+15b362dad5 - libbinder: Turn on whole program vtables (by minaripenguin)
+c36bd8a5f2 - Turn on LTO optmisations for libbinder (by Yi Kong)
+7380f3aa88 - Fix the Nullable pointer is dereferenced issue (by zijunzhao)
+baae0dd751 - libbinder: size by 30%, dirty memory by 43% (by Steven Moreland)
+
    * system/core
 e162184a8 - init.rc: Disable native stats collection service (by Danny Lin)
 
@@ -162,13 +172,8 @@ e162184a8 - init.rc: Disable native stats collection service (by Danny Lin)
    * frameworks/av
 b6e1b56b8f - Change to output ArrayMode if using SkipCutBuffer (by Arun Johnson)
 
-   * frameworks/native
-980c7c9a29 - Display: the resolution scale factor changed during booting (by jiajia.tian)
-6b69b339de - Fix AIBinder_setMinSchedulerPolicy failed to set sched policy (by shuide chen)
-15b362dad5 - libbinder: Turn on whole program vtables (by minaripenguin)
-c36bd8a5f2 - Turn on LTO optmisations for libbinder (by Yi Kong)
-7380f3aa88 - Fix the Nullable pointer is dereferenced issue (by zijunzhao)
-baae0dd751 - libbinder: size by 30%, dirty memory by 43% (by Steven Moreland)
+   * toolchain/pgo-profiles
+924e98b - Refreshed afdo profiles drop from ZP1A.240112.x (by Yi Kong)
 
 ====================
      01-28-2024
@@ -189,13 +194,6 @@ e3b79e7 - Update Chromium Webview arm64 prebuilt to 121.0.6167.101 (by Kevin F. 
    * external/chromium-webview/prebuilt/x86_64
 22f0552 - Update Chromium Webview x86_64 prebuilt to 121.0.6167.101 (by Kevin F. Haggerty)
 
-   * toolchain/pgo-profiles
-924e98b - Refreshed afdo profiles drop from ZP1A.240112.x (by Yi Kong)
-
-====================
-     01-27-2024
-====================
-
    * hardware/interfaces
 7b4810078 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
 
@@ -203,8 +201,23 @@ e3b79e7 - Update Chromium Webview arm64 prebuilt to 121.0.6167.101 (by Kevin F. 
 e46293a3 - remove Udfps Pressed Icon Color options for now (by Matt Filetto)
 2277089d - Bring back UDFPS Icons and Animations (by Matt Filetto)
 
+====================
+     01-27-2024
+====================
+
    * packages/services/Telecomm
 e3bfbc688 - Telecomm: More improvements for incall vibrations (by Pranav Vashi)
+769a363d8 - Telecomm: Get rid of deprecation in incall vibrations (by Ido Ben-Hur)
+87e830f9c - Ringer: Rewrite flashlight blink on incoming calls (by Ido Ben-Hur)
+7ea2a17d5 - Ringer: There should really not be an observer here (by Ido Ben-Hur)
+1676e750b - Telecomm: Add DND & Rate settings to flash on call [2/3] (by Ido Ben-Hur)
+f74146f05 - Telecomm: Allow to flash on call only when entirely silent [2/3] (by Ido Ben-Hur)
+58bed15ce - Telecomm: Add Flashlight blink on incoming calls [2/3] (by Shripal17)
+2570f2d38 - Incall vibration options [2/3] (by beanstown106)
+0af1a7c11 - Telecomm: Update vibration patterns (by rituj)
+c5c02cf74 - Telecomm: Add a null check to custom ring vibration (by Ido Ben-Hur)
+8d5cc05d0 - Telecomm: Allow choosing a custom vibration pattern [2/3] (by Ido Ben-Hur)
+65fe90fc0 - Telecomm: Add vibration patterns from OOS [2/3] (by rituj)
 
    * vendor/gms
 20d0402 - import TurboAdapter and include by default for all pixels (by Matt Filetto)
@@ -223,22 +236,12 @@ e3bfbc688 - Telecomm: More improvements for incall vibrations (by Pranav Vashi)
 47922ad - PixelParts: Import AOSP color mode preview for saturation (by Alfred Lin)
 0d9a5ea - PixelParts: Allow continuousUpdates for saturation SeekBarPreference (by AnierinB)
 
-   * packages/services/Telecomm
-769a363d8 - Telecomm: Get rid of deprecation in incall vibrations (by Ido Ben-Hur)
-87e830f9c - Ringer: Rewrite flashlight blink on incoming calls (by Ido Ben-Hur)
-7ea2a17d5 - Ringer: There should really not be an observer here (by Ido Ben-Hur)
-1676e750b - Telecomm: Add DND & Rate settings to flash on call [2/3] (by Ido Ben-Hur)
-f74146f05 - Telecomm: Allow to flash on call only when entirely silent [2/3] (by Ido Ben-Hur)
-58bed15ce - Telecomm: Add Flashlight blink on incoming calls [2/3] (by Shripal17)
-2570f2d38 - Incall vibration options [2/3] (by beanstown106)
-0af1a7c11 - Telecomm: Update vibration patterns (by rituj)
-c5c02cf74 - Telecomm: Add a null check to custom ring vibration (by Ido Ben-Hur)
-8d5cc05d0 - Telecomm: Allow choosing a custom vibration pattern [2/3] (by Ido Ben-Hur)
-65fe90fc0 - Telecomm: Add vibration patterns from OOS [2/3] (by rituj)
-
 ====================
      01-25-2024
 ====================
+
+   * packages/modules/Permission
+004a77aad - Prevent crashing with several child profiles (by Tommy Webb)
 
 ====================
      01-24-2024
@@ -287,43 +290,15 @@ f35a8dde78db - PixelPropsUtils: Refactor (by Joey Huab)
 83d06c74c70e - PixelPropsUtils: Add emojiwalls and cinematiceffects pkgs (by aswin7469)
 dc6073db3f78 - Revert "PixelPropUtils: Spoof userdebug to pixel launcher" (by aswin7469)
 d079f7b41d2f - [SQUASH] Introduce PixelPropsUtils (by jhenrique09)
-
-   * packages/modules/Permission
-004a77aad - Prevent crashing with several child profiles (by Tommy Webb)
-
-   * system/core
-44da485e7 - Workaround for Global ThinLTO (by Jooyung Han)
-
-====================
-     01-23-2024
-====================
-
-   * device/google/atv
-a876b76 - Revert "Removing references to arm7 emulator targets." (by Nolen Johnson)
-
-   * frameworks/base
 a2d8b68853e5 - PixelProps: Drop current pixelprop impl (by Pyrtle93)
 9cf31700a7cb - speedup window animation scale (by elpaablo)
 59514d1e328a - android.view: reduce animation speeds (by Mazda)
-8b18f8a779c8 - PixelPropsUtils: try and fix NGA Voice Typing (by Matt Filetto)
-31bcd1030eb0 - fixup: Fix derp with getQSTileLableSlize (by Matt Filetto)
-14154937dbb9 - fixup: Launch SIgmaSettings from QS Long Press (by Matt Filetto)
-afd58b70feea - fixup: Fix getting QS Tile label size (by Matt Filetto)
-50456eb60ecb - QSPanel: Increase label text size a step (by minaripenguin)
-a942e91ae139 - QSTiles: Allow changing tile label size independently. (by Matt Filetto)
-3b895d2cd2ae - QSFooter: Launch SigmaDroid Settings when long clicking settings (by Matt Filetto)
 
    * packages/apps/Settings
 a4c49b2adde - SpecUtils: Add fallback option for getting battery capacity to show in About Phone. (by Matt Filetto)
-0ea7abc62ea - Add accent to sigmainfo headers (by LurdRaiden)
 
-   * packages/apps/SigmaSettings
-a509661d - QS: Allow changing the size of the secondary label on QS Tiles (by Matt Filetto)
-
-   * packages/apps/Updater
-4a00d54 - Change some references to alpha I missed (by Matt Filetto)
-652c197 - update permissions (by Matt Filetto)
-0de4399 - Rebrand as SigmaDroid (by Matt Filetto)
+   * system/core
+44da485e7 - Workaround for Global ThinLTO (by Jooyung Han)
 
    * vendor/lineage
 55eab70c - fixup: refactor parsing version string from OTA update zip when no existing device.json is present (by Matt Filetto)
@@ -346,6 +321,4 @@ f1cc5773 - tasks: updatepackage: fixup parsing of filename for final update pack
 bcdcb5ed - build: refactor updatepackage task for SigmaDroid (by Matt Filetto)
 8e018e9d - refactor changelog.sh (by Matt Filetto)
 f28145b4 - tools: add generation of changelog on successful build. (by Matt Filetto)
-a6a3e7a1 - Add new build properties for displaying build date in a formatted way. (by Matt Filetto)
-bf0be3a7 - add RRO to enable Clear Calling settings (by Matt Filetto)
 
