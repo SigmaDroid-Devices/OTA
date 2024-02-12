@@ -1,4 +1,66 @@
 ====================
+     02-11-2024
+====================
+
+====================
+     02-10-2024
+====================
+
+====================
+     02-09-2024
+====================
+
+====================
+     02-08-2024
+====================
+
+   * vendor/addons
+ca7d7139 - Import new fonts (by LurdRaiden)
+
+   * vendor/lineage
+ae6917f1 - bunp to v4.1.2 (by Matt Filetto)
+
+====================
+     02-07-2024
+====================
+
+====================
+     02-06-2024
+====================
+
+   * device/google/shusky
+f34c4a2 - shiba: fix default peak refresh rate setting to smooth display toggle shows (by Matt Filetto)
+
+====================
+     02-05-2024
+====================
+
+   * build/make
+61a3918179 - [SQUASH] build: build changelog [1/2] (by Akhil Narang)
+
+   * device/google/shusky
+9d01b85 - shiba: add SIGMA_BATTERY_CAPACITY for About PHone screen (by Matt Filetto)
+
+   * frameworks/base
+c84b28e0bbf9 - SystemUI: Implement Volume Styles [1/3] (by minaripenguin)
+
+   * vendor/addons
+5b315614 - Ship volume styles (by minaripenguin)
+861a2e3b - themes: Add more volume styles (refactored) [1/3] (by DrDisagree)
+
+====================
+     02-04-2024
+====================
+
+   * vendor/lineage
+78b8ce71 - execution of the changelog.sh has moved to build/make/core/Makefile (by Matt Filetto)
+e075c6eb - tools: changelog: copy chagnelog to system/etc/Changelog.txt for use in SigmaSettings (by Matt Filetto)
+
+====================
+     02-03-2024
+====================
+
+====================
      02-02-2024
 ====================
 
@@ -62,120 +124,9 @@ b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
 5cd3f340 - correct and bump version (by Matt Filetto)
 
 ====================
-     01-28-2024
+     01-30-2024
 ====================
 
-   * device/google/shusky
-a019187 - shusky: override first API level build property. (by Matt Filetto)
-
-   * system/core
-aa49ffbaf - init: add support for setting first api level to <= 32 (by Matt Filetto)
-
-   * vendor/lineage
-1000f789 - include PifPrebuilt.apk for passing SafetyNet (by Matt Filetto)
-
 ====================
-     01-26-2024
+     01-29-2024
 ====================
-
-   * packages/apps/Launcher3
-2a0ee2dc36 - Rebrand as SigmaDroid Launcher (by Matt Filetto)
-
-====================
-     01-25-2024
-====================
-
-   * vendor/google/husky
-660432c - Revert "drop packages that are dupes of ones in vendor/gms" (by Matt Filetto)
-a38f66b - drop packages that are dupes of ones in vendor/gms (by Matt Filetto)
-
-====================
-     01-24-2024
-====================
-
-   * bionic
-821d0e207 - Revert "system_properties: Introduce native PropImitationHooks" (by Matt Filetto)
-7e9c16c7d - system_properties: Introduce native PropImitationHooks (by Adithya R)
-
-   * device/google/shusky
-7d6460d - shusky: set build type to OFFICIAL (by Matt Filetto)
-715f9f8 - shusky: manually define battery capacity Sigma About Phone. (by Matt Filetto)
-
-   * frameworks/base
-6b7a63e25d2c - PPU: do not spoof Pixel Launcher (by ExactExampl)
-3a433bb5dbc3 - PPU: Stop spoofing com.google.android.googlequicksearchbox (by Soo-Hwan Na)
-11bc17c3ba3e - PPU: Allow spoofing all gapps to Pixel 8 Pro [1/2] (by Joey Huab)
-cd71f7c772e0 - PixelPropsUtils: Check process name before doing certify (by someone5678)
-dfe0543240f6 - PPU: Update fingerprints to January 2024 release (by Joey Huab)
-6d0b20c49b6f - PPU: Spoof as Pixel Tab for tablets (by saikiran2001)
-4ba62ba8bde0 - PPU: Spoof to recent Pixel on iD apps (by lahaina)
-0fd4970e4163 - MeizuPropsUtils: Spoof Hihonor Cloudmusic (by QKIvan)
-547875a01c2d - services: Fix google apps permission denials (by minaripenguin)
-d277a2633d39 - PPU: Make PIF and PixelProps toggleable [1/2] (by Joey Huab)
-1a6d9ea36f72 - PPU: Store the current array name in SettingsProvider (by AnierinB)
-915b08af63aa - PPU: Enable logging & add more statements (by AnierinB)
-3aa30018f746 - PPU: Allow spoofing INITIAL_SDK_INT & SECURITY_PATCH (by AnierinB)
-5fe950b863e0 - PPU: Make spoofBuildGms updatable and chosen from a list (by AnierinB)
-c7764f5f7836 - PPU: Make CTS/Play Integrity pass again (again and again and again) (by Adithya R)
-d4f19892ac45 - PPU: Update fingerprints to December 2023 release (by Joey Huab)
-77687bcc69f5 - PPU: Improve device certification bypass (by minaripenguin)
-137a8ea276b8 - PPU: Remove Snapchat spoof (by Joey Huab)
-b18c444f7dc4 - services/PPU: Simplify and improve bypassing for PPU `onTaskStackChanged` listening (by minaripenguin)
-69808e9ec80a - PixelPropsUtils: Make CTS/Play Integrity pass again (by chiteroman)
-dbbd39ea4156 - PixelPropsUtils: Use RecentPixel instead of individual model name (by someone5678)
-eb092a171a0f - PixelPropsUtils: Drop pixel codenames and checks (by someone5678)
-f138a7c9b752 - PixelPropsUtils: Add a config to enable/disable prop imitation (by Chris Crawford)
-ef4b287a1497 - PixelPropsUtils: Update fingerprints to November 2023 release (by Joey Huab)
-2100339580a1 - PixelPropsUtils: Fix GMS drain triggered by an outdated ROM build date (by Tim Josten)
-4d2e653737be - PixelPropsUtils: Bring in Pixel 8 series changes (by Joey Huab)
-6f0f0d6843f4 - PixelPropsUtils: Update fingerprints to September 2023 release (by Joey Huab)
-78fc5e903abb - PixelPropsUtils: Stop spoofing some google apps (by aswin7469)
-41f0c449b8f7 - PixelPropsUtils: Partial spoofing improvement (by minaripenguin)
-19e6fcb65798 - PixelPropsUtils: Refactor logic and cleanup (by Henrique Silva)
-1de491ff3585 - PixelPropsUtils: Update fingerprints to August 2023 release (by Joey Huab)
-c98ea5d8aef0 - PixelPropsUtils: Spoof all wallpaper packages to Pixel 7 Pro (by someone5678)
-03e06c46c13a - PixelPropsUtils: Set HARDWARE, ID values (by someone5678)
-d264ea49d74e - PixelPropsUtils: Correctly spoof unstable process (by someone5678)
-73ac89a0c2c2 - PixelPropsUtils: Remove pixel tablet spoof for Weather (by jhenrique09)
-d8e974fd7d8e - PixelPropsUtils: Spoof to Pixel 5a by default (by someone5678)
-3070d5a0dcdb - PixelPropsUtils: Update fingerprints to July 2023 release (by Joey Huab)
-f35a8dde78db - PixelPropsUtils: Refactor (by Joey Huab)
-8fedba0afde2 - PixelPropsUtils: Enable new Velvet Weather UI (by Sourajit Karmakar)
-83d06c74c70e - PixelPropsUtils: Add emojiwalls and cinematiceffects pkgs (by aswin7469)
-dc6073db3f78 - Revert "PixelPropUtils: Spoof userdebug to pixel launcher" (by aswin7469)
-d079f7b41d2f - [SQUASH] Introduce PixelPropsUtils (by jhenrique09)
-a2d8b68853e5 - PixelProps: Drop current pixelprop impl (by Pyrtle93)
-9cf31700a7cb - speedup window animation scale (by elpaablo)
-59514d1e328a - android.view: reduce animation speeds (by Mazda)
-8b18f8a779c8 - PixelPropsUtils: try and fix NGA Voice Typing (by Matt Filetto)
-31bcd1030eb0 - fixup: Fix derp with getQSTileLableSlize (by Matt Filetto)
-14154937dbb9 - fixup: Launch SIgmaSettings from QS Long Press (by Matt Filetto)
-afd58b70feea - fixup: Fix getting QS Tile label size (by Matt Filetto)
-50456eb60ecb - QSPanel: Increase label text size a step (by minaripenguin)
-a942e91ae139 - QSTiles: Allow changing tile label size independently. (by Matt Filetto)
-3b895d2cd2ae - QSFooter: Launch SigmaDroid Settings when long clicking settings (by Matt Filetto)
-
-   * packages/apps/Settings
-a4c49b2add - SpecUtils: Add fallback option for getting battery capacity to show in About Phone. (by Matt Filetto)
-
-   * vendor/lineage
-55eab70c - fixup: refactor parsing version string from OTA update zip when no existing device.json is present (by Matt Filetto)
-0095e3ca - rework build tasks scripts for new naming scheme (by Matt Filetto)
-c5a3cff7 - Refactor versioning strings to play nicely with createjson.sh (by Matt Filetto)
-bf15e4ce - build: add new build property to define the battery capacity in mAh, (by Matt Filetto)
-57782404 - config: change deviceConfiguratorPackageName (by Matt Filetto)
-d3881518 - createjson.sh: refactor parsing version string from OTA update zip filename (by Matt Filetto)
-892701f1 - init: lineage-updater.rc: add backword compatibility for updater app (by Matt Filetto)
-7410b5f8 - tasks: updatepackage: Fix generation of device JSON for OTA. (by Matt Filetto)
-5478a119 - tools: Don't display generated device JSON in console. (by Matt Filetto)
-505311e2 - tasks: updatepackge: updated to also update the package version in the device.json for OTA purposes. (by Matt Filetto)
-835ea5d5 - tasks: bacon: fix incorrect variables for some build properties. (by Matt Filetto)
-323222e0 - tasks: updatepackage: print full path of the package file from $ANDROID_TOP_DIR (by Matt Filetto)
-85a0b30f - tools: changelog generator: cleanup dead code (by Matt Filetto)
-402961af - tasks: cleanup updatepackage post-build scripts (by Matt Filetto)
-adaa9d31 - tasks: updatepackage: add pretty file naming.... (by Matt Filetto)
-57606f90 - tools: changelog: increae default changlog history to 14 days (by Matt Filetto)
-f1cc5773 - tasks: updatepackage: fixup parsing of filename for final update package zip (by Matt Filetto)
-bcdcb5ed - build: refactor updatepackage task for SigmaDroid (by Matt Filetto)
-8e018e9d - refactor changelog.sh (by Matt Filetto)
-f28145b4 - tools: add generation of changelog on successful build. (by Matt Filetto)
