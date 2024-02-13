@@ -1,4 +1,19 @@
 ====================
+     02-13-2024
+====================
+
+   * vendor/lineage
+13ed1eda - crdroid: Enable Global ThinLTO flag (by Matt Filetto)
+1ed4c7e8 - crdroid: Build BatteryStatsViewer (by Oliver Scott)
+bc230a6c - bump to v4.1.4 (by Matt Filetto)
+d32b6dc2 - don't enable whole-program R8 java opt (by Matt Filetto)
+dab44984 - Don't DEXPREOPT packages (by Matt Filetto)
+
+====================
+     02-12-2024
+====================
+
+====================
      02-11-2024
 ====================
 
@@ -31,6 +46,9 @@ ae6917f1 - bunp to v4.1.2 (by Matt Filetto)
    * device/google/shusky
 f34c4a2 - shiba: fix default peak refresh rate setting to smooth display toggle shows (by Matt Filetto)
 
+   * frameworks/base
+c84b28e0bbf9 - SystemUI: Implement Volume Styles [1/3] (by minaripenguin)
+
 ====================
      02-05-2024
 ====================
@@ -40,9 +58,6 @@ f34c4a2 - shiba: fix default peak refresh rate setting to smooth display toggle 
 
    * device/google/shusky
 9d01b85 - shiba: add SIGMA_BATTERY_CAPACITY for About PHone screen (by Matt Filetto)
-
-   * frameworks/base
-c84b28e0bbf9 - SystemUI: Implement Volume Styles [1/3] (by minaripenguin)
 
    * vendor/addons
 5b315614 - Ship volume styles (by minaripenguin)
@@ -122,11 +137,3 @@ b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
 
    * vendor/lineage
 5cd3f340 - correct and bump version (by Matt Filetto)
-
-====================
-     01-30-2024
-====================
-
-====================
-     01-29-2024
-====================
