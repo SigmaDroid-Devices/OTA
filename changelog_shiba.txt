@@ -1,4 +1,39 @@
 ====================
+     02-13-2024
+====================
+
+   * vendor/lineage
+7457f768 - stop using global thin lto (by Matt Filetto)
+1810e63a - Revert "don't dexpreopt launcher3, settings, or systemui as a test to fix internal compile error crash" (by Matt Filetto)
+3ad67deb - don't dexpreopt launcher3, settings, or systemui as a test to fix internal compile error crash (by Matt Filetto)
+1caf1ab5 - Revert "don't enable whole-program R8 java opt" (by Matt Filetto)
+13ed1eda - crdroid: Enable Global ThinLTO flag (by Matt Filetto)
+1ed4c7e8 - crdroid: Build BatteryStatsViewer (by Oliver Scott)
+bc230a6c - bump to v4.1.4 (by Matt Filetto)
+d32b6dc2 - don't enable whole-program R8 java opt (by Matt Filetto)
+dab44984 - Don't DEXPREOPT packages (by Matt Filetto)
+
+   * vendor/pixel-framework
+79bf5e6 - make themepicker_overlayable_package string entry non-translatable (by Matt Filetto)
+1a3a34a - don't DEXPREOPT SettingsUIGoogle and SystemUIGoogle (by Matt Filetto)
+
+====================
+     02-12-2024
+====================
+
+====================
+     02-11-2024
+====================
+
+====================
+     02-10-2024
+====================
+
+====================
+     02-09-2024
+====================
+
+====================
      02-08-2024
 ====================
 
@@ -19,9 +54,6 @@ ae6917f1 - bunp to v4.1.2 (by Matt Filetto)
    * device/google/shusky
 f34c4a2 - shiba: fix default peak refresh rate setting to smooth display toggle shows (by Matt Filetto)
 
-   * frameworks/base
-c84b28e0bbf9 - SystemUI: Implement Volume Styles [1/3] (by minaripenguin)
-
 ====================
      02-05-2024
 ====================
@@ -31,6 +63,9 @@ c84b28e0bbf9 - SystemUI: Implement Volume Styles [1/3] (by minaripenguin)
 
    * device/google/shusky
 9d01b85 - shiba: add SIGMA_BATTERY_CAPACITY for About PHone screen (by Matt Filetto)
+
+   * frameworks/base
+c84b28e0bbf9 - SystemUI: Implement Volume Styles [1/3] (by minaripenguin)
 
    * vendor/addons
 5b315614 - Ship volume styles (by minaripenguin)
@@ -110,35 +145,3 @@ b25969a5 - Build custom Udfps Icons & animations (by Matt Filetto)
 
    * vendor/lineage
 5cd3f340 - correct and bump version (by Matt Filetto)
-
-====================
-     01-30-2024
-====================
-
-====================
-     01-29-2024
-====================
-
-====================
-     01-28-2024
-====================
-
-   * device/google/shusky
-a019187 - shusky: override first API level build property. (by Matt Filetto)
-
-   * system/core
-aa49ffbaf - init: add support for setting first api level to <= 32 (by Matt Filetto)
-
-   * vendor/lineage
-1000f789 - include PifPrebuilt.apk for passing SafetyNet (by Matt Filetto)
-
-====================
-     01-27-2024
-====================
-
-====================
-     01-26-2024
-====================
-
-   * packages/apps/Launcher3
-2a0ee2dc36 - Rebrand as SigmaDroid Launcher (by Matt Filetto)
