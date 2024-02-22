@@ -1,5 +1,5 @@
 ====================
-     02-21-2024
+     02-22-2024
 ====================
 
    * device/google/zuma
@@ -7,27 +7,40 @@ d4ed386 - build pixeldisplayservice rro (by Matt Filetto)
 c6128e6 - zuma: fixup copying stock permissions (by Matt Filetto)
 7253f0a - whoops: major derp. remove this, its not actually called (by Matt Filetto)
 
-   * packages/apps/Settings
-8b85993185 - AboutPhone: Move Kernel Version, SELinux Status & baseband version to about phone (by Matt Filetto)
-
    * vendor/gms
 1b745adc - Revert "gms: add CarrierSettings from QPR2 Beta 3 * Fix some issues with some carriers Signed-off-by: Ionut Gherman <ghermanionut96@gmail.com>" (by Matt Filetto)
 8b5a5550 - Revert "gms: add CarrierServices" (by Matt Filetto)
 774968a3 - Revert "gms: update CarrierSettings from QPR3 Beta 1 Signed-off-by: Ionut Gherman <ghermanionu96@gmail.com>" (by Matt Filetto)
 0c5a6723 - Revert "drop redundant CarrierSettings RROs and keep only required" (by Matt Filetto)
+
+   * vendor/google/husky
+213d4b0 - Revert "husky: Merge Updated CarrierSettings from Feb Update on top" (by Matt Filetto)
+e3a395e - husky: Merge Updated CarrierSettings from Feb Update on top (by Matt Filetto)
+f65d4a5 - husky: import CarrierSettings configs from QPR2 Beta 3 (by Matt Filetto)
+e916ed4 - Revert "husky: remove CarrierSettings" (by Matt Filetto)
+
+   * vendor/lineage
+22859b675 - bump version to v4.2.2 (by Matt Filetto)
+d8dcbd809 - CarrierSettings: update to qpr2 beta 3 CarrierSettings (by hurtcopain)
+3f0aee2c4 - import carriersettings (by hurtcopain)
+2ee6a90bb - bump version to v4.2.1 (by Matt Filetto)
+
+====================
+     02-21-2024
+====================
+
+   * packages/apps/Settings
+8b85993185 - AboutPhone: Move Kernel Version, SELinux Status & baseband version to about phone (by Matt Filetto)
+
+   * vendor/gms
 a790aa81 - Add the bits for Thermometer (by Matt Filetto)
 
    * vendor/google/husky
-f65d4a5 - husky: import CarrierSettings configs from QPR2 Beta 3 (by Matt Filetto)
-e916ed4 - Revert "husky: remove CarrierSettings" (by Matt Filetto)
 61b701a - Revert "add Pixel Thermometer" (by Matt Filetto)
 49487d6 - Revert "husky: add some missing Thermometer permissions" (by Matt Filetto)
 ffcb99e - husky: add some missing Thermometer permissions Signed-off-by: Ionut Gherman <ghermanionut96@gmail.com> (by Ionut Gherman)
 
    * vendor/lineage
-d8dcbd809 - CarrierSettings: update to qpr2 beta 3 CarrierSettings (by hurtcopain)
-3f0aee2c4 - import carriersettings (by hurtcopain)
-2ee6a90bb - bump version to v4.2.1 (by Matt Filetto)
 4b4fd6e1e - Revert "Revert "config: change deviceConfiguratorPackageName"" (by Matt Filetto)
 f972a48a9 - rro: drop device personlization overrides (by Matt Filetto)
 
@@ -35,13 +48,8 @@ f972a48a9 - rro: drop device personlization overrides (by Matt Filetto)
      02-20-2024
 ====================
 
-====================
-     02-19-2024
-====================
-
    * device/google/zuma
 ed2a45d - zuma: Add Pixel Display Service overlay (by Oscar)
-63ccbd9 - zuma: Add build broken duplication flag (by hurtcopain)
 
    * vendor/gms
 6069d38e - drop redundant CarrierSettings RROs and keep only required (by Matt Filetto)
@@ -52,6 +60,15 @@ bc72286f - gms: add CarrierServices (by Ionut Gherman)
    * vendor/lineage
 bfd8b437b - Revert "config: change deviceConfiguratorPackageName" (by Matt Filetto)
 682efd1a4 - common: stop lying and saying we are building with Thin LTO when we are in fact not (by Matt Filetto)
+
+====================
+     02-19-2024
+====================
+
+   * device/google/zuma
+63ccbd9 - zuma: Add build broken duplication flag (by hurtcopain)
+
+   * vendor/lineage
 c93a8fc55 - Dexpreopt SystemUI,Settings, and Launcher3 (by Matt Filetto)
 
 ====================
@@ -60,20 +77,6 @@ c93a8fc55 - Dexpreopt SystemUI,Settings, and Launcher3 (by Matt Filetto)
 
 ====================
      02-17-2024
-====================
-
-   * device/google/zuma
-59ac2de - zuma: Disable display refresh rate override This got enabled by default on U, and it causes apps like Chrome and Youtube to set the refresh rate to 30FPS when playing some videos. (by hurtcopain)
-
-   * vendor/google/husky
-596e642 - husky: remove CarrierSettings Signed-off-by: Ionut Gherman <ghermanionut96@gmail.com> (by Ionut Gherman)
-1a0855a - add Pixel Thermometer Signed-off-by: Ionut Gherman <ghermanionut96@gmail.com> (by Oscar)
-
-   * vendor/lineage
-25c4b725e - bump version to v4.2 (by Matt Filetto)
-
-====================
-     02-16-2024
 ====================
 
    * build/make
@@ -104,6 +107,9 @@ d854344 - Revert "husky: fix compile with adevtool generated vendor" (by Matt Fi
 bfa99f2 - TEMP: fix extract-files.sh (by Matt Filetto)
 55444b4 - husky: fix compile with adevtool generated vendor (by Matt Filetto)
 42384ba - shusky: don't enforce GSI requirements (by Matt Filetto)
+
+   * device/google/zuma
+59ac2de - zuma: Disable display refresh rate override This got enabled by default on U, and it causes apps like Chrome and Youtube to set the refresh rate to 30FPS when playing some videos. (by hurtcopain)
 
    * device/lineage/sepolicy
 2c06c8d - Merge remote-tracking branch 'alpha/alpha-14' into sigma-14-feb (by Matt Filetto)
@@ -194,7 +200,6 @@ edafcbb78829 - Revert "Add Alert Slider user interface [SQUASHED]" (by Matt File
 
    * packages/apps/Backgrounds
 ec11587 - Import SigmaDroid Wallpapers (by Matt Filetto)
-b0dabf4 - Revert "Rebrand package name to risingOS" (by Matt Filetto)
 
    * packages/apps/Launcher3
 c734a88c30 - Rebrand as SigmaDroid Launcher (by Matt Filetto)
@@ -247,10 +252,13 @@ d2bea87f9 - TvSettings: reformat buttons.xml (by Timi Rautamäki)
 326b7037 - attempt at backgrounds fix (by Matt Filetto)
 
    * vendor/google/husky
+596e642 - husky: remove CarrierSettings Signed-off-by: Ionut Gherman <ghermanionut96@gmail.com> (by Ionut Gherman)
+1a0855a - add Pixel Thermometer Signed-off-by: Ionut Gherman <ghermanionut96@gmail.com> (by Oscar)
 ea178ce - husky: don't include firmware for OTA images to fix build (by Matt Filetto)
 4bb0c25 - Drop DeviceIntelligenceNetworkPrebuilt (by Matt Filetto)
 
    * vendor/lineage
+25c4b725e - bump version to v4.2 (by Matt Filetto)
 ad38b15b2 - Remove Matlog duplicate (by elpaablo)
 8b3c1e5ee - Remove LineageSettingsProvider overlay (by elpaablo)
 fb523ef2a - Revert "rro_packages: add SystemUIOverlay" (by Matt Filetto)
@@ -264,7 +272,7 @@ be88de856 - rro_packages: import AndroidOverlay (by Matt Filetto)
 8a12529 - SystemUIGoogle: set themepicker_overlayable_package correctly (by Matt Filetto)
 
 ====================
-     02-15-2024
+     02-16-2024
 ====================
 
    * frameworks/base
@@ -273,23 +281,12 @@ be88de856 - rro_packages: import AndroidOverlay (by Matt Filetto)
    * hardware/qcom-caf/sm8550/display
 3c2298b15f - sdm: Conditionally revert "sdm: Implement ‘Null Display’ in SDM core" (by Luofan Chen)
 
-   * packages/apps/Settings
-407bd34092 - fixup! Rework firmware version (by elpaablo)
-
-   * packages/modules/Bluetooth
-c1768d24df - BondStateMachine: Allow skipping confirm for some remotes (by Aaron Kling)
+   * packages/apps/Backgrounds
+b0dabf4 - Revert "Rebrand package name to risingOS" (by Matt Filetto)
 
 ====================
-     02-14-2024
+     02-15-2024
 ====================
-
-   * frameworks/av
-73262ecfde - audio: Remove UID check from per-app volume commands (by Adithya R)
-6e599c0e0e - mpeg2ts: Handle bitstream shortfall errors gracefully (by Sohail Nagaraj)
-1282e6b2aa - audio: Fix clang warnings (by Andy Hung)
-
-   * frameworks/native
-389c9ef793 - Revert "Fix AIBinder_setMinSchedulerPolicy failed to set sched policy" (by John Galt)
 
    * packages/apps/Aperture
 d596215 - Aperture: Add support for passkey QR codes (by Sebastiano Barezzi)
@@ -304,19 +301,30 @@ a2b9ffcc5 - Automatic translation import (by LineageOS Infra)
    * packages/apps/Launcher3
 146959374d - Launcher3: Adapt strings to Alphadroid (by kamikaonashi)
 
-   * packages/apps/Messaging
-66c6a77 - Merge remote-tracking branch 'lineage-21.0' into 14.0 (by ShevT)
+   * packages/apps/Settings
+407bd34092 - fixup! Rework firmware version (by elpaablo)
 
    * packages/inputmethods/LatinIME
 cb02cc56a - Automatic translation import (by LineageOS Infra)
 
+   * packages/modules/Bluetooth
+c1768d24df - BondStateMachine: Allow skipping confirm for some remotes (by Aaron Kling)
+
 ====================
-     02-13-2024
+     02-14-2024
 ====================
 
    * device/google/shusky
 b36671a - shusky: Add prebuilt kernel to lineage.dependencies (by Michael Bestas)
 bc5e94d - shusky: Enable Osaifu-Keitai on non-Japanese SKUs (by jabashque)
+
+   * frameworks/av
+73262ecfde - audio: Remove UID check from per-app volume commands (by Adithya R)
+6e599c0e0e - mpeg2ts: Handle bitstream shortfall errors gracefully (by Sohail Nagaraj)
+1282e6b2aa - audio: Fix clang warnings (by Andy Hung)
+
+   * frameworks/native
+389c9ef793 - Revert "Fix AIBinder_setMinSchedulerPolicy failed to set sched policy" (by John Galt)
 
    * hardware/google/pixel
 5723b06 - kernel_headers: Guard with soong namespace (by Michael Bestas)
@@ -342,6 +350,9 @@ c33ca5ac - Add error handling around for loop. (by Greg Ross)
 bf98ea79 - New version 1.0.39 (by Gitsaibot)
 ae3203b3 - Catch errors when we have invalid rrules that lib-recur can't parse. (by Greg Ross)
 
+   * packages/apps/Messaging
+66c6a77 - Merge remote-tracking branch 'lineage-21.0' into 14.0 (by ShevT)
+
    * packages/apps/Seedvault
 f3f4cf3 - Merge branch 'android14' of https://github.com/seedvault-app/seedvault into HEAD (by Chirayu Desai)
 81fae1a - Try to recover from corrupt metadata cache (by Torsten Grote)
@@ -358,11 +369,6 @@ de51ad2 - Use our own scheduling when doing d2d backups (experimental) (by Torst
 
    * packages/apps/Settings
 70a35a4c21 - Reintroduce Settings styles (by elpablo)
-d6f5e9dd4f - Use monet to color Alpha logo (by elpaablo)
-15c00b837d - Rework firmware version (by elpaablo)
-
-   * packages/apps/TvSettings
-b585b36d3 - TvSettings: trust: remove outdated comments in strings.xml (by Timi Rautamäki)
 
    * vendor/google/husky
 7cd5017 - husky: Enable Osaifu-Keitai on non-Japanese SKUs (by Michael Bestas)
@@ -380,10 +386,12 @@ b585b36d3 - TvSettings: trust: remove outdated comments in strings.xml (by Timi 
 1a3a34a - don't DEXPREOPT SettingsUIGoogle and SystemUIGoogle (by Matt Filetto)
 
 ====================
-     02-12-2024
+     02-13-2024
 ====================
 
    * packages/apps/Settings
+d6f5e9dd4f - Use monet to color Alpha logo (by elpaablo)
+15c00b837d - Rework firmware version (by elpaablo)
 fcf83e656a - TopLevelBatteryPreferenceController: add null check (by elpaablo)
 a386e2ceb8 - Revert "Settings: Import illustrations from motorola" (by elpaablo)
 6cc174ea28 - Revert "Settings: Update few illustrations from Lottiefiles" (by elpaablo)
@@ -400,6 +408,9 @@ a5025ee42f - Introduce AlphaSettings (by elpaablo)
 e3ad2597af - Settings: hide battery info (by Lup Gabriel)
 b2330de0a0 - Settings: Move custom vib pattern to its own preference (by Ido Ben-Hur)
 
+   * packages/apps/TvSettings
+b585b36d3 - TvSettings: trust: remove outdated comments in strings.xml (by Timi Rautamäki)
+
    * vendor/lineage
 13ed1edaf - crdroid: Enable Global ThinLTO flag (by Matt Filetto)
 1ed4c7e87 - crdroid: Build BatteryStatsViewer (by Oliver Scott)
@@ -408,7 +419,7 @@ d32b6dc2b - don't enable whole-program R8 java opt (by Matt Filetto)
 dab449844 - Don't DEXPREOPT packages (by Matt Filetto)
 
 ====================
-     02-11-2024
+     02-12-2024
 ====================
 
    * external/chromium-webview/patches
@@ -489,16 +500,12 @@ de2ba9fc4fbb - Add Alpha to metrics constants (by elpaablo)
    * packages/apps/Dialer
 56f7a5190 - Dialer: Voicemail: Don't tear down the app (by Michael W)
 53e7fac23 - Dialer: Fix Voicemail playback (by Michael W)
-b7322baa3 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Launcher3
-fabb58e0fe - Merge branch '14.0' of github.com:crdroidandroid/android_packages_apps_Launcher3 into alpha-14 (by elpaablo)
 
    * packages/apps/TvSettings
 f69b9575c - fixup! Add button to shut down device (by Aaron Kling)
 
 ====================
-     02-10-2024
+     02-11-2024
 ====================
 
    * bootable/recovery
@@ -520,6 +527,7 @@ cac692d0 - Merge branch '14.0' of https://github.com/crdroidandroid/android_boot
 bcc073d - Automatic translation import (by LineageOS Infra)
 
    * packages/apps/Dialer
+b7322baa3 - Automatic translation import (by LineageOS Infra)
 8a32a0776 - Dialer: Fix Voicemail dialog's action button color (by Michael W)
 cdf7cdf60 - Dialer: InCallDialpad: Make light numbers visible (by Michael W)
 604894869 - Dialer: Increase icon size for the end call button (by Georg Veichtlbauer)
@@ -539,7 +547,7 @@ d8742cd6a - Dialer: Update call end button colors (by Georg Veichtlbauer)
 59fbe75 - Automatic translation import (by LineageOS Infra)
 
    * packages/apps/Launcher3
-fed4508192 - Launcher3: Add scrollview for task options menu (by electimon)
+fabb58e0fe - Merge branch '14.0' of github.com:crdroidandroid/android_packages_apps_Launcher3 into alpha-14 (by elpaablo)
 
    * packages/apps/Messaging
 32fcd7a - Automatic translation import (by LineageOS Infra)
@@ -563,7 +571,7 @@ fa9ef52 - Automatic translation import (by LineageOS Infra)
 f5fbe47 - Automatic translation import (by LineageOS Infra)
 
 ====================
-     02-09-2024
+     02-10-2024
 ====================
 
    * build/make
@@ -577,6 +585,19 @@ ea9b023042 - core: Use 0 compression when creating the target_files package (by 
 bb4a00ff9 - cc/lto: drop O3 custom adds (by John Galt)
 e63db651e - cc/config: do not generate additional debug info for AFDO (by John Galt)
 
+   * packages/apps/Aperture
+69f4619 - Aperture: Update CameraX to 1.4.0-alpha04 (by LuK1337)
+
+   * packages/apps/Launcher3
+fed4508192 - Launcher3: Add scrollview for task options menu (by electimon)
+
+   * system/sepolicy
+73513397f - Add property to workaround M_RELEASE rsp len issues (by Nolen Johnson)
+
+====================
+     02-09-2024
+====================
+
    * device/lineage/atv
 be2aa2b - Support double tap to mute on Nvidia remotes (by Aaron Kling)
 
@@ -587,21 +608,6 @@ be2aa2b - Support double tap to mute on Nvidia remotes (by Aaron Kling)
 c236617d1d61 - SystemUI: Cleanup face unlock icon animation (by minaripenguin)
 7e635556e392 - SystemUI: Avoid showing face unlock animation on AOD and ambient screen (by someone5678)
 9a19946957db - SystemUI: Enable pulsing animation for faceunlock (by aswin7469)
-
-   * packages/apps/Aperture
-69f4619 - Aperture: Update CameraX to 1.4.0-alpha04 (by LuK1337)
-
-   * packages/apps/Launcher3
-11301f6c59 - Launcher3: fix shake to clear all apps (by nift4)
-
-   * system/sepolicy
-73513397f - Add property to workaround M_RELEASE rsp len issues (by Nolen Johnson)
-
-====================
-     02-08-2024
-====================
-
-   * frameworks/base
 d5c6bf16d58b - PixelPropsUtils: Fix up compilation (by Pranav Vashi)
 09629191e8b8 - Island: Improve text filtering to support symbols (by minaripenguin)
 
@@ -614,8 +620,6 @@ a96669b - common: Remove schedulerservice from device compatibility matrix (by R
 303bbdd - compatibility-matrix: Add entry for sigma-hal (by Priyanka Gujjula)
 796db0a - Add device compatibility matrix. (by padarshr)
 
-   * vendor/addons
-ca7d7139 - Import new fonts (by LurdRaiden)
+   * packages/apps/Launcher3
+11301f6c59 - Launcher3: fix shake to clear all apps (by nift4)
 
-   * vendor/lineage
-ae6917f1d - bunp to v4.1.2 (by Matt Filetto)
