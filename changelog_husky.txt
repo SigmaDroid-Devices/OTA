@@ -1,4 +1,101 @@
 ====================
+     02-27-2024
+====================
+
+   * build/make
+7d3c85f428 - build: make: use jemalloc by default and allow opt-in to scudo (1/4) (by Juhyung Park)
+
+   * build/soong
+54250e710 - Revert "Add ability to enable scudo-free 32-bit libc variant." (by kondors1995)
+32e4c0455 - build: soong: use jemalloc by default and allow opt-in to scudo (2/4) (by Juhyung Park)
+
+   * device/google/zuma
+0e46e95 - zuma: opt in to scudo (by Matt Filetto)
+97067bc - Revert "zuma: drop Lineage Health" (by Matt Filetto)
+e1738ef - Revert "zuma: drop lineage touch HAL" (by Matt Filetto)
+cc9cf2f - zuma: drop lineage touch HAL (by Matt Filetto)
+0bea23e - zuma: drop Lineage Health (by Matt Filetto)
+bad1381 - rro_overlays: Update PixelDisplayServiceOverlay with changes from stock (by Matt Filetto)
+
+   * frameworks/base
+e3d2881636b3 - Revert "Rename removeAllProcessGroups() into removeAllEmptyProcessGroups()" (by Matt Filetto)
+3a6382252e05 - Revert "Reapply "Adapt to libprocessgroup API changes for polling on cgro..."" (by Matt Filetto)
+0f2829426f45 - Reapply "Adapt to libprocessgroup API changes for polling on cgro..." (by T.J. Mercier)
+2724ecce8bea - Revert "Fix AlarmManager high CPU issue" (by John Galt)
+
+   * packages/modules/StatsD
+7d8f7d5c - Revert "statsd: Disable native stats collection service" (by Matt Filetto)
+
+   * system/core
+747365851 - Revert "libprocessgroup: Remove max_processes from KillProcessGroup API" (by Matt Filetto)
+439fdb421 - Revert "libprocessgroup: Don't sleep after last cgroup removal attempt" (by Matt Filetto)
+8b0629b37 - Revert "libprocessgroup: Use correct language for cgroups" (by Matt Filetto)
+0c20e4032 - Revert "libprocessgroup: Convert incorrect PLOGs to LOGs" (by Matt Filetto)
+a489a6526 - Revert "libprocessgroup: Internal linkage for removeAllProcessGroupsInternal" (by Matt Filetto)
+0e81706b7 - Revert "Revert "libprocessgroup: Add a function to remove only empty process groups"" (by Matt Filetto)
+17f491433 - Revert "libprocessgroup: Add I/O scheduler attributes to task_profiles.json" (by Matt Filetto)
+bef37d1aa - Revert "task_profiles: Use foreground cpuset for SurfaceFlinger" (by Matt Filetto)
+6a4289d91 - Revert "init.rc: tune dirty data writebacks" (by Matt Filetto)
+44882214f - Revert "core: Fix reading max_comp_streams for zram" (by Matt Filetto)
+ae382da57 - Revert "Revert "snapuserd: opt out of Global ThinLTO to workaround segfault"" (by Matt Filetto)
+a52d99aca - Revert "libprocessgroup: Import code linaro optimizations" (by Matt Filetto)
+43592c82d - Revert "libprocessgroup: Write initial cpuset values for audio-app" (by Matt Filetto)
+40502609a - Revert "init: add uclamp setting for service" (by Matt Filetto)
+f46081b76 - Revert "libdm: don't expect uevent for devices that have never been activated" (by Matt Filetto)
+ae7a42f8c - Revert "Add exfat fs in fs_mgr" (by Matt Filetto)
+ddbc528c6 - Revert "Workaround for Global ThinLTO" (by Matt Filetto)
+eb5757383 - Revert "Use target device mapper given mapper target" (by Matt Filetto)
+f0fa80ee6 - Revert "boost uclamp_min for loading modules in parallel" (by Matt Filetto)
+4d64a3067 - Revert "Make partition metadata write atomic" (by Matt Filetto)
+c25c8f223 - Revert "init : optimize the performance of boot time." (by Matt Filetto)
+0872b486e - Revert "Only restart media.tuner when it's running" (by Matt Filetto)
+7381457b0 - Revert "fix kill all processes in a same group" (by Matt Filetto)
+240124864 - Revert "Set permissions for cpu cgroup manipulation" (by Matt Filetto)
+026f88109 - Revert "init.rc: Disable native stats collection service" (by Matt Filetto)
+f40a6dcc8 - Revert "More tunnings" (by Matt Filetto)
+cb30ffc15 - Merge pull request #17 from kondors1995/14.0 (by Pranav Vashi)
+
+   * vendor/google/husky
+33a0c7f - husky: clean import of CarrierSettings configs from QPR2 Beta 3 (by Matt Filetto)
+9733248 - Revert "husky: import CarrierSettings configs from QPR2 Beta 3" (by Matt Filetto)
+36c2ba4 - more perms for pixel health (by Matt Filetto)
+
+====================
+     02-26-2024
+====================
+
+====================
+     02-25-2024
+====================
+
+====================
+     02-24-2024
+====================
+
+   * system/core
+231bc8cae - libprocessgroup: Use pid_t consistently for TIDs (by T.J. Mercier)
+baa70e3d4 - libprocessgroup: Reject JoinCgroup actions for v2 controllers (by Bart Van Assche)
+20f5bb82f - libprocessgroup: Make a log message more detailed (by Bart Van Assche)
+b8214a43b - libprocessgroup: Use pid_t consistently for PIDs (by T.J. Mercier)
+cb07e43eb - libprocessgroup: Use cgroup.kill (by T.J. Mercier)
+34b5c4dcb - Reapply "libprocessgroup: Poll on cgroup.events" (by T.J. Mercier)
+2a558f1a9 - Make RemoveCgroup idempotent (by Kelvin Zhang)
+726455cfa - libprocessgroup: Use uid_t consistently for UIDs (by T.J. Mercier)
+83f5e183e - libprocessgroup: UIDs in linux are unsigned (by T.J. Mercier)
+b10a604b0 - libprocessgroup: Remove isolated UID cgroup directories (by T.J. Mercier)
+2662a612c - libprocessgroup: Stop services that have been migrated to another v2 cgroup (by Bart Van Assche)
+6d80f96f5 - Restore I/O priority support (by Bart Van Assche)
+730334c51 - tasks_profiles: Use top-app cpuset for surfaceflinger (by minaripenguin)
+295d088a2 - init: Throttle background group utilization at 5% (by minaripenguin)
+
+====================
+     02-23-2024
+====================
+
+   * packages/apps/SigmaSettings
+222267d1 - About SigmaDroid: Update Telegram link URL (by Matt Filetto)
+
+====================
      02-22-2024
 ====================
 
@@ -51,15 +148,8 @@ f972a48a9 - rro: drop device personlization overrides (by Matt Filetto)
    * device/google/zuma
 ed2a45d - zuma: Add Pixel Display Service overlay (by Oscar)
 
-   * vendor/gms
-6069d38e - drop redundant CarrierSettings RROs and keep only required (by Matt Filetto)
-dc7d02e3 - gms: update CarrierSettings from QPR3 Beta 1 Signed-off-by: Ionut Gherman <ghermanionu96@gmail.com> (by Ionut Gherman)
-bc72286f - gms: add CarrierServices (by Ionut Gherman)
-0071dd8a - gms: add CarrierSettings from QPR2 Beta 3 * Fix some issues with some carriers Signed-off-by: Ionut Gherman <ghermanionut96@gmail.com> (by Ionut Gherman)
-
    * vendor/lineage
 bfd8b437b - Revert "config: change deviceConfiguratorPackageName" (by Matt Filetto)
-682efd1a4 - common: stop lying and saying we are building with Thin LTO when we are in fact not (by Matt Filetto)
 
 ====================
      02-19-2024
@@ -68,7 +158,14 @@ bfd8b437b - Revert "config: change deviceConfiguratorPackageName" (by Matt Filet
    * device/google/zuma
 63ccbd9 - zuma: Add build broken duplication flag (by hurtcopain)
 
+   * vendor/gms
+6069d38e - drop redundant CarrierSettings RROs and keep only required (by Matt Filetto)
+dc7d02e3 - gms: update CarrierSettings from QPR3 Beta 1 Signed-off-by: Ionut Gherman <ghermanionu96@gmail.com> (by Ionut Gherman)
+bc72286f - gms: add CarrierServices (by Ionut Gherman)
+0071dd8a - gms: add CarrierSettings from QPR2 Beta 3 * Fix some issues with some carriers Signed-off-by: Ionut Gherman <ghermanionut96@gmail.com> (by Ionut Gherman)
+
    * vendor/lineage
+682efd1a4 - common: stop lying and saying we are building with Thin LTO when we are in fact not (by Matt Filetto)
 c93a8fc55 - Dexpreopt SystemUI,Settings, and Launcher3 (by Matt Filetto)
 
 ====================
@@ -292,20 +389,8 @@ b0dabf4 - Revert "Rebrand package name to risingOS" (by Matt Filetto)
 d596215 - Aperture: Add support for passkey QR codes (by Sebastiano Barezzi)
 db697c0 - Aperture: Refactor QrTextClassifier (by Sebastiano Barezzi)
 
-   * packages/apps/Contacts
-52b15c8c8 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/DeskClock
-a2b9ffcc5 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Launcher3
-146959374d - Launcher3: Adapt strings to Alphadroid (by kamikaonashi)
-
    * packages/apps/Settings
 407bd34092 - fixup! Rework firmware version (by elpaablo)
-
-   * packages/inputmethods/LatinIME
-cb02cc56a - Automatic translation import (by LineageOS Infra)
 
    * packages/modules/Bluetooth
 c1768d24df - BondStateMachine: Allow skipping confirm for some remotes (by Aaron Kling)
@@ -316,7 +401,6 @@ c1768d24df - BondStateMachine: Allow skipping confirm for some remotes (by Aaron
 
    * device/google/shusky
 b36671a - shusky: Add prebuilt kernel to lineage.dependencies (by Michael Bestas)
-bc5e94d - shusky: Enable Osaifu-Keitai on non-Japanese SKUs (by jabashque)
 
    * frameworks/av
 73262ecfde - audio: Remove UID check from per-app volume commands (by Adithya R)
@@ -331,6 +415,12 @@ bc5e94d - shusky: Enable Osaifu-Keitai on non-Japanese SKUs (by jabashque)
 
    * packages/apps/Aperture
 80a146b - Aperture: Bump gradle-generatebp to v1.6 (by LuK1337)
+
+   * packages/apps/Contacts
+52b15c8c8 - Automatic translation import (by LineageOS Infra)
+
+   * packages/apps/DeskClock
+a2b9ffcc5 - Automatic translation import (by LineageOS Infra)
 
    * packages/apps/Etar
 84940eef - New version 1.0.42 (by Gitsaibot)
@@ -350,6 +440,9 @@ c33ca5ac - Add error handling around for loop. (by Greg Ross)
 bf98ea79 - New version 1.0.39 (by Gitsaibot)
 ae3203b3 - Catch errors when we have invalid rrules that lib-recur can't parse. (by Greg Ross)
 
+   * packages/apps/Launcher3
+146959374d - Launcher3: Adapt strings to Alphadroid (by kamikaonashi)
+
    * packages/apps/Messaging
 66c6a77 - Merge remote-tracking branch 'lineage-21.0' into 14.0 (by ShevT)
 
@@ -367,11 +460,8 @@ c832cd9 - Remove logWorkInfo as some part of it isn't in AOSP version of workman
 a380445 - Show success notification in a separate notification channel (by Torsten Grote)
 de51ad2 - Use our own scheduling when doing d2d backups (experimental) (by Torsten Grote)
 
-   * packages/apps/Settings
-70a35a4c21 - Reintroduce Settings styles (by elpablo)
-
-   * vendor/google/husky
-7cd5017 - husky: Enable Osaifu-Keitai on non-Japanese SKUs (by Michael Bestas)
+   * packages/inputmethods/LatinIME
+cb02cc56a - Automatic translation import (by LineageOS Infra)
 
    * vendor/lineage
 8f6532ea2 - bump version to v4.1.4-2 for shiba CTS hotfix (by Matt Filetto)
@@ -384,242 +474,3 @@ de51ad2 - Use our own scheduling when doing d2d backups (experimental) (by Torst
    * vendor/pixel-framework
 79bf5e6 - make themepicker_overlayable_package string entry non-translatable (by Matt Filetto)
 1a3a34a - don't DEXPREOPT SettingsUIGoogle and SystemUIGoogle (by Matt Filetto)
-
-====================
-     02-13-2024
-====================
-
-   * packages/apps/Settings
-d6f5e9dd4f - Use monet to color Alpha logo (by elpaablo)
-15c00b837d - Rework firmware version (by elpaablo)
-fcf83e656a - TopLevelBatteryPreferenceController: add null check (by elpaablo)
-a386e2ceb8 - Revert "Settings: Import illustrations from motorola" (by elpaablo)
-6cc174ea28 - Revert "Settings: Update few illustrations from Lottiefiles" (by elpaablo)
-592024b377 - Settings: HideDeveloperStatus: Query all apps installed by any user [2/2] (by someone5678)
-14bb912b2f - Settings: HideDeveloperStatus: Add "Show system" menu (by someone5678)
-0448981aad - Settings: Hide ADB and developer setting enable status [2/2] (by someone5678)
-88815cd543 - Update a few classes location, after reorganizing Alpha settings (by elpaablo)
-bde184979d - FastChargingPreferenceController: implement dynamic summary to show fastcharge status (by elpaablo)
-cf5bfa1f18 - Extend Fastcharge implementation [2/3] (by elpaablo)
-71fe1cf4d5 - Revert "Optional haptic feedback on back gesture [2/2]" (by elpaablo)
-f2f00c4daa - Settings: Partial import DotOS A11 About Phone design (by IacobIonut01)
-a5025ee42f - Introduce AlphaSettings (by elpaablo)
-228980cf53 - Settings: adapt system properties to Alpha (by elpaablo)
-e3ad2597af - Settings: hide battery info (by Lup Gabriel)
-b2330de0a0 - Settings: Move custom vib pattern to its own preference (by Ido Ben-Hur)
-
-   * packages/apps/TvSettings
-b585b36d3 - TvSettings: trust: remove outdated comments in strings.xml (by Timi Rautamäki)
-
-   * vendor/lineage
-13ed1edaf - crdroid: Enable Global ThinLTO flag (by Matt Filetto)
-1ed4c7e87 - crdroid: Build BatteryStatsViewer (by Oliver Scott)
-bc230a6c8 - bump to v4.1.4 (by Matt Filetto)
-d32b6dc2b - don't enable whole-program R8 java opt (by Matt Filetto)
-dab449844 - Don't DEXPREOPT packages (by Matt Filetto)
-
-====================
-     02-12-2024
-====================
-
-   * external/chromium-webview/patches
-70ea05a - Update Chromium Webview to 121.0.6167.164 (by Kevin F. Haggerty)
-
-   * external/chromium-webview/prebuilt/arm
-32694a0 - Update Chromium Webview arm prebuilt to 121.0.6167.164 (by Kevin F. Haggerty)
-
-   * external/chromium-webview/prebuilt/arm64
-6ce5dc3 - Update Chromium Webview arm64 prebuilt to 121.0.6167.164 (by Kevin F. Haggerty)
-
-   * external/chromium-webview/prebuilt/x86
-a95f026 - Update Chromium Webview x86 prebuilt to 121.0.6167.164 (by Kevin F. Haggerty)
-
-   * external/chromium-webview/prebuilt/x86_64
-be88275 - Update Chromium Webview x86_64 prebuilt to 121.0.6167.164 (by Kevin F. Haggerty)
-
-   * frameworks/av
-668660f0dc - codec2: Fix ambiguity in operator overloads (by Pirama Arumuga Nainar)
-
-   * frameworks/base
-f9ba624ce8f1 - Statusbar Clock background chip [SQUASH] (by minaripenguin)
-47308d2aa52e - fixup! Revert "SystemUI: Add A11 QS UI Style [1/3]" (by elpaablo)
-f9fdcdb42a02 - base: HideDeveloperStatus: Query all apps installed by any user [1/2] (by someone5678)
-256482ff4c6e - base: Hide ADB and developer setting enable status [1/2] (by someone5678)
-81a725ef829c - Fixup!: QS icon color (by elpaablo)
-227d36393923 - SystemUI: add more QS Header Images (by kamikaonashi)
-ef0a0c18b7c0 - fixup! Battery Styles: Added 9 more battery styles [1/2] (by elpaablo)
-56a66a52be19 - Add SETTINGS_STYLE to Settings (by elpaablo)
-01cce185e325 - Redesign seekbar (by SagarMakhar)
-2b972a587488 - Move status bar paddings overlays (by elpaablo)
-00924d86fe25 - SystemUI: Controllable squiggle animation [1/2] (by elpaablo)
-fe365e8e1659 - Add Ambient Customizations [1/2] (by elpaablo)
-c937c7045488 - Add tunnings for status bar paddings [1/2] (by IDontCare-05)
-8b6a1ba824e9 - statusbar:  allow user to customize max visible notification icons [1/2] (by elpaablo)
-321c9c347635 - Add statusbar alpha logo (by elpaablo)
-89f6c54786ac - base: rework QS panel styles implementation (by elpaablo)
-637083fbe2ec - Battery Styles: Add MIUI pill battery icon (by DrDisagree)
-a45f2980c149 - Battery styles: add Origami battery icon (by DrDisagree)
-5031d262497f - BatteryMeterView: simplify scale logic (by elpaablo)
-097967f2f913 - Battery Styles: Add Landscape iOS battery styles from Iconify [1/2] (by helliscloser)
-7302e6e68397 - Battery Styles: Added 9 more battery styles [1/2] (by R15Hi)
-55580218c025 - fixup! core: Workaround for ASI crash test: reboot with patch applied, check if ASI services crashes (by minaripenguin)
-ef2f1c2651c3 - Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation (by c_jyuan)
-a304c3a0c181 - Add missing INTERACT_ACROSS_USERS_FULL permission (by AdrianDC)
-dc2f542881f6 - Add "android.permission.READ_PHONE_STATE" to manifest (by Janson Kang)
-be729ac5f9db - base: Grant remaining Gapps permissions (by Stallix)
-bf1a846f3a98 - always auto-grant permissions that have "normal" protectionLevel (by Dmitry Muhomor)
-adfbea0a6d64 - Fix android setup permissions (by mukesh22584)
-c1407e8a3dbf - base: Grant Pixel Wallpaper apps permissions (by calebcabob)
-e6bc078d23b7 - base: Grant Google Sound Picker storage permissions (by shagbag913)
-5576fa99633e - base: Grant storage permission to ThemePicker (by Anushek Prasal)
-d45817a1d480 - Fix Google Dialer FC due to missing permissions (by Alex Cruz)
-e23acb336170 - Fix Google Calendar FC (by Josh Chasky)
-3cfb339ee54f - Fix Fi permissions (by Kshitij Gupta)
-c7a7bff69d0d - Fix Android 7.0 GApps permissions which were causing FC (by Alex Naidis)
-fc6ce813d695 - Permissions: Grant Download Provider access permissions to external storage (by Sagarrokade006)
-753f59c1abe6 - base: fix Chrome sign in (by aswin7469)
-d0ab60c55e96 - DisplayPowerController: Fix incall proximity not turning off display (by sooti)
-2b1f21a23396 - SystemUI: restart timeout causes black screen (by pengzhicai)
-25f5cb28261e - DefaultPermissionGrant: Fix google search crash (by Pranav Vashi)
-7f0fb8f75c97 - Permissions: Grant Mediascanner access permissions to external storage (by Ali B)
-faecf9770639 - services: Whitelist Nfc Service from clipboard toasts (by AshutoshSundresh)
-86ae23db4870 - privapp-permissions: Grant missing TelephonyProvider perm. (by spezi77)
-b4e4da38739f - config: Allow gms to access persistent data partition (by Demon000)
-4eeb564c44ce - BrightnessUtils: Conditionally use low gamma implementation for brightness curve (by SagarMakhar)
-0ecdd29444c3 - RecoverySystem: make the package readable before checking capex (by Chenyang Zhong)
-054f1d9e5331 - core: Implement system vibration haptics settings (by minaripenguin)
-4de4bdea0090 - Revert "Add toggle to enable brightness slider haptic feedback [1/2]" (by elpaablo)
-f8c0d6e7549a - [squash] Add monet customization [1/2] (by elpaablo)
-41f03b2d8b0c - Revert "SystemUI: Add A11 QS UI Style [1/3]" (by elpaablo)
-23d92f4d210e - Revert "SystemUI: Add QS Panel Style [1/3]" (by elpaablo)
-c793eb997f0d - Revert "SystemUI: Add monet customization [1/2]" (by elpaablo)
-11a90c62d22d - SettingsLib: add category for Alpha settings (by elpaablo)
-de2ba9fc4fbb - Add Alpha to metrics constants (by elpaablo)
-6bb16736b116 - fixup! Bring back UDFPS animation (by elpaablo)
-
-   * packages/apps/Dialer
-56f7a5190 - Dialer: Voicemail: Don't tear down the app (by Michael W)
-53e7fac23 - Dialer: Fix Voicemail playback (by Michael W)
-
-   * packages/apps/TvSettings
-f69b9575c - fixup! Add button to shut down device (by Aaron Kling)
-
-====================
-     02-11-2024
-====================
-
-   * bootable/recovery
-cac692d0 - Merge branch '14.0' of https://github.com/crdroidandroid/android_bootable_recovery into alpha-14 (by elpaablo)
-
-   * build/make
-31fc8b5e2a - Merge branch '14.0' of github.com:crdroidandroid/android_build into alpha-14 (by elpaablo)
-
-   * build/soong
-33cac5167 - Merge branch '14.0' of github.com:crdroidandroid/android_build_soong into alpha-14 (by elpaablo)
-
-   * device/lineage/sepolicy
-216bd2b - Merge branch '14.0' of https://github.com/crdroidandroid/android_device_crdroid_sepolicy into alpha-14 (by elpaablo)
-
-   * packages/apps/Aperture
-30fdbed - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/AudioFX
-bcc073d - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Dialer
-b7322baa3 - Automatic translation import (by LineageOS Infra)
-8a32a0776 - Dialer: Fix Voicemail dialog's action button color (by Michael W)
-cdf7cdf60 - Dialer: InCallDialpad: Make light numbers visible (by Michael W)
-604894869 - Dialer: Increase icon size for the end call button (by Georg Veichtlbauer)
-c54a76b02 - Dialer: Fix NPE with private calls (by Michael W)
-d8742cd6a - Dialer: Update call end button colors (by Georg Veichtlbauer)
-
-   * packages/apps/DocumentsUI
-37068d761 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Eleven
-92611f66 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Etar
-88397f71 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Jelly
-59fbe75 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Launcher3
-fabb58e0fe - Merge branch '14.0' of github.com:crdroidandroid/android_packages_apps_Launcher3 into alpha-14 (by elpaablo)
-
-   * packages/apps/Messaging
-32fcd7a - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Recorder
-a48fe52 - Automatic translation import (by LineageOS Infra)
-
-   * packages/apps/Seedvault
-d1f0fef - Import translations from Weblate (by Hosted Weblate)
-
-   * packages/providers/DownloadProvider
-6a59a879 - Automatic translation import (by LineageOS Infra)
-
-   * packages/resources/devicesettings
-fa9ef52 - Automatic translation import (by LineageOS Infra)
-
-   * packages/services/Mms
-76d84de - Automatic translation import (by LineageOS Infra)
-
-   * vendor/qcom/opensource/commonsys/fm
-f5fbe47 - Automatic translation import (by LineageOS Infra)
-
-====================
-     02-10-2024
-====================
-
-   * build/make
-33bbdccceb - Merge pull request #46 from kondors1995/14.0 (by Pranav Vashi)
-4d7b0a6972 - core: set pkg target files deflate level to 1 (by Simão Gomes Viana)
-ea9b023042 - core: Use 0 compression when creating the target_files package (by Park Ju Hyung)
-2338d652bb - Use SOONG_ZIP for all zip usages (by Simao Gomes Viana)
-
-   * build/soong
-50be5f970 - Merge pull request #19 from kondors1995/14.0 (by Pranav Vashi)
-bb4a00ff9 - cc/lto: drop O3 custom adds (by John Galt)
-e63db651e - cc/config: do not generate additional debug info for AFDO (by John Galt)
-
-   * packages/apps/Aperture
-69f4619 - Aperture: Update CameraX to 1.4.0-alpha04 (by LuK1337)
-
-   * packages/apps/Launcher3
-fed4508192 - Launcher3: Add scrollview for task options menu (by electimon)
-
-   * system/sepolicy
-73513397f - Add property to workaround M_RELEASE rsp len issues (by Nolen Johnson)
-
-====================
-     02-09-2024
-====================
-
-   * device/lineage/atv
-be2aa2b - Support double tap to mute on Nvidia remotes (by Aaron Kling)
-
-   * frameworks/base
-305a2aafc26a - Fix: "Clear All" recent app screen loop bug (by vincent.cw_lee)
-642ce9b88f98 - display: Allow HBM in manual brightness if no time limitation (by Adithya R)
-1f9ef960d229 - fixup! base: Initial SenseProvider for FaceSense service (by Chris Crump)
-c236617d1d61 - SystemUI: Cleanup face unlock icon animation (by minaripenguin)
-7e635556e392 - SystemUI: Avoid showing face unlock animation on AOD and ambient screen (by someone5678)
-9a19946957db - SystemUI: Enable pulsing animation for faceunlock (by aswin7469)
-d5c6bf16d58b - PixelPropsUtils: Fix up compilation (by Pranav Vashi)
-09629191e8b8 - Island: Improve text filtering to support symbols (by minaripenguin)
-
-   * hardware/qcom-caf/common
-d0d2fa3 - Update common compatibility matrix with qccsyshal V1.2 (by Phani Deepak Parasuramuni)
-9c827ab - common: Add sigmahal 64-bit instance (by Mahesh Raja Bhogineni)
-a96669b - common: Remove schedulerservice from device compatibility matrix (by Roopesh Nataraja)
-1bc19bc - common: add qccsyshal 1.1 to compat matrix (by Shawn Shin)
-20391c0 - qcc: add IQccsyshal for device compatibility (by Shawn Shin)
-303bbdd - compatibility-matrix: Add entry for sigma-hal (by Priyanka Gujjula)
-796db0a - Add device compatibility matrix. (by padarshr)
-
-   * packages/apps/Launcher3
-11301f6c59 - Launcher3: fix shake to clear all apps (by nift4)
-
