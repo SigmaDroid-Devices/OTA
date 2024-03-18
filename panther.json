@@ -1,28 +1,28 @@
 {
 	"response": [
 		{
-			"maintainer": "Pyrtle93",
+			"maintainer": "LurdRaiden",
 			"oem": "Google",
-			"device": "7",
-			"filename": "AlphaDroid-13.0-20231020-panther-gapps-v1.10.zip",
-			"download": "https://sourceforge.net/projects/alphadroid-project/files/panther/AlphaDroid-13.0-20231020-panther-gapps-v1.10.zip/download",
-			"timestamp": 1697757950,
-			"md5": "fbb7e67bbc89a113081928cadeeb33e0",
-			"sha256": "0656f1f1e5720ee98d496cc0649b0c28e4b80c69c90bd3931b9e56d7a8ca04a6",
-			"size": 2447335084,
-			"version": "1.10",
+			"device": "Pixel 7",
+			"filename": "SigmaDroid-v4.2.4-20240317-OFFICIAL-gapps-panther.zip",
+			"download": "https://sigmadroid.xyz/downloads/Home/Panther/OTAs/SigmaDroid-v4.2.4-20240317-OFFICIAL-gapps-panther.zip",
+			"timestamp": 1710711896,
+			"md5": "cb83f72ff8d2a6cf8dce5dc3bdcd4f5d",
+			"sha256": "c5bdd00646fa2df411725f8cb82c0c03f70f815e3e4952fc6ded112d9e0108dc",
+			"size": 2612389278,
+			"version": "4.2.4",
 			"buildtype": "gapps",
-			"forum": "https://xdaforums.com/t/rom-official-13-0-alphadroid-1-10-cheetah-10-20-2023.4624145/",
+			"forum": "",
 			"gapps": "",
 			"firmware": "",
 			"modem": "",
 			"bootloader": "",
 			"recovery": "",
-			"paypal": "",
-			"telegram": "https://t.me/PyrtlesPixels",
-			"dt": "https://github.com/AlphaDroid-devices/device_google_gs201",
-			"common-dt": "https://github.com/AlphaDroid-devices/device_google_pantah",
-			"kernel": "https://github.com/AlphaDroid-devices/Kirisakura_Pantah"
+			"paypal": "https://paypal.me/mrnubian",
+			"telegram": "https://t.me/PantahRomsPixel7and7Pro",
+			"dt": "https://github.com/SigmaDroid-devices/device_google_gs201",
+			"common-dt": "https://github.com/SigmaDroid-devices/device_google_pantah",
+			"kernel": "https://github.com/SigmaDroid-devices/kernel_google_gs201"
 		}
 	]
 }

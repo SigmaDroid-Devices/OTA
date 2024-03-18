@@ -1,17 +1,189 @@
-Build type: Monthly
-Device: Google Pixel 7 (panther)
-Device maintainer: Pyrtle93
-
 ====================
-     10-20-2023
+     03-17-2024
 ====================
 
-* initial AlphaDroid stable build
-* Fixed gcam f/c
-* Fixed hold for me & direct my call
-* Fixed no default sound for phone/alarm
-* Some QS footer updates
-* Port statusbar brightness control
-* Refactor PixelProps
-* Increased default qs header size from 110 to 130
-* Other Misc improvements/updates
+====================
+     03-16-2024
+====================
+
+====================
+     03-15-2024
+====================
+
+====================
+     03-14-2024
+====================
+
+====================
+     03-13-2024
+====================
+
+====================
+     03-12-2024
+====================
+
+====================
+     03-11-2024
+====================
+
+====================
+     03-10-2024
+====================
+
+====================
+     03-09-2024
+====================
+
+   * packages/apps/Dialer
+f6e87ec72 - Dialer: show blocked calls in call log (by Joel Beckmeyer)
+
+====================
+     03-08-2024
+====================
+
+   * device/google/cheetah
+ce116a0 - Update lineage.dependencies (by Matt Filetto)
+
+   * device/google/gs201
+4688b576 - gs201: drop lineage.dependencies (by Matt Filetto)
+f1d22afa - gs201: re-allow installation of 32-bit applications (by Stefen Wakefield)
+2d705777 - Revert "gs201: Build with 64-bit only GMS if WITH_GMS" (by Matt Filetto)
+
+   * device/google/pantah
+1e2cb7e - dependencies: define remote for gs201 (by Matt Filetto)
+911c43f - Update lineage.dependencies (by Matt Filetto)
+0e855a8 - pantah: update repo dependencies to pull gs201 from SigmaDroid-Devices (by Matt Filetto)
+6e2578b - pantah: replace HbmSVManager with EvoX's PixelParts (by Matt Filetto)
+0e4d406 - shusky: udfps: don't trigger FingerDown on ActionDown (by Matt Filetto)
+6685bc3 - include face unlock (by LurdRaiden)
+712b40d - pantah: add SigmaDroid specifc build flags (by LurdRaiden)
+040bf2f - lineage > sigma (by LurdRaiden)
+
+   * packages/modules/Bluetooth
+ed4ae0b453 - Bluetooth: Preserve APM_ENHANCEMENT on boot (by Ido Ben-Hur)
+07ee079e20 - PlayerSettingsManager: Add null checks to avoid crash for MediaPlayerWrapper or session token (by D3C0Y)
+
+   * vendor/lineage
+4e2aa09b - tools: fix roomservice (by Matt Filetto)
+424e0d65 - build: Provide qti_kernel_headers module (by Michael Bestas)
+e166abbf - Hookup SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC (by Luofan Chen)
+
+====================
+     03-07-2024
+====================
+
+   * frameworks/base
+c3e67a5f6d14 - base: Toggle vertical swipes on Ambient display [1/2] (by Shubham)
+9d6a11b3e7c7 - Refactor tap to ambient gesture conditions (by Matt Filetto)
+fe4d905d8ff6 - base: Allow overlaying single tap gesture invocation delay (by Ido Ben-Hur)
+426571d017fd - base: Extend showing Ambient instead of fully waking to single tap gesture [1/2] (by aswin7469)
+63d2ccbe4b91 - base: Allow showing Ambient instead of fully waking [1/2] (by ezio84)
+1048360a4270 - Implement extended feature support to misc apps Change-Id: I8643f0ec50b8074c037ba5e45095605c409ddee1 (by minaripenguin)
+a33e9644786b - Don't enable extra StrictMode features for userdebug builds (by Sultan Alsawaf)
+f13bacd9a7c7 - SystemUI: Enable production-ready feature flags (by Danny Lin)
+994943a5c05a - SettingsProvider: Resolve package name that requires permission (by Pranav Vashi)
+afb1d3635e24 - Frameworks: Enable VoNR by default (by johnmart19)
+b4a321971735 - core: freeze two IDs used by HbmSvManager (by nift4)
+4f602c6826d9 - aapt2: support freezing private resource IDs (by nift4)
+874a47de2efe - Revert "Revert "Add Alert Slider user interface [SQUASHED]"" (by Matt Filetto)
+2fecb8cd152c - Make sure we'll always kill process group (by Jing Ji)
+68d779ba1a6d - Pass the correct user ID to SetProcessProfilesCached() (by Bart Van Assche)
+da6cbdb5e8a7 - Don't skip proess group creation for system_server (by T.J. Mercier)
+2d00561aac23 - Reapply "Adapt to libprocessgroup API changes for polling on cgro..." (by T.J. Mercier)
+547525be2b01 - Don't add StageChangeRecord when stage task moves to back (by Isak Lilja)
+9ae24316edb0 - Fix cold-lauch Activity Embeded apps flash black. (by yuanhuan)
+355787afa3f5 - Handle mismatch when add worng userid sencodary dex path (by yangfuteng)
+e7838c10f651 - Revert "add workaround for dynamic code logging system_server crash" (by Ronalds)
+dca4dc1fcfab - Revert "Fix AlarmManager high CPU issue" (by John Galt)
+b8af07b06e64 - Fix multiuser freeze-kills (by T.J. Mercier)
+35e6c212b8ee - SystemUI: Redesign seekbar (by SagarMakhar)
+2995da6617a0 - Volume Dialog: Recolor inactive icons/slider (by strwbrry143)
+d80b89e551bc - Implement Volume Styles [1/3] (by LurdRaiden)
+16868cb341a8 - Revert "SystemUI: Implement Volume Styles [1/3]" (by LurdRaiden)
+8b2e15d596ba - SystemUI: Hide custom clocks by default (by minaripenguin)
+fb78162ab42d - SystemUI: Fix user profile icon for custom clock 2 (by minaripenguin)
+aee5dc286623 - SystemUI: Custom clock style improvements (by minaripenguin)
+9ae3f832655c - Lockscreen Clock: Fix custom clock time updates (by minaripenguin)
+af0ac4582f8a - SystemUI: Add more LS Clocks [1/2] (by Subratam6296)
+536cce2c78e6 - SystemUI: Add support for Custom fonts for Custom LS Clocks (by Subratam6296)
+c8ba87aaa343 - Lockscreen Clock: Dedupe requestLayout() calls when updating status area layout (by minaripenguin)
+eb167a8df633 - Introduce Lockscreen Style [1/2] (by 703joko)
+
+   * frameworks/native
+e333363cb6 - services: Pin surfaceflinger to display cpuset (by minaripenguin)
+835e68d8c9 - SF: Limit frame rate overrides to 60 Hz if touch boost is disabled (by Jurijs Oniscuks)
+09f6a55c15 - SF: Prevent rounding error in Fps arithmetic (by Jurijs Oniscuks)
+c95e83dd8e - SF: update frameRateOverride list when policy changes (by Ady Abraham)
+60e163bafc - SF: use drawing state for Winscope (by xinying)
+b2b86561c6 - Fix setMatrix failed issue when rotating (by liulvping)
+99a1712f59 - Remove extra layering of HDR capabilities on top of HWC (by Alec Mouri)
+77ec233790 - Assign previous release fence to previous frame ID (by Alec Mouri)
+bfb8ec60e4 - Remove redundant calls and correct some comments. (by jiayongqiang)
+7103bf5262 - SF: remove the redundant variable on updateCursorAsync. (by linkai)
+e265e4c67f - sf: Optimize doDump function in SurfaceFlinger (by Tingting Zhang)
+c8a5325d42 - Remove redundant call in Layer's constructor. (by jiayongqiang)
+
+   * packages/apps/PixelParts
+2d4c48e - AutoHBM: Enable by default (by Matt Filetto)
+
+   * packages/apps/Settings
+fb7d595fcc9 - gestures: make pick up and lift to wake to ambient settings depend on the gesture being enabled. (by Matt Filetto)
+8feb8f8d8a0 - Settings: Toggle vertical swipes on Ambient display [2/2] (by cjh1249131356)
+6dc47ec4267 - Settings: Update & import illustration From afterlife (by Matt Filetto)
+52e29d1e497 - Settings: DoubleTapGesture: Use new material-you illustration preference (by Akash)
+711323a64b7 - crdroid -> sigma (by Matt Filetto)
+afc85c29698 - Settings: Add missing gesture and battery animations (by Jason Edson)
+7f9cf4ff9e2 - Settings: Extend showing Ambient instead of fully waking to single tap gesture [2/2] (by aswin7469)
+08a38b6c4e9 - Settings: Allow showing Ambient instead of fully waking [2/2] (by Ido Ben-Hur)
+
+   * packages/apps/SigmaSettings
+bbb35eeb - Lockscreen Settings: Put lockscreen preview in its own category so it appears labeled (by Matt Filetto)
+75754a01 - Lockscreen Settings: Drop "Lockscreen" from the clock category title to stay consistent. (by Matt Filetto)
+1f8da902 - Stop using hardcoded text strings for new entires (by Matt Filetto)
+732a33f9 - Move Ambient Display into the Lockscreen Interface category. (by Matt Filetto)
+c2bdd368 - AmbientDisplay: link the lift-to-wake toggles with System>Gestures (by Matt Filetto)
+7f808785 - Fix default lock clock fonts (by LurdRaiden)
+1f7753f9 - SuperiorLab: Add more LS Clocks [2/2] (by Subratam6296)
+50be9e28 - Introduce Lockscreen Style [2/2] (by LurdRaiden)
+
+   * vendor/lineage
+f9fe79bc - createjson.sh: updated to use sigmadroid.xyz as baseURL for download link parsing. (by Matt Filetto)
+f26c9d5f - Bump version to v4.2.4 (by Matt Filetto)
+
+   * vendor/pixel-framework
+b6d4cc2 - SystemUIGoogle: enable pixel VPN (by Matt Filetto)
+665d69f - Enable some Pixel Defaults (by Matt Filetto)
+c55f758 - SettingsGoogle: sync gestures.xml (by Matt Filetto)
+
+====================
+     03-06-2024
+====================
+
+   * frameworks/av
+63c887d477 - Camera: Bump up the offline switch capture request timeout (by Emilian Peev)
+
+   * frameworks/native
+a59d2c04e8 - Fix "Abnormal while playing netflix in PIP mode" (by Eason Chiu)
+
+   * system/vold
+6f0971f - vold: Unmount StubVolume disks before unmounting EmulatedVolumes (by Momoko Hattori)
+
+====================
+     03-05-2024
+====================
+
+   * vendor/pixel-framework
+79a5a82 - Sync with SigmaDroid (by Matt Filetto)
+d669060 - import power_usage_summary from Matrixx (by Matt Filetto)
+387b2b4 - import gestures.xml from Matrixx (by Matt Filetto)
+
+====================
+     03-04-2024
+====================
+
+   * frameworks/native
+2410babff6 - Fix BatteryService enum inconsistent with BatteryManager (by Jack Wu)
+
+   * system/core
+780d18c6f - Revert "boost uclamp_min for loading modules in parallel" (by Matt Filetto)
+
