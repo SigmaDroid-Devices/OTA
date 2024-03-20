@@ -1,4 +1,115 @@
 ====================
+     03-19-2024
+====================
+
+   * frameworks/base
+867bb891a6d7 - [SQUASH] Nuke AlphaDroid's monet customization impl in favor of CrDroid (by Matt Filetto)
+
+   * packages/apps/SigmaSettings
+80327888 - Reapply "crdroid: Add native monet settings to change theme style" (by Ido Ben-Hur)
+735e86c2 - SigmaSettings: drop AlphaDroid's modified monet customization in favor of CrDroid [2/2] (by Matt Filetto)
+
+====================
+     03-18-2024
+====================
+
+   * bootable/recovery
+64170d4a - Merge branch '14.0' of https://github.com/crdroidandroid/android_bootable_recovery into alpha-14 (by elpaablo)
+
+   * build/make
+af05bbbf1f - Merge remote-tracking branch 'alpha/alpha-14' into sigma-14 (by Matt Filetto)
+b142e800cb - Merge branch '14.0' of https://github.com/crdroidandroid/android_build into alpha-14 (by elpaablo)
+
+   * build/soong
+8d07b7669 - Merge remote-tracking branch 'alpha/alpha-14' into sigma-14 (by Matt Filetto)
+
+   * device/google/gs101
+f7b4e2a7 - drop lineage.dependencies (by Matt Filetto)
+9828f9bb - gs101: drop support for Lineage Health (by Matt Filetto)
+d5a459be - gs101: add service to disable HbmSVManager during boot process. (by Matt Filetto)
+1449a007 - gs101: enable doze by default (by Matt Filetto)
+c3022bd0 - gs101: opt-in to scudo for memory allocator. (by Matt Filetto)
+8ed37032 - gs101: Add build broken duplication flag (by Matt Filetto)
+9d7e75f2 - add eUICC privileged permissions (by Matt Filetto)
+ec93d301 - specify GNSS PSDS type (by Matt Filetto)
+e4766fde - declare that Google Camera needs seinfo for access to accelerators (by Matt Filetto)
+cd6ac037 - declare that Google apps can have special access to accelerators (by Matt Filetto)
+8ca8e40e - disable stripping kernel modules (by Matt Filetto)
+44a3cd62 - workaround for building with prebuilt kernel headers (by Matt Filetto)
+529d6f08 - gs101: don't enforce GSI requirements (by Matt Filetto)
+
+   * frameworks/base
+e6ce9092b28c - util: ImageHelper: add missing import (by Matt Filetto)
+2b212ce6b0d5 - fixup! Rewrite trust USB restriction handling (by jabashque)
+d20746cc3d77 - Revert "SystemUI: Implement OnePlus Style QS Panel" (by Matt Filetto)
+08b6b7937c58 - SystemUI: Implement OnePlus Style QS Panel (by DrDisagree)
+88c33951803f - SystemUI: Compress custom file headers properly (by Pranav Vashi)
+ccb420619cbe - Revert "SystemUI: Shrink custom file headers before applying" (by Pranav Vashi)
+e339ad35ab42 - SystemUI: Fix QS customizer background color (by Adithya R)
+10fbbc311667 - SystemUI: use default dialogCornerRadius for qs customize title (by maxwen)
+b177d0c461e4 - SystemUI: Make header image height offset user configurable [1/2] (by AnkitGourav)
+d72524b27016 - SystemUI: Shrink custom file headers before applying (by El Dainosor)
+73e85762b933 - SystemUI: Add QS Header Image customization [1/2] (by Marko Man)
+a274bf8152e8 - Revert "SystemUI: add more QS Header Images" (by elpaablo)
+bd2ac76141db - Revert "SystemUI: QS Header Image [1/2]" (by elpaablo)
+c491035f7960 - Revert "SystemUI: QS Header Image extended settings [1/2]" (by elpaablo)
+4ebad1463849 - Drop UI style sysui (by elpaablo)
+709ae3e1467e - base: Double tap to trigger doze [1/2] (by SKULSHADY)
+0f8f128d2568 - base: Allow setting wake for notifications separately from doze [1/2] (by Ido Ben-Hur)
+965dc488a059 - base: Allow showing Ambient instead of fully waking [1/2] (by ezio84)
+61288d67fec4 - base: Add support for window ignore secure [1/2] (by LibXZR)
+97f8dfae0210 - fixup!base: Add support for UI Styles (by El Dainosor)
+46ee57bb2f69 - base: Add support for UI Styles (by El Dainosor)
+ac7d83f3762e - SystemUI: Fix QS tile dialog background color (by Pranav Vashi)
+f048bbad0670 - Remove redundant broadcasts when adjusting volume on single volume devices (by Ryan Shih)
+ccddfe6ca821 - core: Gracefully handle unregistering of unregistered receivers/services (by minaripenguin)
+3f03838bcdbf - Enable FLAG_SECURE for userdebug builds as well on keyguard (by Saalim Quadri)
+ec056536a6f8 - PixelPropsUtils: add husky & shiba to Tensor codenames (by Matt Filetto)
+f2498dc81ad7 - base: Toggle vertical swipes on Ambient display [1/2] (by Shubham)
+
+   * packages/apps/Settings
+70bce4dae4a - Settings: gestures: drop redundant double-tap to doze preference. (by Matt Filetto)
+2172cc73538 - Settings: Add Default USB Configuration (by ZeNiXxX)
+56b735f0e8b - TopLevelSettings: Homepage Widgets [1/2] (by LurdRaiden)
+ef0fdb6e8b8 - Settings: Toggle vertical swipes on Ambient display [2/2] (by cjh1249131356)
+081214ceb82 - Settings: Make Ambient Display toggle show on single tap sensor (by Cyber Knight)
+eed5dd78e8f - Settings: Allow setting wake for notification separately from doze [2/2] (by Ido Ben-Hur)
+3d87c1295aa - Settings: Make Double Tap to Trigger Doze unsearchable (by Cyber Knight)
+82b1a9e6b33 - Settings: Hide Double Tap to Trigger Doze if AOSP DT2W is used (by Cyber Knight)
+10d5b04351e - Settings: DoubleTapGesture: Use new material-you illustration preference (by Akash)
+103bfdeccd9 - Settings: Double tap to trigger doze [2/2] (by SKULSHADY)
+85413c68241 - Settings: Allow showing Ambient instead of fully waking [2/2] (by Vishalcj17)
+8a33ec032db - Settings: Drop Lineage Health charging control [1/3] (by Matt Filetto)
+573a6424736 - Settings: Add window ignore secure feature [2/2] (by LibXZR)
+f8e25ed5caf - Settings: Update & import illustration From afterlife (by Matt Filetto)
+5c10c206d1b - Settings: Add missing gesture and battery animations (by Jason Edson)
+
+   * packages/apps/SigmaSettings
+96b6c68a - alpha -> sigma (by Matt Filetto)
+4b55150d - crdroid: Make header image height offset user configurable [2/2] (by AnkitGourav)
+46c810ce - crdroid: Add QS Header Image customization [2/2] (by Marko Man)
+63fef1b9 - Revert "crdroid: Bring back QS Header images" (by elpaablo)
+dc6d7d68 - Revert "AlphaSettings: QS header images extended [2/2]" (by elpaablo)
+3403865f - Revert "crdroid: Allow QS Header custom image selection from any app" (by elpaablo)
+e0148ca7 - UI Styles: don't map systemui overlays (by Matt Filetto)
+606bba0e - SigmaSettings: Add summary (by LurdRaiden)
+71db09e1 - TopLevelSettings: Homepage Widgets [2/2] (by LurdRaiden)
+5205fc6b - SigmaSettings: Don't make the doze vibration duration setting depend on anything. (by Matt Filetto)
+
+   * vendor/addons
+cae6680d - addons: Update various icon packs (by Pranav Vashi)
+a37e2398 - addons: Fix signal icons in circular icon pack (by Adithya R)
+1b2c1899 - addons: Import stock OOS settings icons (by RedSkulHYDRA)
+79418659 - Update UIStyles from Alpha (by Matt Filetto)
+
+   * vendor/lineage
+13c22361 - Build SimpleSettingsConfig (by Matt Filetto)
+b866ba50 - Tag v4.2.5-Beta (by Matt Filetto)
+9f7d2724 - Build Glimpse (by Matt Filetto)
+9c27f83e - Build OmniStyle (by Matt Filetto)
+f9abf7e5 - roomservice: refactor and add support for clone-depth (by Matt Filetto)
+
+====================
      03-17-2024
 ====================
 
@@ -6,29 +117,161 @@
      03-16-2024
 ====================
 
+   * external/chromium-webview/prebuilt/arm
+47c88e5 - Update Chromium Webview arm prebuilt to 122.0.6261.119 (by Kevin F. Haggerty)
+
+   * external/chromium-webview/prebuilt/arm64
+bdcd39e - Update Chromium Webview arm64 prebuilt to 122.0.6261.119 (by Kevin F. Haggerty)
+
+   * external/chromium-webview/prebuilt/x86
+2ad8d36 - Update Chromium Webview x86 prebuilt to 122.0.6261.119 (by Kevin F. Haggerty)
+
+   * external/chromium-webview/prebuilt/x86_64
+e3d143e - Update Chromium Webview x86_64 prebuilt to 122.0.6261.119 (by Kevin F. Haggerty)
+
 ====================
      03-15-2024
 ====================
+
+   * external/chromium-webview/patches
+d7502a8 - Update Chromium Webview to 122.0.6261.119 (by Kevin F. Haggerty)
+
+   * frameworks/native
+b573b1f06c - Fix dumpstate read_file_as_long fd leak (by luoqiangwei1)
+
+   * hardware/qcom-caf/common
+b3e4135 - Add LOCHIDL 4.3 in Feature Compatibility Matrix (by Nilesh Gharde)
+b315a44 - Added vendor.qti.gnss.4.2 to FCM (by Nilesh Gharde)
 
 ====================
      03-14-2024
 ====================
 
+   * bionic
+4a1b15c99 - libc_defaults: do not disable LTO (by John Galt)
+251a7cdbc - Revert "libc: Enable thinLTO for note_memtag_heap_async & note_memtag_heap_sync" (by Pranav Vashi)
+
+   * build/make
+441ba2631e - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
 ====================
      03-13-2024
 ====================
+
+   * build/make
+6b657aa67e - Merge branch '14.0' of https://github.com/crdroidandroid/android_build into alpha-14 (by elpaablo)
+
+   * build/soong
+14098ee8a - Merge branch '14.0' of https://github.com/crdroidandroid/android_build_soong into alpha-14 (by elpaablo)
+
+   * device/lineage/sepolicy
+8234c52 - Make backuptool permissive only in non user builds (by Luca Stefani)
+
+   * packages/modules/Bluetooth
+2bfaf2b670 - BluetoothManagerService: check if bluetooth is in airplane mode radios before disabling (by Oliver Scott)
+729e670c41 - BluetoothManagerService: allow bluetooth auto-enable if not in airplane mode radios (by Oliver Scott)
+0e7be0696d - fixup! Bluetooth timeout feature (by Oliver Scott)
+177979095e - Bluetooth timeout feature (by Oliver Scott)
 
 ====================
      03-12-2024
 ====================
 
+   * build/soong
+f7c73626c - check_boot_jars: add org.ifaa.aidl packages to whitelist (by ShevT)
+
+   * packages/apps/PixelParts
+c9acebb - ChargeControl: Fix cuncurrency issue with writing to nodes when turning charge control off (by Matt Filetto)
+
+   * packages/apps/SigmaSettings
+ae140217 - SigmaSettings: bring back the missing UI Styles preference. (by Matt Filetto)
+b3737276 - Doze: change doze vibration pref depend on doze_enabled instead. (by Matt Filetto)
+
+   * vendor/pixel-framework
+0e5626e - SettingsGoogle: Drop Lineage Health charging control [2/3] (by Matt Filetto)
+
 ====================
      03-11-2024
 ====================
 
+   * build/make
+3abf1f8ded - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * build/soong
+d5dee1906 - check_boot_jars: add OnePlus packages to whitelist (by ShevT)
+
+   * external/setupcompat
+84347a8 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * hardware/interfaces
+9c2c824aa - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * packages/apps/Contacts
+e3024cc2c - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * packages/apps/DeskClock
+f9341b197 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * packages/apps/Dialer
+7894d1ba2 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+96743d943 - Dialer: implement vvm_type_advvm (AT&T VVM) (by Joel Beckmeyer)
+
+   * packages/apps/SigmaSettings
+cea58c1f - SigmaSettings: Fix AODSchedule fragment crash (by Matt Filetto)
+ff38c660 - DozeSettings: Refactor and link with the lift-to-wake toggles from System>Gestures. (by Matt Filetto)
+899518e0 - AmbientCustomization: Allow Ambient Display custom image selection from any app (by Matt Filetto)
+
+   * packages/inputmethods/LatinIME
+939c56306 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * packages/modules/Bluetooth
+1bfb0210d2 - Bluetooth: Preserve APM_ENHANCEMENT on boot (by Ido Ben-Hur)
+5525bda7fa - PlayerSettingsManager: Add null checks to avoid crash for MediaPlayerWrapper or session token (by D3C0Y)
+b7341703a6 - Disable LTO on a few defaults (by John Galt)
+
+   * system/core
+44c0c78ef1 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * system/sepolicy
+1ff8b0195 - Allow system server to access tmpfs files (by minaripenguin)
+e52706f66 - Allow ueventd to read apexd property (by Suchang Woo)
+9f1e519da - sepolicy: allow system app to access sysfs_leds (by Marko Man)
+a5e547ddc - sepolicy: Allow permissive in recovery on user builds (by Pranav Vashi)
+
+   * vendor/addons
+42162845 - ShishuNightsTheme: Fix theming for About phone (by mukesh22584)
+48490f08 - UiStyles:  add dummy overlays for some themes (by ElDainosor)
+2aac1501 - ShishuNightsTheme: Fix theming for preference category UI (by mukesh22584)
+ad141aa0 - ShishuNightsTheme: Fix theming for our collapsing toolbar (by mukesh22584)
+bfd68d74 - UIStyle: Reimport & adapt for our use case (by ElDainosor)
+229b3c3f - addons:Import UIStyles from Bootleggers (by ElDainosor)
+
+   * vendor/gms
+4c69dd4 - gms: drop GooglePackageInstaller (by Matt Filetto)
+
+   * vendor/pixel-framework
+d231f85 - SettingsGoogle: Drop gestures.xml (by Matt Filetto)
+
 ====================
      03-10-2024
 ====================
+
+   * bootable/recovery
+bfb3d352 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
+
+   * packages/apps/Dialer
+42f9b006d - Dialer: implement vvm_type_advvm (AT&T VVM) (by Joel Beckmeyer)
+7661654ec - New translations (#107) (by Lup Gabriel)
+
+   * packages/apps/Matlog
+a126db8 - Matlog: Update Polish translation (by rehork)
+04891be - Matlog: Update icon color to original red (by Pranav Vashi)
+b7f84d8 - Matlog: Use monet colors as accent (by DarkJoker360)
+e2190b2 - Matlog: Add launcher shortcut (by Pranav Vashi)
+cdbd719 - Matlog: Delete OmniPreference theme (by Pranav Vashi)
+
+   * packages/apps/ThemePicker
+7b245e43 - Drop UI style sysui (by elpaablo)
 
 ====================
      03-09-2024
@@ -36,6 +279,17 @@
 
    * packages/apps/Dialer
 f6e87ec72 - Dialer: show blocked calls in call log (by Joel Beckmeyer)
+0f6deb18a - Dialer: show blocked calls in call log (by Joel Beckmeyer)
+
+   * packages/apps/OmniStyle
+5d4675c - OmniStyle: Compress few headers (by Pranav Vashi)
+d0247e3 - OmniStyle: Add JLA, Xmen and Avengers headers (by Jayrod76)
+60badba - OmniStyle: Update space headers (by Pranav Vashi)
+e00cd99 - OmniStyle: switch to androidx (by maxwen)
+7356b4e - OmniStyle: add required android:exported=true in manifest (by maxwen)
+
+   * packages/apps/SigmaSettings
+ef16dd4d - crdroid: Allow QS Header custom image selection from any app (by Pranav Vashi)
 
 ====================
      03-08-2024
@@ -59,9 +313,9 @@ f1d22afa - gs201: re-allow installation of 32-bit applications (by Stefen Wakefi
 712b40d - pantah: add SigmaDroid specifc build flags (by LurdRaiden)
 040bf2f - lineage > sigma (by LurdRaiden)
 
-   * packages/modules/Bluetooth
-ed4ae0b453 - Bluetooth: Preserve APM_ENHANCEMENT on boot (by Ido Ben-Hur)
-07ee079e20 - PlayerSettingsManager: Add null checks to avoid crash for MediaPlayerWrapper or session token (by D3C0Y)
+   * packages/apps/SimpleSettingsConfig
+f5620aa - Convert to set settings instead of deviceconfig (by Aaron Kling)
+6d87e7a - Rebrand to SimpleSettingsConfig (by Aaron Kling)
 
    * vendor/lineage
 4e2aa09b - tools: fix roomservice (by Matt Filetto)
@@ -73,11 +327,6 @@ e166abbf - Hookup SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC (by Luofan Chen)
 ====================
 
    * frameworks/base
-c3e67a5f6d14 - base: Toggle vertical swipes on Ambient display [1/2] (by Shubham)
-9d6a11b3e7c7 - Refactor tap to ambient gesture conditions (by Matt Filetto)
-fe4d905d8ff6 - base: Allow overlaying single tap gesture invocation delay (by Ido Ben-Hur)
-426571d017fd - base: Extend showing Ambient instead of fully waking to single tap gesture [1/2] (by aswin7469)
-63d2ccbe4b91 - base: Allow showing Ambient instead of fully waking [1/2] (by ezio84)
 1048360a4270 - Implement extended feature support to misc apps Change-Id: I8643f0ec50b8074c037ba5e45095605c409ddee1 (by minaripenguin)
 a33e9644786b - Don't enable extra StrictMode features for userdebug builds (by Sultan Alsawaf)
 f13bacd9a7c7 - SystemUI: Enable production-ready feature flags (by Danny Lin)
@@ -126,16 +375,6 @@ c8a5325d42 - Remove redundant call in Layer's constructor. (by jiayongqiang)
    * packages/apps/PixelParts
 2d4c48e - AutoHBM: Enable by default (by Matt Filetto)
 
-   * packages/apps/Settings
-fb7d595fcc9 - gestures: make pick up and lift to wake to ambient settings depend on the gesture being enabled. (by Matt Filetto)
-8feb8f8d8a0 - Settings: Toggle vertical swipes on Ambient display [2/2] (by cjh1249131356)
-6dc47ec4267 - Settings: Update & import illustration From afterlife (by Matt Filetto)
-52e29d1e497 - Settings: DoubleTapGesture: Use new material-you illustration preference (by Akash)
-711323a64b7 - crdroid -> sigma (by Matt Filetto)
-afc85c29698 - Settings: Add missing gesture and battery animations (by Jason Edson)
-7f9cf4ff9e2 - Settings: Extend showing Ambient instead of fully waking to single tap gesture [2/2] (by aswin7469)
-08a38b6c4e9 - Settings: Allow showing Ambient instead of fully waking [2/2] (by Ido Ben-Hur)
-
    * packages/apps/SigmaSettings
 bbb35eeb - Lockscreen Settings: Put lockscreen preview in its own category so it appears labeled (by Matt Filetto)
 75754a01 - Lockscreen Settings: Drop "Lockscreen" from the clock category title to stay consistent. (by Matt Filetto)
@@ -145,6 +384,9 @@ c2bdd368 - AmbientDisplay: link the lift-to-wake toggles with System>Gestures (b
 7f808785 - Fix default lock clock fonts (by LurdRaiden)
 1f7753f9 - SuperiorLab: Add more LS Clocks [2/2] (by Subratam6296)
 50be9e28 - Introduce Lockscreen Style [2/2] (by LurdRaiden)
+
+   * system/core
+a0f99cd705 - Merge pull request #20 from SigmaDroid-Project/uclamp_revert (by Pranav Vashi)
 
    * vendor/lineage
 f9fe79bc - createjson.sh: updated to use sigmadroid.xyz as baseURL for download link parsing. (by Matt Filetto)
@@ -167,23 +409,4 @@ a59d2c04e8 - Fix "Abnormal while playing netflix in PIP mode" (by Eason Chiu)
 
    * system/vold
 6f0971f - vold: Unmount StubVolume disks before unmounting EmulatedVolumes (by Momoko Hattori)
-
-====================
-     03-05-2024
-====================
-
-   * vendor/pixel-framework
-79a5a82 - Sync with SigmaDroid (by Matt Filetto)
-d669060 - import power_usage_summary from Matrixx (by Matt Filetto)
-387b2b4 - import gestures.xml from Matrixx (by Matt Filetto)
-
-====================
-     03-04-2024
-====================
-
-   * frameworks/native
-2410babff6 - Fix BatteryService enum inconsistent with BatteryManager (by Jack Wu)
-
-   * system/core
-780d18c6f - Revert "boost uclamp_min for loading modules in parallel" (by Matt Filetto)
 
