@@ -1,7 +1,7 @@
 {
 	"response": [
 		{
-			"maintainer": "LurdRaiden",
+			"maintainer": "Albinoman887",
 			"oem": "Google",
 			"device": "Pixel 7",
 			"filename": "SigmaDroid-v4.2.5-Beta-20240319-OFFICIAL-gapps-panther.zip",
@@ -18,7 +18,7 @@
 			"modem": "",
 			"bootloader": "",
 			"recovery": "",
-			"paypal": "https://paypal.me/mrnubian",
+			"paypal": "https://paypal.me/albinoman887",
 			"telegram": "https://t.me/SigmaDroidROMChat",
 			"dt": "https://github.com/SigmaDroid-devices/device_google_gs201",
 			"common-dt": "https://github.com/SigmaDroid-devices/device_google_pantah",
