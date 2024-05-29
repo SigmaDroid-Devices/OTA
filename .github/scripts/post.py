@@ -124,6 +124,7 @@ def get_info(ID):
         msg += f"Device Name: {DEVICE_NAME} ({DEVICE_CODENAME})\n"
         msg += f"Maintainer: {MAINTAINER}\n"
         msg += f"Support Group: {SUPPORT_GROUP}\n"
+        msg += f"Paypal: {PAYPAL}\n"
         msg += f"Date Time: {DATE_TIME}\n"
         msg += f"Build Type: {BUILD_TYPE}\n"
         # msg += f"Download URL: {DOWNLOAD_URL}\n"
@@ -180,7 +181,7 @@ def button(information):
     button2 = InlineKeyboardButton(text="🤝 Support", url=support)
     button3 = InlineKeyboardButton(text="📝 Changelog", url=f"https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/Changelogs/{information['filename'].replace('.zip', '')}-Changelog.txt")
     button4 = InlineKeyboardButton(text="📥 Download", url=f"https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/OTAs/{information['filename']}")
-    button5 = InlineKeyboardButton(text="💰 Donate", url=donate)
+    button5 = InlineKeyboardButton(text="💰 Donate", url=f"{donate}")
     return buttons.add(button1, button2, button3, button4, button5)
 
 # Send updates to channel and commit changes in repo
