@@ -151,20 +151,20 @@ def send_post(chat_id, image, caption, button):
 # Prepare message format for channel
 def message_content(information):
     msg = ""
-    msg += f"📱 <b>SigmaDroid</b> <code>v{information['sigma_version']}</code> | Android 14 - #OFFICIAL\n\n"
-    msg += f"🔧 <b>Device:</b> <code>{information['device']} ({information['codename']})</code>\n"
+    msg += f"<b>SigmaDroid</b> <code>v{information['sigma_version']}</code> | Android 14 - #OFFICIAL\n\n"
+    msg += f"<b>Device:</b> <code>{information['device']} ({information['codename']})</code>\n"
     if isinstance(information['maintainer'], List):
-        msg += f"👥 <b>Maintainers:</b> "
+        msg += f"<b>Maintainers:</b> "
         msg += " | ".join([f"<a href='https://t.me/{x}'>{x}</a>" for x in information['maintainer']])
         msg += "\n"
     else:
-        msg += f"👤 <b>Maintainer:</b> <a href='https://t.me/{information['maintainer']}'>{information['maintainer']}</a>\n"
-    msg += f"📅 <b>Build Date:</b> <code>{information['datetime']} UTC</code>\n"
-    msg += f"🔖 <b>Build Type:</b> <code>{information['build_type']}</code>\n\n"
+        msg += f"<b>Maintainer:</b> <a href='https://t.me/{information['maintainer']}'>{information['maintainer']}</a>\n"
+    msg += f"<b>Build Date:</b> <code>{information['datetime']} UTC</code>\n"
+    msg += f"<b>Build Type:</b> <code>{information['build_type']}</code>\n\n"
     filenameBase = information['filename'].replace(".zip", "")
-    msg += f"📝 <b>Release Notes:</b> <a href='https://raw.githubusercontent.com/SigmaDroid-devices/OTA/sigma-14.2/release_notes.txt'>Here</a>\n"
-    msg += f"📸 <b>Screenshots:</b> <a href='https://sigmadroid.xyz/Screenshots'>Here</a>\n"
-    msg += f"🌐 <b>Official Website:</b> <a href='https://sigmadroid.xyz'>Here</a>\n"
+    msg += f"<b>Release Notes:</b> <a href='https://raw.githubusercontent.com/SigmaDroid-devices/OTA/sigma-14.2/release_notes.txt'>Here</a>\n"
+    msg += f"<b>Screenshots:</b> <a href='https://sigmadroid.xyz/Screenshots'>Here</a>\n"
+    msg += f"<b>Official Website:</b> <a href='https://sigmadroid.xyz'>Here</a>\n"
     msg += f"\n#{information['codename']} #SigmaDroid #Android14"
     return msg
 
