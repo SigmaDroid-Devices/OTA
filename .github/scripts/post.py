@@ -152,7 +152,7 @@ def send_post(chat_id, image, caption, button):
 def message_content(information):
     msg = ""
     # msg += f"<b>SigmaDroid Project OFFICIAL - A14</b> <b>(</b><code>{information['sigma_version']}</code><b>)</b>\n\n"
-    msg += f"<b>SigmaDroid v</b><code>{information['sigma_version']}</code> | Android 14 - #OFFICIAL\n\n"
+    msg += f"<b>SigmaDroid</b> <code>v{information['sigma_version']}</code> | Android 14 - #OFFICIAL\n\n"
     msg += f"<b>Device:</b> <code>{information['device']} ({information['codename']})</code>\n"
     if isinstance(information['maintainer'], List):
         msg += f"<b>Maintainers:</b> "
