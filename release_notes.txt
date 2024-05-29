@@ -1,0 +1,9 @@
+Release Version : v4.5.1 2024-05-29
+
+Highlights & Device Specific Changes:
+   * NOTICE! A FULL WIPE MAY BE REQUIRED WHEN UPGRADING FROM PREVIOUS VERSIONS OF SIGMADROID
+   * Play Integrity is Passing again!
+   * Added Quick-tap Actions
+   * Added Default Launcher toggle in SigmaSettings>Misc (Swich between Pixel Launcher and Launcher3)
+
+- I Spent a lot of time on this update, if you like my work please donate @ https://paypal.me/albinoman887
