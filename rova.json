@@ -24,7 +24,6 @@
                         "common-dt": "",
                         "kernel": "https://github.com/AlphaDroid-devices/android_kernel_xiaomi_rova"
                 },
-
                 {
                         "maintainer": "Maxx459",
                         "oem": "Xiaomi",
