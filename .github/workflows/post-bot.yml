@@ -45,7 +45,9 @@ jobs:
         if: ${{ github.event.inputs.repost == null }}
         run: | 
           git fetch && git pull
-          COMMIT_MESSAGE=$(cat commit_mesg.txt)
-          rm commit_mesg.txt
-          git add . && git commit -sm "$COMMIT_MESSAGE"
-          git push origin
+          if [ -f commit_mesg.txt ]; then
+            COMMIT_MESSAGE=$(cat commit_mesg.txt)
+            rm commit_mesg.txt
+            git add . && git commit -sm "$COMMIT_MESSAGE"
+            git push origin
+          fi
