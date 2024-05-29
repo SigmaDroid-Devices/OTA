@@ -114,6 +114,8 @@ def get_info(ID):
         MAINTAINER = info['maintainer']
         SUPPORT_GROUP = info.get('support_group', None)
         PAYPAL = info.get('paypal', None)
+        if PAYPAL == "":
+            PAYPAL = None
         DOWNLOAD_URL = info['download']
         FILENAME = info['filename']
         DATE_TIME = datetime.datetime.fromtimestamp(int(info['timestamp']))
@@ -181,7 +183,7 @@ def button(information):
     button2 = InlineKeyboardButton(text="🤝 Support", url=support)
     button3 = InlineKeyboardButton(text="📝 Changelog", url=f"https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/Changelogs/{information['filename'].replace('.zip', '')}-Changelog.txt")
     button4 = InlineKeyboardButton(text="📥 Download", url=f"https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/OTAs/{information['filename']}")
-    button5 = InlineKeyboardButton(text="💰 Donate", url=f"{donate}")
+    button5 = InlineKeyboardButton(text="💰 Donate", url=donate)
     return buttons.add(button1, button2, button3, button4, button5)
 
 # Send updates to channel and commit changes in repo
