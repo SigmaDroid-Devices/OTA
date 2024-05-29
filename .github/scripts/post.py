@@ -151,22 +151,20 @@ def send_post(chat_id, image, caption, button):
 # Prepare message format for channel
 def message_content(information):
     msg = ""
-    # msg += f"<b>SigmaDroid Project OFFICIAL - A14</b> <b>(</b><code>{information['sigma_version']}</code><b>)</b>\n\n"
-    msg += f"<b>SigmaDroid</b> <code>v{information['sigma_version']}</code> | Android 14 - #OFFICIAL\n\n"
-    msg += f"<b>Device:</b> <code>{information['device']} ({information['codename']})</code>\n"
+    msg += f"📱 <b>SigmaDroid</b> <code>v{information['sigma_version']}</code> | Android 14 - #OFFICIAL\n\n"
+    msg += f"🔧 <b>Device:</b> <code>{information['device']} ({information['codename']})</code>\n"
     if isinstance(information['maintainer'], List):
-        msg += f"<b>Maintainers:</b> "
+        msg += f"👥 <b>Maintainers:</b> "
         msg += " | ".join([f"<a href='https://t.me/{x}'>{x}</a>" for x in information['maintainer']])
         msg += "\n"
     else:
-        msg += f"<b>Maintainer:</b> <a href='https://t.me/{information['maintainer']}'>{information['maintainer']}</a>\n"
-    msg += f"<b>Build Date:</b> <code>{information['datetime']} UTC</code>\n"
-    msg += f"<b>Build Type:</b> <code>{information['build_type']}</code>\n\n"
+        msg += f"👤 <b>Maintainer:</b> <a href='https://t.me/{information['maintainer']}'>{information['maintainer']}</a>\n"
+    msg += f"📅 <b>Build Date:</b> <code>{information['datetime']} UTC</code>\n"
+    msg += f"🔖 <b>Build Type:</b> <code>{information['build_type']}</code>\n\n"
     filenameBase = information['filename'].replace(".zip", "")
-    # msg += f"<b>Changelogs:</b> <a href='https://sigmadroid.xyz/downloads/Home/Husky/Changelogs/Changelog.txt'>Source</a> <b>|</b> <a href='https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/Changelogs/{filenameBase}-Changelog.txt'>Device</a>\n"
-    msg += f"<b>Release Notes:</b> <a href='https://raw.githubusercontent.com/SigmaDroid-devices/OTA/sigma-14.2/release_notes.txt'>Here</a>\n"
-    msg += f"<b>Screenshots:</b> <a href='https://sigmadroid.xyz/Screenshots'>Here</a>\n"
-    msg += f"<b>Official Website:</b> <a href='https://sigmadroid.xyz'>Here</a>\n"
+    msg += f"📝 <b>Release Notes:</b> <a href='https://raw.githubusercontent.com/SigmaDroid-devices/OTA/sigma-14.2/release_notes.txt'>Here</a>\n"
+    msg += f"📸 <b>Screenshots:</b> <a href='https://sigmadroid.xyz/Screenshots'>Here</a>\n"
+    msg += f"🌐 <b>Official Website:</b> <a href='https://sigmadroid.xyz'>Here</a>\n"
     msg += f"\n#{information['codename']} #SigmaDroid #Android14"
     return msg
 
@@ -175,11 +173,11 @@ def button(information):
     support = information['support_group'] if information['support_group'] is not None else 'https://t.me/SigmaDroidROMChat'
     buttons = InlineKeyboardMarkup()
     buttons.row_width = 2
-    button1 = InlineKeyboardButton(text="Channel", url=f"https://t.me/SigmaDroidAnnouncements")
-    button2 = InlineKeyboardButton(text="Support", url=support)
-    button3 = InlineKeyboardButton(text="Changelog", url=f"https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/Changelogs/{information['filename'].replace('.zip', '')}-Changelog.txt")
-    button4 = InlineKeyboardButton(text="Download", url=f"https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/OTAs/{information['filename']}")
-    button5 = InlineKeyboardButton(text="Donate", url=f"https://paypal.me/albinoman887")
+    button1 = InlineKeyboardButton(text="📢 Channel", url=f"https://t.me/SigmaDroidAnnouncements")
+    button2 = InlineKeyboardButton(text="🤝 Support", url=support)
+    button3 = InlineKeyboardButton(text="📝 Changelog", url=f"https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/Changelogs/{information['filename'].replace('.zip', '')}-Changelog.txt")
+    button4 = InlineKeyboardButton(text="📥 Download", url=f"https://sigmadroid.xyz/downloads/Home/{information['codename'].capitalize()}/OTAs/{information['filename']}")
+    button5 = InlineKeyboardButton(text="💰 Donate", url=f"https://paypal.me/albinoman887")
     return buttons.add(button1, button2, button3, button4, button5)
 
 # Send updates to channel and commit changes in repo
