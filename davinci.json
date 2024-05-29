@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "Rumais",
+			"oem": "Xiaomi",
+			"device": "Xiaomi MI 9T",
+			"filename": "AlphaDroid-20230213-davinci-full_gapps-v1.2.zip",
+			"download": "https://sourceforge.net/projects/alphadroid-project/files/davinci/AlphaDroid-20230213-davinci-full_gapps-v1.2.zip/download",
+			"timestamp": 1676279464,
+			"md5": "9c1b2c81be8d7d4310ab929317f6278b",
+			"sha256": "5d4cfb399c76c481e7550eb18d23138d189e741190f5c121a1eaf2542c495a00",
+			"size": 1993837537,
+			"version": "1.2",
+			"buildtype": "full_gapps",
+			"forum": "",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "",
+			"telegram": "https://t.me/hopethislasts",
+			"dt": "https://github.com/AlphaDroid-devices/device_xiaomi_davinci",
+			"common-dt": "https://github.com/AlphaDroid-devices/davinci_sm6150-common",
+			"kernel": "https://github.com/AlphaDroid-devices/kdavinci_kernel_xiaomi_sm6150"
+		}
+	]
+}
