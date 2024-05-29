@@ -193,7 +193,7 @@ def tg_message():
     if len(get_diff(get_new_id(), get_old_id())) == 0:
         print("All are Updated\nNothing to do\nExiting...")
         sleep(2)
-        exit(1)
+        exit(0)
     else:
         print(f"IDs Changed:\n{get_diff(get_new_id(), get_old_id())}\n\n")
         for devices in get_diff(get_new_id(), get_old_id()):
