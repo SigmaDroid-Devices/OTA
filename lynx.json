@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "EliteDarkKaiser",
+			"oem": "Google",
+			"device": "Pixel 7a",
+			"filename": "SigmaDroid-v4.5.1-20240529-OFFICIAL-gapps-lynx.zip",
+			"download": "https://sourceforge.net/projects/sigmadroid-for-pixel-7a/files/Offical/A14/QPR2/SigmaDroid-v4.5.1-20240529-OFFICIAL-gapps-lynx.zip/download",
+			"timestamp": 1717003712,
+			"md5": "e498f20257876564d7203a6cb4912bd3",
+			"sha256": "0917668d61f1768700019d8a79d33ad98ace314826b1ca7b4b45a82472a7f462",
+			"size": 2620523647,
+			"version": "4.5.1",
+			"buildtype": "",
+			"forum": "",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "",
+			"telegram": "",
+			"dt": "https://github.com/SigmaDroid-Devices/device_google_gs201",
+			"common-dt": "https://github.com/SigmaDroid-Devices/device_google_lynx",
+			"kernel": "https://android.googlesource.com/device/google/lynx-kernel/+/refs/heads/main"
+		}
+	]
+}
