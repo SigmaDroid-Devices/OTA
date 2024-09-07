@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "Jrcable2",
+			"oem": "Google",
+			"device": "Pixel 6",
+			"filename": "SigmaDroid-v4.8.3-20240907-OFFICIAL-gapps-oriole.zip",
+			"download": "https://sigmadroid.xyz/downloads/Home/Oriole/OTAs/SigmaDroid-v4.8.3-20240907-OFFICIAL-gapps-oriole.zip",
+			"timestamp": 1725746726,
+			"md5": "5b79363202c7a1f59d945bd844d7174b",
+			"sha256": "555affd2df8456a158309d6d6e12cd7c6329c83d1e71e345de89d88993782d65",
+			"size": 2526310434,
+			"version": "4.8.3",
+			"buildtype": "ota",
+			"forum": "",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "",
+			"telegram": "",
+			"dt": "",
+			"common-dt": "",
+			"kernel": ""
+		}
+	]
+}
