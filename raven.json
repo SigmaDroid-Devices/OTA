@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "Jrcable2",
+			"oem": "Google",
+			"device": "Pixel 6 Pro",
+			"filename": "SigmaDroid-v4.8.3-20240907-OFFICIAL-gapps-raven.zip",
+			"download": "https://sigmadroid.xyz/downloads/Home/Raven/OTAs/SigmaDroid-v4.8.3-20240907-OFFICIAL-gapps-raven.zip",
+			"timestamp": 1725737223,
+			"md5": "90ecf277e59dd52749143892cdab5a41",
+			"sha256": "d16e59df0c2c28072ed4051419471624f596f64dd1761ca0d81b282ba65cdbab",
+			"size": 2531605485,
+			"version": "4.8.3",
+			"buildtype": "OTA",
+			"forum": "",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "",
+			"telegram": "",
+			"dt": "",
+			"common-dt": "",
+			"kernel": ""
+		}
+	]
+}
