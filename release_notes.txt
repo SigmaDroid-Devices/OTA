@@ -1,4 +1,4 @@
-Release Version : v4.7.0 2024-07-30
+Release Version : v4.8.3 2024-09-06
 
 Highlights & Device Specific Changes:
    * Fixed ShadedLayer QS Panel style label color
@@ -8,7 +8,9 @@ Highlights & Device Specific Changes:
    * TrickyStore implemented directly into the ROM!
    * Passes STRONG integrity out of the box with no changes by the end user. Using a PRIVATE unrevoked keybox
      given to us. 
-   * Fixed QS Media Player Enable/Disable  
-   * ... and many more upstream changes
+   * Fixed QS Media Player Enable/Disable
+   * Brought back "PixelParts" as per requests.
+   * PixelParts includes Auto HBM customization and Percentaged Based Charge Control
+   * Synced with upstream crDroid changes
 
 - I Spent a lot of time on this update, if you like my work please donate @ https://paypal.me/albinoman887
