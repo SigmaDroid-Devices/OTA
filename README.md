@@ -104,12 +104,17 @@ git push
 
 If you are updating an existing device, follow these steps:
 
-1. Navigate to the directory where this repository is cloned during the repo sync and git pull the latest changes if any:
+1. Navigate to the directory where this repository is cloned during the repo sync, fetch the latest changes, and checkout the sigma-14.3 branch:
 
 ```bash
 cd vendor/OTA
 git fetch --all
-git pull sigma sigma-14.3
+ # checkout the sigma-14.3 branch after fetching the latest changes
+git checkout sigma-devices/sigma-14.3
+# delete the local copy of the sigma-14.3 branch
+git branch -D sigma-14.3
+# create a new local branch named sigma-14.3 based on the remote branch and change to it
+git checkout -b sigma-14.3
 ```
 
 2. Copy the *codename*.json file from the OUT directory to this repository at vendor/OTA.
@@ -124,5 +129,17 @@ git commit -m "<device codename>: update build"
 5. Push your changes to this repository:
 
 ```bash
-git push sigma sigma-14.3
+git push sigma-devices sigma-14.3
+```
+
+**Note:** If you experience errors while attempting to push over HTTPS, run the following command:
+   
+```bash
+git config --global url."git@github.com:".insteadOf "https://github.com/"
+```
+
+It will force git to use SSH instead of HTTPS for all GitHub repositories. It only needs to be executed once. You can revert this change (if needed) by running the following command:
+
+```bash
+git config --global --unset url."
 ```
