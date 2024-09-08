@@ -49,7 +49,7 @@ Your JSON file should look something like this:
 
 ### 1.2 Changelog Structure
 
-The changelog is auto-generated during the build process and can be found in your OUT directory as SigmaDroid-v<version>-<date>-OFFICIAL-gapps-<device_codename>-Changelog.txt. It should look something like this:
+The changelog is auto-generated during the build process and can be found in your OUT directory as `SigmaDroid-v<version>-<date>-OFFICIAL-gapps-<device_codename>-Changelog.txt`. It should look something like this:
 
 ```text
 ====================
@@ -89,7 +89,7 @@ If you are adding support for a new device, follow these steps:
 2. After building, a file named *codename*.json will be created in the OUT directory.
 3. Copy that JSON file to the directory you cloned this repository.
 4. Open the file and review and if required, modify the necessary entries (refer to section 1.1 for mandatory entries).
-5. Copy the SigmaDroid-v<version>-<date>-OFFICIAL-gapps-<device_codename>-Changelog.txt file from your OUT directory (refer to section 1.2) to the cloned repository and rename it to `changelog_*codename*.txt`.
+5. Copy the `SigmaDroid-v<version>-<date>-OFFICIAL-gapps-<device_codename>-Changelog.txt` file from your OUT directory (refer to section 1.2) to the cloned repository and rename it to `changelog_*codename*.txt`.
 6. Commit your changes to this repository:
 
 ```bash
@@ -113,7 +113,7 @@ git pull sigma sigma-14.3
 ```
 
 2. Copy the *codename*.json file from the OUT directory to this repository at vendor/OTA.
-3. Copy the SigmaDroid-v<version>-<date>-OFFICIAL-gapps-<device_codename>-Changelog.txt file from your OUT directory (refer to section 1.2) to this repository at vendor/OTA and rename it to `changelog_*codename*.txt`.
+3. Copy the `SigmaDroid-v<version>-<date>-OFFICIAL-gapps-<device_codename>-Changelog.txt` file from your OUT directory (refer to section 1.2) to this repository at vendor/OTA and rename it to `changelog_*codename*.txt`.
 4. Commit your changes to this repository:
 
 ```bash
