@@ -17,12 +17,12 @@
 			"firmware": "",
 			"modem": "",
 			"bootloader": "",
-			"recovery": "",
+			"recovery": "https://sigmadroid.xyz/downloads/Home/Raven/Recovery/vendor_boot.img",
 			"paypal": "https://paypal.me/albinoman887",
 			"telegram": "https://t.me/SigmaDroidROMChat",
-			"dt": "",
-			"common-dt": "",
-			"kernel": ""
+			"dt": "https://github.com/SigmaDroid-devices/device_google_raviole",
+			"common-dt": "https://github.com/SigmaDroid-devices/device_google_gs101",
+			"kernel": "https://android.googlesource.com/device/google/raviole-kernel/"
 		}
 	]
 }
