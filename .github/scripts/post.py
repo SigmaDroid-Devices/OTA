@@ -41,7 +41,8 @@ except KeyError:
 
 REPOST_MD5 = getConfig("REPOST_MD5")
 
-BANNER_PATH = "./assets/banner.png"
+BANNER_FALLBACK = "./assets/fallback_banner.png"
+BANNER_DIR = "./assets/"
 
 # Init bot
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
@@ -191,7 +192,10 @@ def tg_message():
     if REPOST_MD5:
         info = get_info(REPOST_MD5)
         for CHAT_ID in CHAT_IDS:
-            with open(BANNER_PATH, "rb") as image:
+            banner_path = f"{BANNER_DIR}{info['codename']}_banner.png"
+            if not os.path.exists(banner_path):
+                banner_path = BANNER_FALLBACK
+            with open(banner_path, "rb") as image:
                 send_post(CHAT_ID, image, message_content(info), button(info))
         return
     commit_message = "Update new IDs and push OTA"
@@ -205,13 +209,15 @@ def tg_message():
         for devices in get_diff(get_new_id(), get_old_id()):
             info = get_info(devices)
             for CHAT_ID in CHAT_IDS:
-                with open(BANNER_PATH, "rb") as image:
+                banner_path = f"{BANNER_DIR}{info['codename']}_banner.png"
+                if not os.path.exists(banner_path):
+                    banner_path = BANNER_FALLBACK
+                with open(banner_path, "rb") as image:
                     send_post(CHAT_ID, image, message_content(info), button(info))
             commit_description += f"- {info['device']} ({info['codename']})\n"
             sleep(5)
     update(get_new_id())
     open("commit_mesg.txt", "w+").write(f"SigmaDroid: {commit_message} [BOT]\n\n{commit_description}")
-
 
 # Final stuffs
 tg_message()
