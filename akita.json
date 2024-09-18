@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "EliteBlackKaiser",
+			"oem": "Google",
+			"device": "Pixel 8a",
+			"filename": "SigmaDroid-v4.9.0-20240918-OFFICIAL-gapps-akita.zip",
+			"download": "https://sigmadroid.xyz/downloads/Home/Akita/OTAs/SigmaDroid-v4.9.0-20240918-OFFICIAL-gapps-akita.zip",
+			"timestamp": 1726682201,
+			"md5": "465ef9e7678e631297557ee2fdb83a24",
+			"sha256": "835041a0d19d23c3e6375a6c8086a3964bf4e80310c87a3c953bb9c4b7c790b9",
+			"size": 2490299382,
+			"version": "4.9.0",
+			"buildtype": "gapps",
+			"forum": "",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "https://paypal.me/albinoman887",
+			"telegram": "https://t.me/SigmaDroidROMChat",
+			"dt": "",
+			"common-dt": "",
+			"kernel": ""
+		}
+	]
+}
