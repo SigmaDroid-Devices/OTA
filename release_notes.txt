@@ -1,3 +1,31 @@
+Release Version : v4.9.1 2024-09-19
+
+Highlights & Device Specific Changes:
+   * Small Cleanup to PixelPropsUtils Spoofing logic
+   * Expose Tensor features to Pixel Studio
+   * Expose Tensor features to dialer (Prevent showing compat messages)
+   * Expose 2024 experience to PixelAIPrebuilt
+  
+- I Spent a lot of time on this update, if you like my work please donate @ https://paypal.me/albinoman887
+
+==============================================
+
+Release Version : v4.9.0 2024-09-18
+
+Highlights & Device Specific Changes:
+   * Fixed SystemUI Memory leaks (and others)
+   * Fixed Google Circle-to-Search (Contextual Search) not being triggered when holding down on nav handle
+     without removing the custom battery styles like Evolution-X had to. (Still requires using Pixel Launcher. You can switch to in in Sigma Toolbox>Misc)
+   * Performed complete clean rebase against crDroid Android 14 September since its the final release of Android 14
+   * Updated Pif fingerprint to latest
+   * Fixed setting back gesture sensitivity setting to the lowest value
+   * Fixed missing Navigation Mode settings option from System>Gesture when Pixel Launcher is set as default
+   * Synced with upstream crDroid changes
+
+- I Spent a lot of time on this update, if you like my work please donate @ https://paypal.me/albinoman887
+
+==============================================
+
 Release Version : v4.8.3 2024-09-06
 
 Highlights & Device Specific Changes:
