@@ -519,7 +519,6 @@ d09566b9d16 - Merge pull request #152 from kamikaonashi/14.0 (by Pranav Vashi)
 bf1867b798 - Fix leak introduced by aosp/3111768 (by Hans Boehm)
 5ac187b978 - Allow RunCheckpoint to lock mutator repeatedly (by Hans Boehm)
 
-<<<<<<< Updated upstream
    * device/lineage/sepolicy
 a624abc - common: msft: Integrate PhoneLink 14-3 sepolicy change (by chawan)
 0746f20 - common: msft: Allow system_server to add cross_device_service (by minaripenguin)
@@ -530,8 +529,6 @@ bbb659b - update sepolicy for OTA Updater app name change (by Matt Filetto)
    * external/boringssl
 4d2b3953 - Add keystore2 to libbssl_sys visibility (by chiteroman)
 
-=======
->>>>>>> Stashed changes
    * frameworks/base
 19283b7f20da - Revert "BrightnessController: Prevent possible memory leak" (by Pranav Vashi)
 9533af9a9ad6 - NetworkTraffic: Fix leak in network callback (by Pranav Vashi)
@@ -543,10 +540,7 @@ a3d94c1fd9d9 - CollapsedStatusBarFragment: Prevent memory leak (by minaripenguin
 
    * manifest
 73e3c10 - [TEMP]: switch to WIP branches (by Matt Filetto)
-<<<<<<< Updated upstream
 4534093 - initial SigmaDroid Project manifest (by Matt Filetto)
-=======
->>>>>>> Stashed changes
 
    * packages/apps/Aperture
 e570a4f - Aperture: Enable ZXing-C++ tryInvert option (by LuK1337)
@@ -554,7 +548,6 @@ e570a4f - Aperture: Enable ZXing-C++ tryInvert option (by LuK1337)
    * packages/apps/Gallery2
 b51a5f5b5 - Fix uses_libs properties for Gallery2. (by Jiakai Zhang)
 
-<<<<<<< Updated upstream
    * packages/apps/Launcher3
 66eaa583da - Rebrand as SigmaDroid Launcher (by Matt Filetto)
 239c2f3493 - Launcher3: Adapt strings to Alphadroid (by kamikaonashi)
@@ -573,8 +566,6 @@ ef11937 - res: drop duplicate string (by Matt Filetto)
 bf5de4f - SetupWizard: skip a couple of steps (by elpaablo)
 bccf1b5 - Ship as SigmaDroid based on CrDroid (by Matt Filetto)
 
-=======
->>>>>>> Stashed changes
    * packages/apps/Updater
 5743627 - [HACK]: Skip package verification for local update (by Matt Filetto)
 40c95a7 - Update URL for sigma-14.3 (by Matt Filetto)
@@ -644,7 +635,6 @@ bfc2869 - fixup Settings Widgets enable/disable switches (by Matt Filetto)
 f7b64ef - Introduce SigmaSettings (by Matt Filetto)
 6f212e3 - [SQUASH] Revert MatrixxSettings Changes (by Matt Filetto)
 
-<<<<<<< Updated upstream
    * system/security
 b5d6cfde - Free X509 if other ptr are null (by chiteroman)
 e8ef37ac - Modify issuer of leaf certificate to match first certificate chain subject (by chiteroman)
@@ -680,8 +670,6 @@ b00d2ba8 - Guard AOSPA Face Unlock implementation (by Matt Filetto)
 8378c77f - Add RRO Overlays (by Matt Filetto)
 36096cb0 - Add initial SigmaDroid properties (by Matt Filetto)
 
-=======
->>>>>>> Stashed changes
 ====================
      09-11-2024
 ====================
@@ -700,52 +688,12 @@ cf12533886 - envsetup: bump CCACHE_MAXSIZE to 80G (by Matt Filetto)
    * build/soong
 0df3a5237 - Rebrand as SigmaDroid (by Matt Filetto)
 
-<<<<<<< Updated upstream
    * frameworks/base
 6ba08a05ceb1 - Revert "PackageInstaller: fix NPE due to a race condition in PackageUtil" (by ShevT)
 
    * packages/apps/Messaging
 86df71b - Messaging: FrameSequence -> ImageDecoder (by Ido Ben-Hur)
 
-=======
-   * device/lineage/sepolicy
-a624abc - common: msft: Integrate PhoneLink 14-3 sepolicy change (by chawan)
-0746f20 - common: msft: Allow system_server to add cross_device_service (by minaripenguin)
-0020fea - common: Import phone link sepolicy for non-Qcom devices (by Arthur Shuai)
-bbb659b - update sepolicy for OTA Updater app name change (by Matt Filetto)
-30b7476 - missing GMS policy (by Matt Filetto)
-
-   * external/boringssl
-4d2b3953 - Add keystore2 to libbssl_sys visibility (by chiteroman)
-
-   * frameworks/base
-6ba08a05ceb1 - Revert "PackageInstaller: fix NPE due to a race condition in PackageUtil" (by ShevT)
-
-   * manifest
-4534093 - initial SigmaDroid Project manifest (by Matt Filetto)
-
-   * packages/apps/Launcher3
-66eaa583da - Rebrand as SigmaDroid Launcher (by Matt Filetto)
-239c2f3493 - Launcher3: Adapt strings to Alphadroid (by kamikaonashi)
-73178559ab - Restore 4x4 workspace (by elpaablo)
-5b8c1b79b9 - Disable shake to clean recents by default (by elpaablo)
-0b41e9ed94 - Ship as AlphaDroid based on crDroid (by elpaablo)
-
-   * packages/apps/LineageParts
-c63112e - [SQUASH] LineageParts: Rebrand as SigmaDroid (by Matt Filetto)
-
-   * packages/apps/Messaging
-86df71b - Messaging: FrameSequence -> ImageDecoder (by Ido Ben-Hur)
-
-   * packages/apps/SetupWizard
-8624d0f - Revert "SetupWizard: skip a couple of steps" (by Matt Filetto)
-ef11937 - res: drop duplicate string (by Matt Filetto)
-6a5e27c - Use correct Updater package name (by Matt Filetto)
-564014b - fixup! SetupWizard: Add step for changing theme (by elpaablo)
-bf5de4f - SetupWizard: skip a couple of steps (by elpaablo)
-bccf1b5 - Ship as SigmaDroid based on CrDroid (by Matt Filetto)
-
->>>>>>> Stashed changes
    * packages/apps/crDroidSettings
 96cd58d - Revert "crdroid: Add strings for space below IME" (by mukesh22584)
 c777ca9 - Revert "matrixx: Update strings & arrays for Clock background chip style" (by mukesh22584)
@@ -800,44 +748,6 @@ e216973 - matrixx: Initial Matrixx conversion (by mukesh22584)
 2b7635b - matrixx: Add hide developer status preference (by mukesh22584)
 9fa2bb6 - matrixx: Ignore window secure flags [2/2] (by libxzr)
 
-<<<<<<< Updated upstream
-=======
-   * system/security
-b5d6cfde - Free X509 if other ptr are null (by chiteroman)
-e8ef37ac - Modify issuer of leaf certificate to match first certificate chain subject (by chiteroman)
-0f304293 - Better memory management + new hooks (by chiteroman)
-8eb02cf8 - Spoof locked bootloader in hardware attestations with valid certificate chain (by chiteroman)
-ca978447 - Include libbssl_sys (by chiteroman)
-
-   * vendor/lineage
-8467f177 - createjson.sh: attempt to auto populate more fields when generating <codename>.json (by Matt Filetto)
-73825c3e - config: add pihooks mainline device properties (by Matt Filetto)
-c02f7eb6 - PIF: spoof as husky_beta (by Matt Filetto)
-f8e8957f - config: fix PIF default properties (by Matt Filetto)
-2df92afc - config: update default PIF GMS spoof fingerprint (by Matt Filetto)
-163509b7 - config: stop shipping PifPrebuilt.apk (by Matt Filetto)
-60c087f9 - config: set default PIF GMS spoof values (by Matt Filetto)
-510c17a4 - config: add PIF build properties (by Matt Filetto)
-fc7e2a47 - Fix Quick-tap sensitivity preference not showing (by Matt Filetto)
-7cdc304f - rro: drop SettingsOverlay (by Matt Filetto)
-94800591 - set default launcher to Launcher3 (by Matt Filetto)
-2ce553b7 - roomservice: update default branch to sigma-14.3 (by Matt Filetto)
-d43269bf - import CarrierSettingsOverlays to fix issues with global carriers (by Matt Filetto)
-43b333d0 - bacon: update after our modifications to play nicely with QPR2 base (by Matt Filetto)
-bc326ce2 - Add SIgmaDroid ASCII console output (by Matt Filetto)
-d49b5f32 - introduce updatepackage build wrapper (like bacon, but fastboot) (by Matt Filetto)
-652a5ec2 - bacon: refactor for our usage (by Matt Filetto)
-f960f4cc - stop globally disabling blurs on app launch (by Matt Filetto)
-28c06fdf - config: fix guard for some pixel features [SQUASH] (by Matt Filetto)
-41b1e967 - roomservice: refactor and add support for clone-depth (by Matt Filetto)
-5db600c6 - Introduce SigmaDroid Boot Animation (by Matt Filetto)
-f55bc3a2 - common_full: don't build Seedvault (by Matt Filetto)
-69259143 - common: add build properties to inject if TARGET_SUPPORTS_QUICK_TAP = true (by Matt Filetto)
-b00d2ba8 - Guard AOSPA Face Unlock implementation (by Matt Filetto)
-8378c77f - Add RRO Overlays (by Matt Filetto)
-36096cb0 - Add initial SigmaDroid properties (by Matt Filetto)
-
->>>>>>> Stashed changes
 ====================
      09-10-2024
 ====================
@@ -854,7 +764,6 @@ ed9dc508fbd8 - ClockController: Prevent possible memory leak (by minaripenguin)
 07545935aaf1 - CurrentWeather: Prevent possible memory leak (by minaripenguin)
 01ae08140837 - memory leak: Closes leaked instance (by LiLei)
 
-<<<<<<< Updated upstream
    * tools/extract-utils
 2e47015 - extract_utils: Fix package generation for x86/x86_64 (by LuK1337)
 dd283e9 - extract_utils: Remove useless DISABLE_DEPS declaration (by Cosmin Tanislav)
@@ -865,8 +774,6 @@ dd283e9 - extract_utils: Remove useless DISABLE_DEPS declaration (by Cosmin Tani
    * vendor/google/raven
 8a497b7 - raven: Remove 32bit libedgetpu_util that is actually 64bit (by Michael Bestas)
 
-=======
->>>>>>> Stashed changes
 ====================
      09-09-2024
 ====================
@@ -899,26 +806,12 @@ c587995 - Recorder: Move from tasks to coroutines and flows (by Sebastiano Barez
 d3cc3ac - New Crowdin updates (#1168) (by Lup Gabriel)
 
    * tools/extract-utils
-<<<<<<< Updated upstream
-=======
-2e47015 - extract_utils: Fix package generation for x86/x86_64 (by LuK1337)
-dd283e9 - extract_utils: Remove useless DISABLE_DEPS declaration (by Cosmin Tanislav)
->>>>>>> Stashed changes
 fa5a421 - extract_utils: Remove second parameter of write_makefiles from templates (by Cosmin Tanislav)
 90b34e8 - extract_utils: Add FIX_{SONAME,XML} helper functions (by Michael Bestas)
 9c657f5 - extract_utils: Implement DISABLE_DEPS (by Michael Bestas)
 4c30806 - extract_utils: Add MODULE_SUFFIX support (by LuK1337)
 17465ca - extract_utils: Fix multiple args parsing for automatic fixup (by LuK1337)
 
-<<<<<<< Updated upstream
-=======
-   * vendor/google/oriole
-460fad9 - oriole: Remove 32bit libedgetpu_util that is actually 64bit (by Michael Bestas)
-
-   * vendor/google/raven
-8a497b7 - raven: Remove 32bit libedgetpu_util that is actually 64bit (by Michael Bestas)
-
->>>>>>> Stashed changes
 ====================
      09-08-2024
 ====================
@@ -952,10 +845,7 @@ a55d4ce80 - soong: Change to CR_VERSION (by Pranav Vashi)
 
    * device/google/gs101
 684d853e - gs101: Remove elf files in copy files check (by Aaron Kling)
-<<<<<<< Updated upstream
 db1cc7a4 -  gs101: its 101 (by jrcable1)
-=======
->>>>>>> Stashed changes
 
    * frameworks/av
 b1be3a4256 - Merge 'lineage-21.0' into 14.0 (by Pranav Vashi)
@@ -1926,12 +1816,6 @@ a20a9bcb - crdroid: Add changelog script (by Pranav Vashi)
    * device/google/gs-common
 811212e - fixup! Disable userdebug diagnostics (by Michael Bestas)
 
-<<<<<<< Updated upstream
-=======
-   * device/google/gs101
-db1cc7a4 -  gs101: its 101 (by jrcable1)
-
->>>>>>> Stashed changes
    * hardware/qcom-caf/sdm845/display
 80aa9e092a - Convert some display libraries to blueprint (by Aaron Kling)
 
@@ -1976,7 +1860,6 @@ e213df3 - OmniJaws: Update default icon package (by Pranav Vashi)
 0924bd2 - OmniJaws: iconpack: Add Google's new material weather icons (light) (by Jayant-Deshmukh)
 289e053 - OmniJaws: Remove Google weather icon set (by Jayant-Deshmukh)
 
-<<<<<<< Updated upstream
    * system/core
 7273ae44e - Modifying /dev/memcg permissions. (by Karthik Gopalan)
 b673ff400 - Remove unnecessary std::move (by Yi Kong)
@@ -1985,8 +1868,6 @@ b673ff400 - Remove unnecessary std::move (by Yi Kong)
 e7685de0f - task_profiles: Use foreground cpuset for SurfaceFlinger (by Jake Weinstein)
 5aae45fd6 - Set swappiness of apps and system under /dev/memcg from init.rc (by Manjunatha Ramachandra)
 
-=======
->>>>>>> Stashed changes
    * tools/extract-utils
 bccc230 - extract-utils: Also support rfsa package targets on odm (by Bruno Martins)
 
@@ -2027,15 +1908,6 @@ f55e136f - vars: Drop no longer supported Pixels (by Michael Bestas)
 ab9d9f6 - Import translations. DO NOT MERGE ANYWHERE (by Bill Yi)
 
    * system/core
-<<<<<<< Updated upstream
-=======
-7273ae44e - Modifying /dev/memcg permissions. (by Karthik Gopalan)
-b673ff400 - Remove unnecessary std::move (by Yi Kong)
-1078ce49b - init: Write initial cpuset values for audio-app (by minaripenguin)
-5ec68c500 - Add cpu set for audio app (by Revathi Uddaraju)
-e7685de0f - task_profiles: Use foreground cpuset for SurfaceFlinger (by Jake Weinstein)
-5aae45fd6 - Set swappiness of apps and system under /dev/memcg from init.rc (by Manjunatha Ramachandra)
->>>>>>> Stashed changes
 e6f3aac15 - debuggerd: use jemalloc by default and allow opt-in to scudo (4/4) (by Adithya R)
 1316c7460 - core: Lockscreen Charging (2/3) (by xyyx)
 1226e048a - hosts: Block OTA downloading from GMS (by jhenrique09)
@@ -2068,10 +1940,7 @@ bd0ca6f79 - debuggerd: Adapt rom name in tombstones (by DarkJoker360)
 
    * packages/apps/Aperture
 cde40a1 - Aperture: SettingsActivity: Deduplicate HardwareKey prefs keys (by Sebastiano Barezzi)
-<<<<<<< Updated upstream
 bdf870d - Aperture: Update CameraX to 1.5.0-alpha01 (by LuK1337)
-=======
->>>>>>> Stashed changes
 
    * vendor/lineage
 8450e172 - apn: Set correct apn for `Grameenphone` (by hipexscape)
