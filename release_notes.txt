@@ -1,3 +1,29 @@
+Release Version : v4.9.2 2024-09-26
+
+Highlights & Device Specific Changes:
+   * Fixed a couple more possible memory leaks
+   * When switching to Pixel Launcher, the system will automatically disable the AOSP Wallpaper picker
+     and enable the Pixel "Wallpaper & Styles" picker. This is to address the "no app installed" message when
+     trying to change the wallpaper from the Pixel Launcher home screen. Also updated the Settings app to
+     reflect this change.
+   * Added some new Wallpapers to both SigmaDroid Launcher and Pixel Launcher.
+   * Added BCR (Basic Call Recorder) app to the ROM. This is a simple call recorder that works with the stock
+     Phone app. It is not enabled by default, but can be enabled in the app's settings.
+   * Updated all Gapps and dependencies and cleaned up some RRO overlays. Should see a minor quality of life
+     improvement with Google apps and services. For example, if your device isn't certified, you should see
+     a clickable "Fix" button directly below the "Device is not certified" message in the Play Store.
+   * Addressed a handful of SEPolicy denials
+   * Added preliminary support for vanilla build variants. This is still a work in progress, but the ROM should
+     now be able to be built without any of the Pixel-specific features. This will be expanded upon in future
+     updates.
+   * Changed the keybox used by the built-in TrickyStore implementation because I found the one we were using
+     floating around on the internet. The new keybox is private and unrevoked.
+   * Synced with upstream crDroid changes
+
+- I Spent a lot of time on this update, if you like my work please donate @ https://paypal.me/albinoman887
+
+==============================================
+
 Release Version : v4.9.1 2024-09-19
 
 Highlights & Device Specific Changes:
